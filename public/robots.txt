@@ -1,0 +1,36 @@
+# robots.txt for https://www.destinationpick.com/
+# Last updated: 26 Feb 2026
+
+User-agent: *
+Disallow:
+
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /*
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OpenAI
+Allow: /
+
+User-agent: Claude
+Allow: /
+
+User-agent: BingAI
+Allow: /
+
+Sitemap: https://www.destinationpick.com/sitemap.xml
+
+
