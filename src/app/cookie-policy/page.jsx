@@ -1,5 +1,8 @@
 import React from 'react'
 import Bannersection from '../../components/Bannersection'
+
+export const metadata = { robots: { index: false, follow: false } }
+
 const page = () => {
     return (
         <main>

@@ -1,4 +1,19 @@
 ﻿import React from "react"
+
+export const metadata = {
+    title: "Destination Wedding in Los Cabos Mexico | Ultimate Wedding Guide | DestinationPick",
+    description: "Plan the ultimate destination wedding in Los Cabos, Mexico. Desert cliffs, turquoise sea, 350+ days of sunshine. Expert wedding planning by DestinationPick in partnership with the Los Cabos Tourism Board.",
+    keywords: "Los Cabos destination wedding, Cabo San Lucas wedding, San Jose del Cabo wedding, destination wedding Mexico Baja, Los Cabos wedding planner",
+    alternates: {
+        canonical: "https://www.destinationpick.com/lp/los-cabos-tourism-board/",
+    },
+    openGraph: {
+        title: "Destination Wedding in Los Cabos Mexico | DestinationPick",
+        description: "Where desert cliffs meet turquoise sea. Plan your dream destination wedding in Los Cabos with DestinationPick.",
+        images: [{ url: "/lp/los-cabos-tourism/banner1.jpg", width: 1200, height: 630, alt: "Los Cabos Destination Wedding" }],
+    },
+}
+
 import { Check } from "lucide-react"
 import { LosCabosHero } from "../components/LosCabosHero"
 import { LosCabosDestinationStory } from "../components/LosCabosDestinationStory"

@@ -1,10 +1,63 @@
 import React from 'react'
+import Script from 'next/script'
 import { MapPin, Phone, Mail } from 'lucide-react'
 import Bannersection from '../../components/Bannersection'
 import ContactForm from '../../components/forms/ContactForm'
+
+export const metadata = {
+    title: "Contact Us | Destination Wedding & Travel Planner in Texas",
+    description: "Get in touch with DestinationPick — your luxury destination wedding and travel management specialists in Carrollton, TX. Call (917) 913-4262 or email info.us@destinationpick.com.",
+    keywords: "contact destination wedding planner, travel agency Texas, destination wedding planner Carrollton TX, luxury travel agency USA",
+    alternates: {
+        canonical: "https://www.destinationpick.com/contact/",
+    },
+    openGraph: {
+        title: "Contact DestinationPick | Luxury Destination Wedding & Travel Planner",
+        description: "Reach out to our team of destination wedding and travel specialists. Based in Carrollton, TX. Available 24/7.",
+        images: [{ url: "/banners/banner7.jpg", width: 1200, height: 630, alt: "Contact DestinationPick" }],
+    },
+}
+
+const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "DestinationPick",
+    "url": "https://www.destinationpick.com/",
+    "logo": "https://www.destinationpick.com/favicon.webp",
+    "image": "https://www.destinationpick.com/banners/banner1.jpg",
+    "description": "DestinationPick is a luxury destination wedding and travel management company based in Carrollton, TX, serving couples and corporate clients across the USA and worldwide.",
+    "telephone": "+1-917-913-4262",
+    "email": "info.us@destinationpick.com",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1039 I-35E Suite 304",
+        "addressLocality": "Carrollton",
+        "addressRegion": "TX",
+        "postalCode": "75006",
+        "addressCountry": "US",
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 32.954465,
+        "longitude": -96.913953,
+    },
+    "openingHours": "Mo-Su 00:00-23:59",
+    "priceRange": "$$$",
+    "sameAs": [
+        "https://www.facebook.com/destinationpick",
+        "https://www.instagram.com/destinationpick",
+        "https://www.linkedin.com/company/destinationpick",
+    ],
+}
+
 const page = () => {
     return (
         <main>
+            <Script
+                id="local-business-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+            />
             <Bannersection
                 image="/banners/banner7.jpg"
                 title="Contact Us"

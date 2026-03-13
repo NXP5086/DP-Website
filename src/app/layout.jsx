@@ -19,13 +19,40 @@ const inter = Inter({
 });
 
 export const metadata = {
-    title: "DestinationPick | Luxury Destination Weddings",
+    metadataBase: new URL("https://www.destinationpick.com"),
+    title: {
+        default: "DestinationPick | Luxury Destination Weddings",
+        template: "%s | DestinationPick",
+    },
     description:
-        "Your dream destination wedding awaits. End-to-end luxury wedding planning in Mexico, Italy, France, Maldives & beyond. Serving couples across the USA.",
+        "Your dream destination wedding awaits. End-to-end luxury wedding planning in Mexico, Punta Cana, Bahamas & beyond. Serving couples across the USA.",
     keywords:
-        "destination wedding, luxury wedding planner, wedding travel, destination wedding packages, Mexico wedding, Italy wedding",
+        "destination wedding, luxury wedding planner, wedding travel, destination wedding packages, Mexico wedding, Punta Cana wedding, Bahamas wedding",
     icons: {
         icon: "/favicon.webp",
+    },
+    openGraph: {
+        type: "website",
+        siteName: "DestinationPick",
+        title: "DestinationPick | Luxury Destination Weddings",
+        description:
+            "Your dream destination wedding awaits. End-to-end luxury wedding planning in Mexico, Punta Cana, Bahamas & beyond. Serving couples across the USA.",
+        images: [
+            {
+                url: "/banners/banner1.jpg",
+                width: 1200,
+                height: 630,
+                alt: "DestinationPick — Luxury Destination Weddings",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        site: "@destinationpick",
+        title: "DestinationPick | Luxury Destination Weddings",
+        description:
+            "Your dream destination wedding awaits. End-to-end luxury wedding planning in Mexico, Punta Cana, Bahamas & beyond.",
+        images: ["/banners/banner1.jpg"],
     },
 };
 
@@ -78,15 +105,23 @@ export default function RootLayout({ children }) {
                             "@context": "https://schema.org",
                             "@type": "TravelAgency",
                             "name": "DestinationPick",
-                            "url": "https://destinationpick.com/",
-                            "logo": "https://destinationpick.com/logo.png",
+                            "url": "https://www.destinationpick.com/",
+                            "logo": "https://www.destinationpick.com/favicon.webp",
                             "description":
                                 "DestinationPick offers travel management, destination weddings, tours & event planning with expert concierge services across top global locations.",
                             "contactPoint": {
                                 "@type": "ContactPoint",
-                                "telephone": "+1 917-913-4262",
+                                "telephone": "+1-917-913-4262",
                                 "contactType": "Customer Service",
                                 "availableLanguage": ["English"],
+                            },
+                            "address": {
+                                "@type": "PostalAddress",
+                                "streetAddress": "1039 I-35E Suite 304",
+                                "addressLocality": "Carrollton",
+                                "addressRegion": "TX",
+                                "postalCode": "75006",
+                                "addressCountry": "US",
                             },
                             "sameAs": [
                                 "https://www.facebook.com/destinationpick",
@@ -103,6 +138,28 @@ export default function RootLayout({ children }) {
                                     { "@type": "Offer", "name": "Private Travel Tours" },
                                     { "@type": "Offer", "name": "Corporate Travel" },
                                 ],
+                            },
+                        }),
+                    }}
+                />
+
+                <Script
+                    id="website-schema"
+                    type="application/ld+json"
+                    strategy="beforeInteractive"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "WebSite",
+                            "name": "DestinationPick",
+                            "url": "https://www.destinationpick.com/",
+                            "potentialAction": {
+                                "@type": "SearchAction",
+                                "target": {
+                                    "@type": "EntryPoint",
+                                    "urlTemplate": "https://www.destinationpick.com/destinations/?q={search_term_string}",
+                                },
+                                "query-input": "required name=search_term_string",
                             },
                         }),
                     }}

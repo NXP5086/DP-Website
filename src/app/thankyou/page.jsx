@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import Bannersection from '../../components/Bannersection'
 
+export const metadata = { robots: { index: false, follow: false } }
+
 const page = () => {
     return (
         <main>

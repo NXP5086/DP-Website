@@ -30,6 +30,7 @@ export function HeroSection() {
                     muted
                     playsInline
                     style={{ objectPosition: 'center' }}
+                    poster="/videos/video-poster.jpg"
                 >
                     <source
                         src="/videos/hero-background.mp4"

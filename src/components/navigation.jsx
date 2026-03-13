@@ -20,7 +20,7 @@ const navLinks = [
     { href: "/services", label: "Services" },
     { href: "/destinations", label: "Destinations" },
     { href: "/contact", label: "Contact" },
-    { href: "", label: "Blog" },
+    { href: "/blog", label: "Blog" },
 ]
 
 export function Navigation() {

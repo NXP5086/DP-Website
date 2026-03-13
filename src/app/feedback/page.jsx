@@ -1,6 +1,8 @@
 import React from 'react'
 import Bannersection from '../../components/Bannersection'
 import Feedbackform from '../../components/forms/Feedbackform'
+
+export const metadata = { robots: { index: false, follow: false } }
 const page = () => {
     return (
         <main>

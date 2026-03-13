@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation"
+import Script from "next/script"
 import destinationData from "../../../../../data/destinationData.json"
 import { hotelMeta } from "../../../../../data/Metatags"
 
@@ -47,12 +48,21 @@ export async function generateMetadata({ params }) {
     const fallbackDescription = `Plan your dream Indian wedding at ${hotel.name} in ${city.name}. Expert planning, luxury venues & all-inclusive packages by DestinationPick.`
     const fallbackKeywords = `${hotel.name} wedding, Indian wedding ${hotel.name}, ${city?.name} wedding venue, destination wedding ${destination}`
 
+    const hotelImage = hotel.images?.main
+        ? `https://www.destinationpick.com${hotel.images.main}`
+        : `https://www.destinationpick.com/banners/banner1.jpg`
+
     return {
         title: meta?.title ?? fallbackTitle,
         description: meta?.description ?? fallbackDescription,
         keywords: meta?.keywords ?? fallbackKeywords,
         alternates: {
-            canonical: meta?.canonical ?? `https://www.destinationpick.com/destinations/${destination}/${cities}/${slug}`,
+            canonical: meta?.canonical ?? `https://www.destinationpick.com/destinations/${destination}/${cities}/${slug}/`,
+        },
+        openGraph: {
+            title: meta?.title ?? fallbackTitle,
+            description: meta?.description ?? fallbackDescription,
+            images: [{ url: hotelImage, width: 1200, height: 630, alt: `${hotel.name} Destination Wedding` }],
         },
     }
 }
@@ -69,8 +79,37 @@ export default async function HotelPage({ params }) {
 
     const otherHotels = city.hotels.filter(h => h.slug !== slug).slice(0, 3)
 
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.destinationpick.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Destinations", "item": "https://www.destinationpick.com/destinations/" },
+            { "@type": "ListItem", "position": 3, "name": dest.name, "item": `https://www.destinationpick.com/destinations/${destination}/` },
+            { "@type": "ListItem", "position": 4, "name": city.name, "item": `https://www.destinationpick.com/destinations/${destination}/${cities}/` },
+            { "@type": "ListItem", "position": 5, "name": hotel.name, "item": `https://www.destinationpick.com/destinations/${destination}/${cities}/${slug}/` },
+        ],
+    }
+
+    const lodgingSchema = {
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "name": hotel.name,
+        "description": hotel.overview ?? `${hotel.name} is a luxury resort in ${city.name} offering destination wedding packages.`,
+        "url": `https://www.destinationpick.com/destinations/${destination}/${cities}/${slug}/`,
+        ...(hotel.images?.main && { "image": `https://www.destinationpick.com${hotel.images.main}` }),
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": city.name,
+            "addressCountry": destination === "bahamas" ? "BS" : destination === "dominican-republic" ? "DO" : "MX",
+        },
+        "touristType": "Couples, Wedding Guests",
+    }
+
     return (
         <main className="min-h-screen bg-background">
+            <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <Script id="lodging-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(lodgingSchema) }} />
             <HotelHero hotel={hotel} />
             <HotelTrustScale hotel={hotel} />
             <HotelWhyChoose hotel={hotel} />

@@ -1,4 +1,19 @@
 import React from 'react'
+
+export const metadata = {
+    title: "Dreams Macao Beach Punta Cana | Indian Wedding Packages | DestinationPick",
+    description: "Plan your dream Indian wedding at Dreams Macao Beach Punta Cana — a luxury all-inclusive beachfront resort with 500 suites, 6 event venues, and expert Indian wedding coordination by DestinationPick.",
+    keywords: "Dreams Macao Beach wedding, Indian wedding Punta Cana, Dreams Macao Beach packages, destination wedding Dominican Republic",
+    alternates: {
+        canonical: "https://www.destinationpick.com/lp/dreams-macao-beach/",
+    },
+    openGraph: {
+        title: "Dreams Macao Beach Punta Cana | Indian Wedding Packages | DestinationPick",
+        description: "Luxury beachfront resort with 500 suites and 6 wedding venues. Perfect for multi-day Indian weddings in Punta Cana.",
+        images: [{ url: "/images/dominican-republic/cities/punta-cana/hotels/dreams-macao-beach/main.jpg", width: 1200, height: 630, alt: "Dreams Macao Beach Wedding" }],
+    },
+}
+
 import { Hero } from '../components/Hero'
 import {
   DreamsMacaoExperience,

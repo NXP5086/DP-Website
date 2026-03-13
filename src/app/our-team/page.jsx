@@ -1,6 +1,21 @@
 import React from 'react'
 import Bannersection from '../../components/Bannersection'
 import OurteamCard from '../../components/OurteamCard'
+
+export const metadata = {
+    title: "Meet Our Team | Destination Wedding & Travel Specialists",
+    description: "Meet the DestinationPick team — experienced destination wedding planners, travel specialists, and operations professionals dedicated to crafting unforgettable experiences worldwide.",
+    keywords: "destination wedding team, travel management specialists, DestinationPick team, wedding planners USA",
+    alternates: {
+        canonical: "https://www.destinationpick.com/our-team/",
+    },
+    openGraph: {
+        title: "Meet Our Team | DestinationPick",
+        description: "Meet the people behind DestinationPick — destination wedding planners, travel specialists, and operations professionals serving clients across the USA.",
+        images: [{ url: "/banners/banner1.jpg", width: 1200, height: 630, alt: "DestinationPick Team" }],
+    },
+}
+
 const page = () => {
 
     const teamMembers = [

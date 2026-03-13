@@ -1,4 +1,19 @@
 import React from 'react'
+
+export const metadata = {
+    title: "Grand Palladium Costa Mujeres | Indian Wedding Packages Cancun | DestinationPick",
+    description: "Host your grand Indian wedding at Grand Palladium Costa Mujeres, Cancun — featuring a signature canal boat system, 707-guest capacity, 6 event venues, and all-inclusive luxury. Expert planning by DestinationPick.",
+    keywords: "Grand Palladium Costa Mujeres wedding, Indian wedding Cancun luxury resort, Costa Mujeres destination wedding, Grand Palladium wedding packages",
+    alternates: {
+        canonical: "https://www.destinationpick.com/lp/grand-palladium-costa-mujeres/",
+    },
+    openGraph: {
+        title: "Grand Palladium Costa Mujeres | Indian Wedding Packages | DestinationPick",
+        description: "707-guest capacity, unique canal boat system, and beachfront mandap setups. The ultimate Indian wedding destination in Cancun.",
+        images: [{ url: "/lp/grand-palladium/palladium-img.jpg", width: 1200, height: 630, alt: "Grand Palladium Costa Mujeres Wedding" }],
+    },
+}
+
 import { Hero } from '../components/Hero'
 import { Overview } from '../components/Overview'
 import { WeddingDetails } from '../components/Weddingdetails'

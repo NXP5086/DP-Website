@@ -1,6 +1,7 @@
 import destinationData from "../../../../data/destinationData.json"
 import { cityMeta } from "../../../../data/Metatags"
 import { notFound } from "next/navigation"
+import Script from "next/script"
 
 import { CityHero } from "../../../../components/city/city-hero"
 import { CityMarquee } from "../../../../components/city/city-marquee"
@@ -48,7 +49,12 @@ export async function generateMetadata({ params }) {
         description: meta?.description ?? fallbackDescription,
         keywords: meta?.keywords ?? "",
         alternates: {
-            canonical: meta?.canonical ?? `https://www.destinationpick.com/destinations/${destination}/${cities}`,
+            canonical: meta?.canonical ?? `https://www.destinationpick.com/destinations/${destination}/${cities}/`,
+        },
+        openGraph: {
+            title: meta?.title ?? fallbackTitle,
+            description: meta?.description ?? fallbackDescription,
+            images: [{ url: `/banners/banner3.jpg`, width: 1200, height: 630, alt: `${cityObj?.name ?? cities} Destination Weddings` }],
         },
     }
 }
@@ -67,8 +73,20 @@ export default async function CityPage({ params }) {
 
     const cityData = cityObj.cityPageData
 
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.destinationpick.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Destinations", "item": "https://www.destinationpick.com/destinations/" },
+            { "@type": "ListItem", "position": 3, "name": destinationObj.name, "item": `https://www.destinationpick.com/destinations/${destination}/` },
+            { "@type": "ListItem", "position": 4, "name": cityObj.name, "item": `https://www.destinationpick.com/destinations/${destination}/${cities}/` },
+        ],
+    }
+
     return (
         <main className="min-h-screen bg-background">
+            <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <CityHero data={cityData.hero} />
             <CityMarquee data={cityData.marquee} />
             <CityAbout data={cityData.about} />

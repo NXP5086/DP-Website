@@ -1,6 +1,7 @@
 import destinationData from "../../../data/destinationData.json"
 import { destinationMeta } from "../../../data/Metatags"
 import { notFound } from "next/navigation"
+import Script from "next/script"
 
 import { DestinationPageHero } from "../../../components/destinations/destinationpage-hero"
 import { DestinationPageMarquee } from "../../../components/destinations/destinationpage-marquee"
@@ -37,7 +38,12 @@ export async function generateMetadata({ params }) {
         description: meta?.description ?? fallbackDescription,
         keywords: meta?.keywords ?? "",
         alternates: {
-            canonical: meta?.canonical ?? `https://www.destinationpick.com/destinations/${destination}`,
+            canonical: meta?.canonical ?? `https://www.destinationpick.com/destinations/${destination}/`,
+        },
+        openGraph: {
+            title: meta?.title ?? fallbackTitle,
+            description: meta?.description ?? fallbackDescription,
+            images: [{ url: `/banners/banner2.jpg`, width: 1200, height: 630, alt: `${data?.name ?? destination} Destination Weddings` }],
         },
     }
 }
@@ -50,8 +56,19 @@ export default async function MexicoPage({ params }) {
 
     const pageData = data.destinationPageData
 
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.destinationpick.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Destinations", "item": "https://www.destinationpick.com/destinations/" },
+            { "@type": "ListItem", "position": 3, "name": data.name, "item": `https://www.destinationpick.com/destinations/${destination}/` },
+        ],
+    }
+
     return (
         <main className="min-h-screen bg-background">
+            <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <DestinationPageHero data={pageData.hero} />
             <DestinationPageMarquee data={pageData.marquee} />
             <DestinationPageAbout data={pageData.about} />

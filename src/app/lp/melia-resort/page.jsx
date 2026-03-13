@@ -1,4 +1,19 @@
 import React from 'react'
+
+export const metadata = {
+    title: "Paradisus Melia Resorts | Indian Destination Wedding Packages | DestinationPick",
+    description: "Plan a luxury Indian destination wedding at Paradisus Cancun, Paradisus Playa del Carmen, Paradisus La Perla, or Paradisus Palma Real. Expert multi-resort planning by DestinationPick.",
+    keywords: "Paradisus wedding packages, Melia resorts wedding, Indian wedding Paradisus Cancun, Paradisus Punta Cana wedding, destination wedding Melia",
+    alternates: {
+        canonical: "https://www.destinationpick.com/lp/melia-resort/",
+    },
+    openGraph: {
+        title: "Paradisus Melia Resorts | Indian Wedding Packages | DestinationPick",
+        description: "Four iconic Paradisus beachfront resorts in Mexico & Dominican Republic. One expert Indian wedding planning partner.",
+        images: [{ url: "/lp/melia/banner1.jpg", width: 1200, height: 630, alt: "Paradisus Melia Resort Wedding" }],
+    },
+}
+
 import { Hero } from '../components/Hero'
 import { BookingBenefits } from '../components/BookingBenefits'
 import { ComparisonTable } from '../components/ComparisonTable'

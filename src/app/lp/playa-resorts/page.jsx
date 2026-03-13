@@ -1,4 +1,19 @@
 import React from 'react'
+
+export const metadata = {
+    title: "Playa Resorts | Hyatt Ziva Destination Wedding Packages | DestinationPick",
+    description: "Plan your Indian destination wedding at Hyatt Ziva Cancun, Los Cabos, or Puerto Vallarta, or Dreams La Romana. Multi-resort planning through DestinationPick x Playa Resorts partnership.",
+    keywords: "Playa Resorts wedding, Hyatt Ziva Cancun wedding, Hyatt Ziva Los Cabos wedding, Indian wedding Playa Resorts, destination wedding Hyatt",
+    alternates: {
+        canonical: "https://www.destinationpick.com/lp/playa-resorts/",
+    },
+    openGraph: {
+        title: "Playa Resorts | Indian Wedding Packages | DestinationPick",
+        description: "Four extraordinary Playa Resorts properties across Mexico & Dominican Republic. Expert Indian wedding planning through DestinationPick.",
+        images: [{ url: "/lp/playa/banner1.jpg", width: 1200, height: 630, alt: "Playa Resorts Wedding" }],
+    },
+}
+
 import { Hero } from '../components/Hero'
 import { BookingBenefits } from '../components/BookingBenefits'
 import { ComparisonTable } from '../components/ComparisonTable'

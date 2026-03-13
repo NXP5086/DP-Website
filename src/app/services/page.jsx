@@ -1,8 +1,84 @@
 import React from 'react'
+import Script from 'next/script'
 import Bannersection from '../../components/Bannersection'
+
+export const metadata = {
+    title: "Our Services | Corporate Travel, Weddings, Touring & More",
+    description: "DestinationPick offers corporate travel management, destination wedding planning, luxury private travel, touring, holy land tours & humanitarian travel. Based in Texas, serving clients worldwide.",
+    keywords: "corporate travel agency USA, destination wedding planner, private travel planner, touring services, holy land tours, humanitarian travel, luxury travel management",
+    alternates: {
+        canonical: "https://www.destinationpick.com/services/",
+    },
+    openGraph: {
+        title: "Our Services | DestinationPick",
+        description: "Corporate travel, destination weddings, luxury touring & more. Expert travel management services from DestinationPick — serving clients across the USA and worldwide.",
+        images: [{ url: "/banners/pp.webp", width: 1200, height: 630, alt: "DestinationPick Services" }],
+    },
+}
+
+const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What corporate travel services does DestinationPick offer?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "DestinationPick offers comprehensive corporate travel services including strategic account management, custom air & hotel programs, 24/7 traveler support, visa services, ground transportation, group airfare, and flexible payment solutions.",
+            },
+        },
+        {
+            "@type": "Question",
+            "name": "Can DestinationPick plan a destination wedding?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. DestinationPick specializes in destination weddings across Mexico, Punta Cana, Bahamas, and beyond. We handle venue selection, travel coordination for guests, wedding planning, and on-site management for all-inclusive resort celebrations.",
+            },
+        },
+        {
+            "@type": "Question",
+            "name": "What is included in DestinationPick's touring services?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our touring services include global tour planning, VIP and band management, production crew management, flight & hotel arrangements, excess baggage, airport assistance, ground transportation, and visa services.",
+            },
+        },
+        {
+            "@type": "Question",
+            "name": "Does DestinationPick offer private luxury travel planning?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Our Private Travel Planner division specializes in creating personalized luxury experiences for high-net-worth individuals and VIPs, leveraging exclusive relationships with international airlines, top resorts, and hotels worldwide.",
+            },
+        },
+        {
+            "@type": "Question",
+            "name": "Does DestinationPick offer Holy Land tours?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We offer Holy Land Tours to Israel, Tel Aviv, Jerusalem, the Dead Sea, and Eilat. We handle accommodations, guided tours of historical and religious sites, and complete trip logistics.",
+            },
+        },
+        {
+            "@type": "Question",
+            "name": "Can DestinationPick assist with mission and humanitarian travel?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. DestinationPick provides flexible airfares and comprehensive travel services tailored to humanitarian, faith-based, and group travel, with competitive pricing so more funds go toward your mission.",
+            },
+        },
+    ],
+}
+
 const page = () => {
     return (
         <main>
+            <Script
+                id="faq-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
             <Bannersection
                 title="Services"
                 description=""
