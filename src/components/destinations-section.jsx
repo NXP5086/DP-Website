@@ -6,6 +6,7 @@ import { Button } from "../components/ui/button"
 import { cn } from "../lib/utils"
 import Link from "next/link"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 const destinations = [
     {
@@ -90,10 +91,12 @@ export function DestinationsSection() {
                                 onMouseLeave={() => setHoveredId(null)}
                             >
                                 {/* Image */}
-                                <img
+                                <Image
                                     src={destination.image || "/placeholder.svg"}
                                     alt={destination.name}
-                                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 33vw"
+                                    className="object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
 
                                 {/* Overlay */}

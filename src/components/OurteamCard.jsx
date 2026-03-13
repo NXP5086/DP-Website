@@ -1,15 +1,18 @@
 import React from 'react';
+import Image from 'next/image';
 
 const OurteamCard = ({ teamMembers }) => {
     return (
         <div className="max-w-5xl mx-auto">
             {teamMembers.map((member, index) => (
                 <div key={index} className='flex flex-col md:flex-row justify-center mb-10 items-center gap-8 bg-white p-4 rounded-lg shadow-[0px_0px_4px_0px_rgba(0,0,0,0.2)]'>
-                    <div className="w-full md:w-[30%]">
-                        <img
+                    <div className="w-full md:w-[30%] relative h-72">
+                        <Image
                             src={member.image}
                             alt={`${member.name} from DestinationPick`}
-                            className='w-full h-full md:h-72 object-contain rounded-lg'
+                            fill
+                            sizes="(max-width: 768px) 100vw, 30vw"
+                            className='object-contain rounded-lg'
                         />
                     </div>
                     <div className="w-full md:w-[70%]">

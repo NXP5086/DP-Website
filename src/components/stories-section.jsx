@@ -6,6 +6,7 @@ import { cn } from "../lib/utils"
 import { Button } from "../components/ui/button"
 import Link from "next/link"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 const stories = [
     {
@@ -98,11 +99,13 @@ export function StoriesSection() {
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 0.7 }}
                     >
-                        <img
+                        <Image
                             src={featuredStory.image || "/placeholder.svg"}
                             alt={featuredStory.couple}
                             key={activeStory}
-                            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            fill
+                            sizes="(max-width: 768px) 100vw, 60vw"
+                            className="object-cover transition-transform duration-700 group-hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-linear-to-t from-foreground/80 via-transparent to-foreground/20" />
 
@@ -137,11 +140,13 @@ export function StoriesSection() {
                                 whileInView={{ opacity: 1 }}
                                 transition={{ duration: 0.7, delay: index * 0.1 }}
                             >
-                                <div className="w-20 h-20 rounded-lg overflow-hidden shrink-0">
-                                    <img
+                                <div className="w-20 h-20 rounded-lg overflow-hidden shrink-0 relative">
+                                    <Image
                                         src={story.image || "/placeholder.svg"}
                                         alt={story.couple}
-                                        className="w-full h-full object-cover"
+                                        fill
+                                        sizes="80px"
+                                        className="object-cover"
                                     />
                                 </div>
                                 <div className="flex-1 min-w-0">

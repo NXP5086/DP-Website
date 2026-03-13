@@ -4,6 +4,7 @@ import { Button } from "../components/ui/button"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 export function AboutSection() {
     return (
@@ -20,10 +21,12 @@ export function AboutSection() {
                                     whileInView={{ opacity: 1 }}
                                     transition={{ duration: 0.7 }}
                                 >
-                                    <img
+                                    <Image
                                         src="/images/abt1.jpg"
                                         alt="Bride getting ready"
-                                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                        fill
+                                        sizes="(max-width: 768px) 50vw, 25vw"
+                                        className="object-cover hover:scale-105 transition-transform duration-700"
                                     />
                                 </motion.div>
                                 <motion.div
@@ -32,10 +35,12 @@ export function AboutSection() {
                                     whileInView={{ opacity: 1 }}
                                     transition={{ duration: 0.7 }}
                                 >
-                                    <img
+                                    <Image
                                         src="/images/abt2.jpg"
                                         alt="Wedding couple"
-                                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                        fill
+                                        sizes="(max-width: 768px) 50vw, 25vw"
+                                        className="object-cover hover:scale-105 transition-transform duration-700"
                                     />
                                 </motion.div>
                             </div>
@@ -46,10 +51,12 @@ export function AboutSection() {
                                     whileInView={{ opacity: 1 }}
                                     transition={{ duration: 0.7 }}
                                 >
-                                    <img
+                                    <Image
                                         src="/images/abt3.jpg"
                                         alt="Wedding table setting"
-                                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                        fill
+                                        sizes="(max-width: 768px) 50vw, 25vw"
+                                        className="object-cover hover:scale-105 transition-transform duration-700"
                                     />
                                 </motion.div>
                                 <motion.div
@@ -58,10 +65,12 @@ export function AboutSection() {
                                     whileInView={{ opacity: 1 }}
                                     transition={{ duration: 0.7 }}
                                 >
-                                    <img
+                                    <Image
                                         src="/images/about/beach-wedding.jpg"
                                         alt="Beach wedding"
-                                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                        fill
+                                        sizes="(max-width: 768px) 50vw, 25vw"
+                                        className="object-cover hover:scale-105 transition-transform duration-700"
                                     />
                                 </motion.div>
                             </div>

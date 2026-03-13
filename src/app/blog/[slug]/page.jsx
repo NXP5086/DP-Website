@@ -1,6 +1,7 @@
 import React from "react"
 import Script from "next/script"
 import Link from "next/link"
+import Image from "next/image"
 import { notFound } from "next/navigation"
 import { blogPosts } from "../../../data/blogPosts"
 import ContactForm from "../../../components/forms/ContactForm"
@@ -90,11 +91,13 @@ export default async function BlogArticlePage({ params }) {
 
             {/* Hero image */}
             <div className="w-full h-64 md:h-96 overflow-hidden relative">
-                <img
+                <Image
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-full object-cover"
-                    loading="eager"
+                    fill
+                    priority
+                    sizes="100vw"
+                    className="object-cover"
                 />
                 <div className="absolute inset-0 bg-black/40" />
                 <div className="absolute inset-0 flex items-end">
@@ -131,20 +134,26 @@ export default async function BlogArticlePage({ params }) {
                         <span>{post.readTime}</span>
                     </div>
 
-                    {/* Article excerpt as intro — content will be added per article */}
-                    <div className="prose prose-lg max-w-none text-gray-700">
-                        <p className="text-xl text-gray-600 font-light leading-relaxed mb-8">{post.excerpt}</p>
-
-                        <div className="bg-accent/5 border border-accent/20 rounded-xl p-6 my-8">
-                            <p className="text-gray-700 font-medium mb-0">
-                                Ready to start planning? <Link href="/contact/" className="text-accent underline">Contact our team</Link> for a free consultation — we specialize in destination weddings across Mexico, Punta Cana, Bahamas, and beyond.
+                    {post.content ? (
+                        /* Generated article content */
+                        <div
+                            className="prose prose-lg max-w-none prose-headings:font-serif prose-headings:text-foreground prose-a:text-accent prose-a:no-underline hover:prose-a:underline prose-strong:text-foreground prose-li:text-gray-700"
+                            dangerouslySetInnerHTML={{ __html: post.content }}
+                        />
+                    ) : (
+                        /* Placeholder shown until content is generated */
+                        <div className="prose prose-lg max-w-none text-gray-700">
+                            <p className="text-xl text-gray-600 font-light leading-relaxed mb-8">{post.excerpt}</p>
+                            <div className="bg-accent/5 border border-accent/20 rounded-xl p-6 my-8">
+                                <p className="text-gray-700 font-medium mb-0">
+                                    Ready to start planning? <Link href="/contact/" className="text-accent underline">Contact our team</Link> for a free consultation — we specialize in destination weddings across Mexico, Punta Cana, Bahamas, and beyond.
+                                </p>
+                            </div>
+                            <p>
+                                Planning a destination wedding is one of the most exciting decisions a couple can make — and one of the most complex. At DestinationPick, we&apos;ve helped hundreds of couples navigate the process from first inquiry to wedding day. This guide covers everything you need to know.
                             </p>
                         </div>
-
-                        <p>
-                            Planning a destination wedding is one of the most exciting decisions a couple can make — and one of the most complex. At DestinationPick, we&apos;ve helped hundreds of couples navigate the process from first inquiry to wedding day. This guide covers everything you need to know.
-                        </p>
-                    </div>
+                    )}
                 </div>
             </section>
 
@@ -161,8 +170,8 @@ export default async function BlogArticlePage({ params }) {
                                     href={`/blog/${p.slug}/`}
                                     className="group block bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
                                 >
-                                    <div className="aspect-[16/9] overflow-hidden">
-                                        <img src={p.image} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                                    <div className="aspect-[16/9] overflow-hidden relative">
+                                        <Image src={p.image} alt={p.title} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover group-hover:scale-105 transition-transform duration-300" />
                                     </div>
                                     <div className="p-5">
                                         <span className="text-xs font-semibold text-accent uppercase tracking-wide">{p.category}</span>

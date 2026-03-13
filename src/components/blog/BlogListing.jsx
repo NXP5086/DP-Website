@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { blogCategories } from "../../data/blogPosts"
 
 export default function BlogListing({ posts }) {
@@ -37,11 +38,13 @@ export default function BlogListing({ posts }) {
                         href={`/blog/${post.slug}/`}
                         className="group block bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
                     >
-                        <div className="aspect-[16/9] overflow-hidden">
-                            <img
+                        <div className="aspect-[16/9] overflow-hidden relative">
+                            <Image
                                 src={post.image}
                                 alt={post.title}
-                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                fill
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                className="object-cover group-hover:scale-105 transition-transform duration-300"
                             />
                         </div>
                         <div className="p-6">
