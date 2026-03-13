@@ -16,7 +16,7 @@ export function AboutSection() {
                         <div className="grid grid-cols-2 gap-4">
                             <div className="space-y-4">
                                 <motion.div
-                                    className="aspect-3/4 rounded-lg overflow-hidden"
+                                    className="relative aspect-3/4 rounded-lg overflow-hidden"
                                     initial={{ opacity: 0 }}
                                     whileInView={{ opacity: 1 }}
                                     transition={{ duration: 0.7 }}
@@ -30,7 +30,7 @@ export function AboutSection() {
                                     />
                                 </motion.div>
                                 <motion.div
-                                    className="aspect-square rounded-lg overflow-hidden"
+                                    className="relative aspect-square rounded-lg overflow-hidden"
                                     initial={{ opacity: 0 }}
                                     whileInView={{ opacity: 1 }}
                                     transition={{ duration: 0.7 }}
@@ -46,7 +46,7 @@ export function AboutSection() {
                             </div>
                             <div className="space-y-4 pt-8">
                                 <motion.div
-                                    className="aspect-square rounded-lg overflow-hidden"
+                                    className="relative aspect-square rounded-lg overflow-hidden"
                                     initial={{ opacity: 0 }}
                                     whileInView={{ opacity: 1 }}
                                     transition={{ duration: 0.7 }}
@@ -60,7 +60,7 @@ export function AboutSection() {
                                     />
                                 </motion.div>
                                 <motion.div
-                                    className="aspect-3/4 rounded-lg overflow-hidden"
+                                    className="relative aspect-3/4 rounded-lg overflow-hidden"
                                     initial={{ opacity: 0 }}
                                     whileInView={{ opacity: 1 }}
                                     transition={{ duration: 0.7 }}
