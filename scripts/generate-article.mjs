@@ -75,12 +75,13 @@ const internalLinks = [
 
 // ── Build site context string ─────────────────────────────────────────────────
 function buildSiteContext() {
-    const destinations = destinationData.map((d) => {
-        const cities = (d.cities || []).map((c) => {
+    // Build preferred hotels grouped by destination + city for the prompt
+    const preferredHotelsList = destinationData.map((d) => {
+        const cityLines = (d.cities || []).map((c) => {
             const hotels = (c.hotels || []).map((h) => h.name).join(", ")
             return `    ${c.name}: ${hotels}`
         }).join("\n")
-        return `  ${d.name}:\n${cities}`
+        return `  ${d.name}:\n${cityLines}`
     }).join("\n")
 
     return `Company: DestinationPick (destinationpick.com)
@@ -89,8 +90,8 @@ Location: Carrollton, Texas, USA
 Phone: +1-917-913-4262
 Tone: Expert, warm, luxury-focused, trustworthy — like advice from a knowledgeable friend
 
-Destinations & Hotels:
-${destinations}
+PREFERRED PARTNER HOTELS — feature these prominently and first when recommending properties:
+${preferredHotelsList}
 
 Internal links to use naturally throughout the article:
 ${internalLinks.slice(0, 20).map((l) => `  "${l.text}" → ${l.url}`).join("\n")}`
@@ -136,6 +137,11 @@ STRUCTURE:
 3. Use H3 subsections, bullet lists, or numbered lists where they add clarity
 4. FAQ section: <h2>Frequently Asked Questions</h2> with <h3> for each question
 5. Closing paragraph with CTA to contact DestinationPick
+
+HOTEL & RESORT MENTIONS:
+- When recommending or listing hotels/resorts, always feature our Preferred Partner Hotels first and with more detail when relevant (they are our partner properties)
+- You may also mention other well-known properties (e.g. Sandals, Iberostar, Hard Rock, Breathless, Excellence, Secrets, Royalton, Dreams, etc.) for SEO completeness and to make the article feel comprehensive and unbiased — but keep those mentions brief
+- Never list ONLY preferred hotels — always include at least a couple of well-known non-partner properties so the article reads as genuinely authoritative, not promotional
 
 HTML RULES (critical — follow exactly):
 - Output ONLY the article body HTML — no <html>, <head>, <body>, <article>, or <h1> tags

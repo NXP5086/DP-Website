@@ -219,65 +219,67 @@ export const blogPosts = [
         content: `
 <p class="text-xl text-gray-600 font-light leading-relaxed mb-8">Cancun is home to some of the most spectacular wedding venues in the world. With hundreds of all-inclusive resorts lining the Caribbean coast — from Playa Mujeres in the north to Tulum in the south — narrowing down your options can feel overwhelming. We've done the work for you. Here are the top 10 all-inclusive wedding resorts in Cancun and the Riviera Maya for 2026, based on venue quality, wedding infrastructure, guest experience, and overall value.</p>
 
-<h2>1. Dreams Playa Mujeres Golf &amp; Spa Resort</h2>
-<p><strong>Best for:</strong> Couples seeking ultra-luxury with a secluded setting</p>
-<p>Located on the pristine Playa Mujeres peninsula north of Cancun's Hotel Zone, Dreams Playa Mujeres is consistently ranked among Mexico's finest wedding properties. The secluded location means less commercial traffic and a more exclusive feel. The resort's ceremony locations are extraordinary — a dramatic seaside gazebo, a crystal-clear infinity pool terrace, and an elegant ballroom for receptions of up to 500 guests.</p>
-<p>Their "Unlimited-Luxury" wedding packages include top-shelf spirits, gourmet dining at multiple specialty restaurants, and dedicated on-site wedding coordinators. The "Xhale Club" adults-only section is especially popular for wedding parties. Nightly rates for guests typically run $350–$600 per person including all meals and drinks.</p>
+<h2>1. Planet Hollywood Cancun</h2>
+<p><strong>Best for:</strong> Couples who want a chic, entertainment-forward celebration (50–250 guests)</p>
+<p>Planet Hollywood Cancun is one of the most visually striking all-inclusive properties on the entire Riviera Maya. The resort's Star Lane ceremony walkway is a showstopper — a dramatic, architecturally designed corridor that frames Caribbean views and creates the kind of grand entrance moment couples remember forever. The rooftop terrace reception with 360-degree ocean views is equally spectacular.</p>
+<p>Modern, design-forward, and energetic, Planet Hollywood appeals to couples who want their wedding to feel like a curated luxury event rather than a standard resort ceremony. The all-inclusive offering is strong, with premium spirits, multiple specialty restaurants, and an experienced on-site wedding team. Capacity reaches 250+ for receptions.</p>
 
-<h2>2. Secrets Moxché Playa del Carmen</h2>
-<p><strong>Best for:</strong> Adults-only luxury with spectacular design</p>
-<p>Opened in 2022, Secrets Moxché has quickly become one of the most sought-after wedding venues on the Riviera Maya. The property's architecture is inspired by Mayan culture, featuring natural wood, stone, and cenote-style water features throughout. Adults-only, with 24 premium wedding venues including a rooftop terrace with panoramic Caribbean views — arguably the most photographed ceremony space in all of Playa del Carmen.</p>
-<p>Wedding packages at Moxché can be fully customized with the resort's on-site floral and décor studio. Guest capacity for receptions reaches 300+.</p>
+<h2>2. Hyatt Ziva Cancun</h2>
+<p><strong>Best for:</strong> Dramatic panoramic views with family-friendly access (up to 350 guests)</p>
+<p>Hyatt Ziva Cancun occupies one of the most enviable positions of any resort in Mexico — a narrow peninsula where the Caribbean Sea meets the Nichupté Lagoon, delivering water views from virtually every direction. The signature rooftop "Cielo" terrace is among the most photographed ceremony venues in Mexico: open-air, elevated, with unobstructed ocean panoramas in every direction.</p>
+<p>The Hyatt brand ensures consistent, high-caliber service. Family-friendly with adults-only sections, Hyatt Ziva accommodates guests of all ages gracefully. Reception capacity of up to 350 guests. Strong catering and beverage programs with genuine gourmet options well above typical all-inclusive standards.</p>
 
-<h2>3. Royalton Splash Riviera Cancun</h2>
-<p><strong>Best for:</strong> Large weddings with guests of all ages</p>
-<p>If your guest list includes families with children, Royalton Splash is the answer. This massive property features a spectacular water park for families while maintaining luxurious wedding venues on the beachfront. It's one of the few resorts where you can have a stunning, upscale wedding ceremony without sacrificing the guest experience for families with kids.</p>
-<p>The resort's signature "Royal Service" adults-only area provides the couple with a more intimate experience while kids enjoy the waterpark. Wedding capacities here reach 700+ guests — one of the largest in the region.</p>
+<h2>3. Grand Velas Riviera Maya</h2>
+<p><strong>Best for:</strong> Ultra-luxury all-inclusive weddings that demand the best (up to 300 guests)</p>
+<p>Grand Velas Riviera Maya is consistently rated among the finest all-inclusive resorts in the world — and its wedding program matches that standard. The property sits amid 200 acres of lush jungle and pristine beach on the Riviera Maya, with ceremony venues that range from a dramatic open-air palapa over cenote waters to an oceanfront beach setup beneath a towering jungle canopy.</p>
+<p>Every element is executed at a luxury level far above typical all-inclusives: farm-to-table cuisine, sommelier-curated wine lists, a world-class spa, and a dedicated wedding concierge for every couple. If budget allows, Grand Velas is the benchmark that other Cancun wedding venues are measured against.</p>
 
-<h2>4. Hard Rock Hotel Riviera Maya</h2>
-<p><strong>Best for:</strong> Couples who want a high-energy, entertainment-focused celebration</p>
-<p>Hard Rock Hotel Riviera Maya sits on a lush stretch of beach between Cancun and Playa del Carmen and delivers a music-infused, high-energy wedding experience unlike anything else in Mexico. The property's "Rock Star" wedding packages are legendary — they include live entertainment, professional recording sessions, and reception setups that feel more like a concert than a wedding dinner.</p>
-<p>Beyond the theatrics, the resort has excellent traditional ceremony options including a beachfront pergola and elegant outdoor terrace. It can accommodate up to 500 reception guests. The all-inclusive setup is particularly strong, with premium spirits and a wide range of à la carte dining options.</p>
+<h2>4. Grand Palladium Costa Mujeres Resort &amp; Spa</h2>
+<p><strong>Best for:</strong> Large-scale weddings for families and mixed-age groups (up to 500+ guests)</p>
+<p>Grand Palladium Costa Mujeres sits on a spectacular stretch of beach on the Costa Mujeres peninsula — one of the most pristine and least commercialized beaches in the entire Cancun area. The resort's scale and quality make it ideal for large weddings: multiple ballrooms, expansive beachfront ceremony areas, and comprehensive wedding packages that include everything from the mandap setup to late-night reception service.</p>
+<p>The TRS Coral Hotel sits within the same complex as an adults-only, ultra-premium sister property — couples can house their most discerning guests in TRS while the broader group stays in the Grand Palladium. This dual-property setup is particularly valuable for large Indian weddings or multigenerational celebrations.</p>
 
-<h2>5. Iberostar Selection Cancun</h2>
-<p><strong>Best for:</strong> Budget-conscious couples who don't want to compromise on quality</p>
-<p>Iberostar Selection Cancun sits right on the Hotel Zone strip and delivers outstanding value without sacrificing beauty. The resort's ceremony terrace overlooks the Caribbean Sea, and the lush tropical gardens create a naturally beautiful backdrop that requires minimal additional décor.</p>
-<p>What sets Iberostar apart for couples on a tighter budget is the inclusivity of their packages — more décor, catering, and extras are bundled at a lower starting price than comparable properties. Guest room rates are also notably more affordable, making it a popular choice for couples prioritizing their guests' comfort and value.</p>
+<h2>5. TRS Coral Hotel</h2>
+<p><strong>Best for:</strong> Adults-only ultra-luxury within a large resort complex</p>
+<p>TRS Coral is the premium adults-only wing of the Grand Palladium Costa Mujeres complex — offering butler service, exclusive pool areas, private beach access, and a distinctly upscale atmosphere while still connecting guests to the broader resort amenities. For couples who want intimate luxury for their inner circle combined with large-event capacity for the full guest list, the Grand Palladium + TRS Coral combination is one of the best in Mexico.</p>
+<p>Wedding ceremonies on TRS's private beach terrace, with the turquoise Caribbean as backdrop, are among the most striking on the entire coast.</p>
 
-<h2>6. Planet Hollywood Cancun</h2>
-<p><strong>Best for:</strong> Couples who want a festive, celebrity-inspired atmosphere</p>
-<p>Planet Hollywood Cancun reimagines the all-inclusive experience with a chic, modern design and entertainment-forward ethos. The Star Lane is one of the most talked-about ceremony spaces in Cancun — a dramatic walkway flanked by film memorabilia and framed by Caribbean views. Wedding dinners on the rooftop terrace with panoramic ocean views are a highlight.</p>
-<p>The property works well for weddings of 50–250 guests and is particularly popular with younger couples who want their celebration to feel like a party rather than a formal event.</p>
+<h2>6. Garza Blanca Cancun</h2>
+<p><strong>Best for:</strong> Boutique ultra-luxury for intimate weddings (up to 120 guests)</p>
+<p>Garza Blanca Cancun is the Cancun extension of the celebrated Garza Blanca brand, known for its adults-only, boutique luxury positioning on Mexico's Pacific coast. The Cancun property delivers the same philosophy — stunning architectural design, exceptional food, and deeply personalized service — in an intimate beachfront setting on the Riviera Maya.</p>
+<p>For couples who want their wedding to feel genuinely exclusive rather than resort-scale, Garza Blanca's smaller property count and premium service model creates an experience that larger all-inclusives simply can't replicate.</p>
 
-<h2>7. Hyatt Ziva Cancun</h2>
-<p><strong>Best for:</strong> Dramatic views and iconic ceremony settings</p>
-<p>Hyatt Ziva Cancun sits on a narrow strip of land where the Caribbean Sea meets the Nichupté Lagoon — giving it water views from virtually every angle. The "Cielo" rooftop terrace is one of the most dramatic ceremony venues in Mexico: open-air, elevated, with 360-degree ocean views that make for extraordinary photos.</p>
-<p>The family-friendly setup accommodates guests of all ages, and the Hyatt brand ensures consistent service quality. Capacity runs up to 350 guests for receptions. Hyatt's "Ziva" adults-only rooms provide couples with a more intimate experience within the broader family property.</p>
+<h2>7. Paradisus Cancun &amp; Paradisus Playa del Carmen</h2>
+<p><strong>Best for:</strong> Sophisticated luxury with Spanish-inspired elegance (up to 400 guests)</p>
+<p>The Paradisus properties — Paradisus Cancun on the Hotel Zone and Paradisus Playa del Carmen and La Perla further south — bring Meliá Hotels' flagship luxury brand to the Riviera Maya. These are architecturally magnificent resorts with genuinely world-class wedding programs. Paradisus Playa del Carmen in particular is one of the Riviera Maya's premier wedding venues: a adults-only property (La Perla section) or family-inclusive (La Esmeralda) with spectacular overwater ceremony locations and a culinary program to match the finest restaurants in the region.</p>
 
-<h2>8. Nizuc Resort &amp; Spa</h2>
-<p><strong>Best for:</strong> Ultra-luxury boutique weddings of up to 100 guests</p>
-<p>For couples who prioritize exclusivity above all else, Nizuc is in a class of its own. This small-scale, ultra-luxury property at the southern end of the Hotel Zone accommodates a limited number of guests and offers a genuinely private wedding experience. The resort's jungle-meets-sea setting is one of the most distinctive in the region, featuring natural cenotes, immaculate tropical gardens, and secluded beach coves.</p>
-<p>Nizuc is more expensive per-guest than mass-market all-inclusives but provides an incomparable level of personalized service. If you're planning a 20–80 person wedding and want guests to feel truly special, this is worth every peso.</p>
+<h2>8. Waldorf Astoria Cancun</h2>
+<p><strong>Best for:</strong> True five-star luxury for the most discerning couples (up to 200 guests)</p>
+<p>The Waldorf Astoria Cancun brings the legendary Waldorf Astoria brand to Mexico's Caribbean coast for the first time — and it delivers on the promise. Opened recently, the property sits on the quieter, more exclusive stretch of the Hotel Zone and offers the Waldorf signature of flawless service, extraordinary culinary excellence, and venues that feel genuinely special rather than resort-generic.</p>
+<p>For couples who benchmark their wedding against the world's finest hotels rather than the all-inclusive market, Waldorf Astoria Cancun represents a distinctive tier. Capacity is intentionally limited — making it most appropriate for weddings of 150 or fewer guests who want uncompromised quality.</p>
 
-<h2>9. Excellence Playa Mujeres</h2>
-<p><strong>Best for:</strong> Couples-only weddings in a serene adults-only setting</p>
-<p>Adults-only and occupying a private stretch of beach on the Playa Mujeres peninsula, Excellence Playa Mujeres combines seclusion with sophistication. The resort offers six ceremony locations — including a floating ceremony pier over a lagoon that's become one of the most popular wedding photos in all of Mexico — and multiple reception venues ranging from intimate terrace dinners to grand ballroom events.</p>
-<p>If all or most of your guests are couples and you want a sophisticated, romantic atmosphere rather than a family resort energy, Excellence Playa Mujeres delivers consistently.</p>
+<h2>9. Rosewood Mayakoba</h2>
+<p><strong>Best for:</strong> Eco-luxury intimate weddings in a UNESCO-recognized natural setting (up to 120 guests)</p>
+<p>Rosewood Mayakoba is frequently cited as one of the best hotels in the world — not just in Mexico. Located within the Mayakoba ecological reserve south of Playa del Carmen, the resort is built around a network of natural lagoons, mangrove forests, and pristine beach frontage. Guests arrive at their overwater bungalows by boat. The ceremony settings — overwater platforms, jungle clearings, secluded beach coves — are unlike anything in the standard Cancun resort strip.</p>
+<p>For couples seeking a wedding that transcends the typical all-inclusive format, Rosewood Mayakoba is the most distinctive luxury option on the entire Riviera Maya.</p>
 
-<h2>10. Secrets Akumal Riviera Maya</h2>
-<p><strong>Best for:</strong> Nature-lovers and couples who want a more intimate, eco-luxury setting</p>
-<p>Akumal is located south of Playa del Carmen near one of Mexico's best natural snorkeling bays — a bay where sea turtles nest and swim year-round. Secrets Akumal is a smaller, adults-only property that offers a more understated luxury experience than the mega-resorts of Cancun's Hotel Zone. Ceremony venues here include a stunning seafront terrace steps from the natural beach, surrounded by tropical foliage.</p>
-<p>For couples who love nature, want a quieter setting, and don't need a mega-resort scale, Akumal is an inspired choice — particularly for weddings of 20–120 guests.</p>
+<h2>10. Fairmont Mayakoba</h2>
+<p><strong>Best for:</strong> Elegant luxury with world-class golf and nature setting (up to 300 guests)</p>
+<p>Fairmont Mayakoba shares the Mayakoba ecological reserve with Rosewood next door — same extraordinary natural setting, slightly larger scale, and the Fairmont brand's signature approach to luxury hospitality. The resort is built among mangrove-lined lagoons with multiple ceremony locations including dramatic overwater settings and lush garden venues.</p>
+<p>The Fairmont is more accommodating for larger weddings than Rosewood, with strong ballroom and outdoor event capacity. The Greg Norman-designed El Camaleón golf course (formerly an annual PGA Tour stop) is a major draw for sports-loving guests extending their stay.</p>
+
+<h2>Also Worth Considering</h2>
+<p>Beyond the properties above, the Riviera Maya has several other well-regarded wedding venues worth knowing. <strong>Hard Rock Hotel Riviera Maya</strong> is popular for high-energy, entertainment-forward celebrations. <strong>Iberostar Selection Cancun</strong> offers excellent value on the Hotel Zone strip. The <strong>Secrets</strong> brand (Moxché, Akumal) and <strong>Excellence Playa Mujeres</strong> are strong adults-only options. And <strong>Royalton Splash Riviera Cancun</strong> is one of the best choices for family-heavy guest lists with children.</p>
 
 <h2>How to Choose Among These Resorts</h2>
 <p>Every resort on this list is excellent — the right choice depends on your specific priorities:</p>
 <ul>
-  <li>Need to accommodate 300+ guests? → Royalton Splash or Hard Rock</li>
-  <li>Want ultra-luxury and privacy? → Nizuc or Dreams Playa Mujeres</li>
-  <li>Budget-conscious? → Iberostar Selection or Planet Hollywood</li>
-  <li>Adults-only? → Excellence Playa Mujeres or Secrets Moxché</li>
-  <li>Best views? → Hyatt Ziva Cancun or Secrets Moxché</li>
-  <li>Families with kids? → Royalton Splash or Hard Rock Riviera Maya</li>
+  <li>Need to accommodate 400+ guests? → Grand Palladium Costa Mujeres</li>
+  <li>Want ultra-luxury boutique? → Rosewood Mayakoba or Waldorf Astoria Cancun</li>
+  <li>Best all-inclusive value at a luxury level? → Grand Velas Riviera Maya or Paradisus</li>
+  <li>Dramatic views for ceremony photos? → Hyatt Ziva Cancun or TRS Coral</li>
+  <li>Modern, entertainment-focused vibe? → Planet Hollywood Cancun</li>
+  <li>Nature + luxury? → Rosewood or Fairmont Mayakoba</li>
 </ul>
 
 <p>At <a href="/services/">DestinationPick</a>, we work directly with all of these properties and can negotiate group rates, complimentary upgrades, and package enhancements that couples booking directly rarely receive. <a href="/contact/">Contact our team</a> to find out which Cancun resort is the best fit for your wedding vision and guest count.</p>
@@ -347,16 +349,19 @@ export const blogPosts = [
 
 <h3>Cancun &amp; Riviera Maya</h3>
 <ul>
-  <li><strong>Dreams Playa Mujeres:</strong> Large event spaces, experienced wedding team, multiple outdoor ceremony locations, proven track record with Indian weddings</li>
-  <li><strong>Hard Rock Hotel Riviera Maya:</strong> Massive scale, strong entertainment infrastructure, accommodates very large groups</li>
-  <li><strong>Royalton Splash Riviera Cancun:</strong> Excellent for mixed-age groups, large beach ceremony area, family-friendly</li>
-  <li><strong>Planet Hollywood Cancun:</strong> Modern infrastructure, open-air spaces ideal for mehndi and cocktail events, experienced with non-traditional wedding formats</li>
+  <li><strong>Planet Hollywood Cancun:</strong> Modern open-air venues ideal for mehndi, sangeet, and cocktail events; experienced with large multi-day celebrations; strong entertainment infrastructure</li>
+  <li><strong>Grand Palladium Costa Mujeres + TRS Coral Hotel:</strong> The largest combined capacity on the Riviera Maya — ideal for 200–400 guest Indian weddings; dual-property setup accommodates mixed luxury preferences; proven track record with multi-day events</li>
+  <li><strong>Grand Velas Riviera Maya:</strong> Exceptional culinary team that can execute authentic Indian menus at a world-class level; multiple private event spaces for concurrent functions; ultra-luxury standard throughout</li>
+  <li><strong>Hyatt Ziva Cancun:</strong> Strong event department experienced with large group weddings; multiple outdoor ceremony locations; consistent Hyatt service standards for international guests</li>
+  <li><strong>Paradisus Playa del Carmen:</strong> Stunning ceremony locations, flexible large-event catering, suitable for 150–400 guests</li>
 </ul>
+<p>Other properties like <strong>Hard Rock Hotel Riviera Maya</strong> and <strong>Royalton Splash Riviera Cancun</strong> also accommodate large groups and have experience with multi-day events — worth considering for very large weddings (300+ guests) or family-heavy guest lists.</p>
 
 <h3>Los Cabos</h3>
 <ul>
-  <li><strong>Hyatt Ziva Los Cabos:</strong> Spectacular ocean views, large event spaces, strong culinary team</li>
-  <li><strong>Nobu Hotel Los Cabos:</strong> For ultra-luxury small Indian weddings (50–100 guests) with exceptional food service</li>
+  <li><strong>Grand Velas Los Cabos:</strong> The Los Cabos benchmark for ultra-luxury all-inclusive events — extraordinary culinary program, dramatic ocean views, world-class service for discerning Indian wedding guests</li>
+  <li><strong>Hyatt Ziva Los Cabos:</strong> Spectacular setting where the Pacific meets the Sea of Cortez; experienced with large group events; strong catering flexibility</li>
+  <li><strong>JW Marriott Los Cabos Beach Resort:</strong> Excellent event infrastructure, reliable Marriott service standards, strong capacity for mid-to-large Indian wedding celebrations</li>
 </ul>
 
 <h2>Guest Logistics for Large Indian Wedding Groups</h2>
@@ -418,11 +423,11 @@ export const blogPosts = [
 <h2>Venues &amp; Resorts</h2>
 
 <h3>Cancun</h3>
-<p>Cancun's Hotel Zone and the broader Riviera Maya region offer hundreds of all-inclusive wedding venues across every price point. Major wedding properties include Dreams Playa Mujeres, Secrets Moxché, Royalton Splash, Hard Rock Hotel, Hyatt Ziva, and dozens more. The sheer volume of inventory means couples at every budget find excellent options, and the competition keeps quality high.</p>
+<p>Cancun's Hotel Zone and the broader Riviera Maya region offer hundreds of all-inclusive wedding venues across every price point. Leading properties include Planet Hollywood Cancun, Hyatt Ziva Cancun, Grand Velas Riviera Maya, Grand Palladium Costa Mujeres, Paradisus Cancun, Waldorf Astoria Cancun, Garza Blanca Cancun, and Rosewood Mayakoba — as well as well-known names like Hard Rock, Secrets, and Iberostar. The sheer volume of inventory means couples at every budget find excellent options, and the competition keeps quality high.</p>
 <p>Cancun resorts tend to be large — often 500+ rooms — which means they're experienced at handling big groups with complex logistics. Beach ceremony locations are plentiful and well-established.</p>
 
 <h3>Cabo San Lucas</h3>
-<p>Los Cabos has a smaller but extremely high-caliber collection of wedding venues. Top properties include Nobu Hotel Los Cabos, Las Ventanas al Paraíso (a Rosewood Resort), Chileno Bay Resort &amp; Residences, Hyatt Ziva Los Cabos, One&amp;Only Palmilla, and Marquis Los Cabos. These properties skew toward the ultra-luxury tier — smaller, more intimate, with genuinely extraordinary service.</p>
+<p>Los Cabos has a smaller but extremely high-caliber collection of wedding venues. Top properties include Grand Velas Los Cabos, Hyatt Ziva Los Cabos, Viceroy Los Cabos, JW Marriott Los Cabos Beach Resort, and Park Hyatt Cabo Del Sol. These properties skew toward the ultra-luxury tier — smaller, more intimate, with genuinely extraordinary service. Other notable options include Las Ventanas al Paraíso, Nobu Hotel Los Cabos, and One&amp;Only Palmilla for couples seeking boutique ultra-luxury.</p>
 <p>Ceremony locations in Cabo are dramatically different from Cancun. Instead of flat white-sand beaches, you get rugged coastlines, desert cactus gardens, infinity-edge terraces overlooking the Sea of Cortez, and the iconic "Arch of Cabo San Lucas" (El Arco) as a natural backdrop for beach ceremonies at Lover's Beach.</p>
 
 <h2>Cost Comparison</h2>
@@ -772,49 +777,38 @@ export const blogPosts = [
 
 <p>Here are the best beach wedding venues in Punta Cana for 2026 — ranked by overall wedding experience, venue quality, and the guest experience they create.</p>
 
-<h2>1. Sanctuary Cap Cana — Adults-Only Luxury</h2>
-<p><strong>Location:</strong> Cap Cana | <strong>Best for:</strong> Boutique luxury weddings up to 150 guests</p>
-<p>Sanctuary Cap Cana consistently tops "best of" lists for Punta Cana destination weddings — and for good reason. The adults-only resort sits within the exclusive Cap Cana marina community, separated from the main Bávaro resort corridor. The result is a quieter, more sophisticated atmosphere that feels genuinely exclusive.</p>
-<p>Wedding venues here include a breathtaking beachfront gazebo, a colonial-style chapel surrounded by tropical gardens, and a cliffside terrace with sunset ocean views. The resort's culinary team is exceptional — a standout in a destination where food quality is often inconsistent. Capacity runs up to approximately 150 guests for receptions.</p>
-<p>Sanctuary also offers a dedicated bridal villa with a private plunge pool and oceanfront terrace — perfect for getting-ready photos and a private wedding morning experience.</p>
+<h2>1. Hyatt Ziva Cap Cana</h2>
+<p><strong>Location:</strong> Cap Cana | <strong>Best for:</strong> Family-inclusive luxury with spectacular Cap Cana beachfront (up to 400 guests)</p>
+<p>Hyatt Ziva Cap Cana opened to wide acclaim and quickly established itself as one of the finest all-inclusive resorts in the entire Caribbean. Set within the exclusive Cap Cana resort enclave at the southeastern tip of the Dominican Republic, the property occupies a stunning stretch of cliff-backed beach with turquoise water that consistently photographs as some of the most beautiful in the Caribbean.</p>
+<p>The wedding program here is exceptional. Multiple ceremony locations include an oceanfront gazebo perched above the water, a formal garden chapel, and a beachfront setup under dramatic natural cliffs. Culinary quality is notably above typical all-inclusive standards, with genuine specialty restaurant options that impress even the most discerning guests. Accommodates up to 400 reception guests with strong ballroom and outdoor venue options.</p>
 
-<h2>2. Breathless Punta Cana Resort &amp; Spa</h2>
-<p><strong>Location:</strong> Uvero Alto | <strong>Best for:</strong> Modern, stylish weddings with a party atmosphere (up to 250 guests)</p>
-<p>Breathless Punta Cana caters explicitly to the young, stylish, nightlife-oriented crowd — and its wedding department reflects that energy. Adults-only and consistently one of the most visually striking resorts in the DR, Breathless features dramatic architecture, spectacular infinity pools, and ceremony spaces that photograph like nothing else in the region.</p>
-<p>The "Breathless Bride" wedding packages are comprehensive and highly customizable, and the resort's event team is among the most experienced in Punta Cana. Couples who want their wedding to feel like a high-energy event — with great music, flowing cocktails, and a real party — will love Breathless.</p>
+<h2>2. Hyatt Zilara Cap Cana</h2>
+<p><strong>Location:</strong> Cap Cana | <strong>Best for:</strong> Adults-only ultra-luxury within the Cap Cana complex (up to 250 guests)</p>
+<p>Sharing the Cap Cana complex with Hyatt Ziva, the Hyatt Zilara is the adults-only counterpart — offering the same extraordinary beachfront and culinary program in an exclusively adult atmosphere. For couples whose guest list is primarily or entirely adults, Zilara provides a more refined, intimate atmosphere while still benefiting from the full Cap Cana resort infrastructure.</p>
+<p>The dual-resort setup — Ziva for families, Zilara for adults — is one of the most flexible arrangements in Punta Cana, allowing couples to house guests according to preference while keeping the entire group in the same stunning complex. Wedding ceremonies can be staged at locations spanning both properties.</p>
 
-<h2>3. Excellence Punta Cana</h2>
-<p><strong>Location:</strong> Uvero Alto | <strong>Best for:</strong> Couples-only celebrations with classic elegance (up to 200 guests)</p>
-<p>Excellence Punta Cana is the adults-only standard-bearer in this region. With a long stretch of private beach, beautifully landscaped grounds, and a wedding department with an impeccable reputation, it's a perennially popular choice for couples seeking refined elegance without the ultra-luxury price tag.</p>
-<p>Wedding ceremony options include a seafront gazebo, a tropical garden setting, and an outdoor terrace. The resort's in-house floral and décor team is excellent, and the catering is consistently above average for an all-inclusive property. Multiple reception venue options accommodate parties from intimate to 200 guests.</p>
-<p>One notable advantage: Excellence Punta Cana is more sheltered from sargassum than some northern Bávaro properties, making it a better choice for couples prioritizing pristine beach conditions.</p>
+<h2>3. Eden Roc Cap Cana</h2>
+<p><strong>Location:</strong> Cap Cana | <strong>Best for:</strong> Ultra-luxury boutique weddings where nothing is left to chance (up to 150 guests)</p>
+<p>Eden Roc Cap Cana is widely regarded as the finest boutique luxury resort in the Dominican Republic. This adults-only property brings European ultra-luxury hospitality to the Caribbean — meticulous service, extraordinary cuisine, and a level of physical beauty that places it in a global class of exceptional wedding venues.</p>
+<p>The resort's relatively small size (intentionally limited) creates a genuinely exclusive atmosphere: your wedding is never competing for attention with dozens of other events. The beachfront ceremony location and outdoor reception terraces overlook some of the most spectacular water in Cap Cana. For couples benchmarking their wedding against the world's finest hotels, Eden Roc is the standard in Punta Cana.</p>
 
-<h2>4. Zoetry Agua Punta Cana</h2>
-<p><strong>Location:</strong> Uvero Alto | <strong>Best for:</strong> Intimate ultra-luxury weddings up to 60 guests</p>
-<p>For couples who want an intimate, genuinely luxurious experience — rather than a large resort with many other guests — Zoetry Agua is extraordinary. This small-scale adults-only property limits its guest count to just over 100 rooms, creating a private-island feeling on the Dominican Republic mainland.</p>
-<p>Everything at Zoetry is curated for the highest end of the market: gourmet dining, personalized butler service, and wedding packages that feel like true bespoke experiences. The ceremony locations — a private beach with natural jungle backdrop, or a garden terrace beside a serene freshwater lagoon — are among the most beautiful in all of Punta Cana.</p>
-<p>Ideal for micro-weddings and elopements of 10–60 guests where quality trumps scale.</p>
+<h2>4. Paradisus Palma Real</h2>
+<p><strong>Location:</strong> Bávaro | <strong>Best for:</strong> Sophisticated Spanish-brand luxury in the heart of Bávaro (up to 400 guests)</p>
+<p>Paradisus Palma Real brings Meliá Hotels' flagship luxury brand to Punta Cana's Bávaro strip — one of the most established and well-connected resort areas in the Dominican Republic. The property features beautifully manicured tropical gardens, a long stretch of white beach, and a wedding program built around the Paradisus "Yes I Do" platform, which is among the most comprehensive in the all-inclusive market.</p>
+<p>Ceremony locations include an oceanfront gazebo, elegant garden pavilions, and a traditional Spanish-style terrace. The culinary program is strong, with genuine fine-dining options alongside the standard all-inclusive buffet. A family-inclusive property with YHI Spa and multiple pool areas that keep guests of all ages entertained throughout their stay.</p>
 
-<h2>5. Hard Rock Hotel &amp; Casino Punta Cana</h2>
-<p><strong>Location:</strong> Bávaro | <strong>Best for:</strong> Large, high-energy weddings up to 500 guests</p>
-<p>When scale is the priority, Hard Rock Hotel Punta Cana delivers like nowhere else in the Dominican Republic. This massive property can accommodate up to 500+ guests for a single wedding event, with multiple ballrooms, outdoor terraces, beach pavilions, and specialty event spaces that can be configured in countless ways.</p>
-<p>The all-inclusive offering is exceptional — premium spirits, multiple à la carte restaurants, and a beach that runs for nearly a kilometer. The entertainment infrastructure (professional stage, sound systems, DJ booths) is among the best in the Caribbean for wedding receptions that lean into live performances and high-energy entertainment.</p>
-<p>An added draw: the casino, the waterpark (perfect for families), and the spa create a built-in guest entertainment ecosystem that keeps everyone happy across multiple days.</p>
+<h2>5. Dreams Macao Beach Punta Cana</h2>
+<p><strong>Location:</strong> Macao Beach | <strong>Best for:</strong> Couples seeking a quieter, more nature-forward beach setting (up to 300 guests)</p>
+<p>Dreams Macao Beach sits on the beautiful Macao Beach — one of the Dominican Republic's most naturally pristine stretches of coastline, away from the dense resort corridor of Bávaro. The resort's "Unlimited-Luxury" all-inclusive concept is one of the strongest in the Dreams portfolio, and the more secluded beach location means significantly lower sargassum impact than many Bávaro properties.</p>
+<p>Wedding ceremonies on Macao Beach's natural white sand, with clear turquoise water and minimal commercial development in the backdrop, produce some of the most genuinely beautiful destination wedding photography in Punta Cana. An excellent choice for couples who prioritize natural beach beauty over resort infrastructure density.</p>
 
-<h2>6. Dreams Royal Beach Punta Cana</h2>
-<p><strong>Location:</strong> Bávaro | <strong>Best for:</strong> Family-friendly weddings with a mix of ages (up to 350 guests)</p>
-<p>Dreams Royal Beach is one of the most popular family-friendly wedding resorts in Punta Cana — a destination where the children's programs, family suites, and multiple restaurant options make it genuinely accessible for guests of all ages. The resort occupies an enviable position on one of Bávaro's best beach stretches, with a well-maintained ceremony area and multiple reception venues.</p>
-<p>Their "Dreams of Love" wedding collection is well-structured and comprehensive. The resort's Unlimited-Luxury concept (like the sister Dreams Playa Mujeres in Mexico) keeps the guest experience premium while maintaining the all-inclusive model. This is one of the best value-for-money wedding resorts in the region.</p>
+<h2>6. Zemi Miches All-Inclusive Resort</h2>
+<p><strong>Location:</strong> Miches | <strong>Best for:</strong> Adventurous couples who want Punta Cana's most untouched natural setting (up to 200 guests)</p>
+<p>Zemi Miches is one of the most exciting new resort openings in the Dominican Republic — a luxury all-inclusive on the completely undeveloped Miches coastline, accessible by a short drive or helicopter transfer from Punta Cana airport. The Miches bay is flanked by lush green mountains and fringed with untouched white sand beaches that have earned comparisons to the Maldives.</p>
+<p>For couples seeking a destination wedding that genuinely surprises and impresses guests — a location they've never seen or heard of — Zemi Miches delivers an experience that no Bávaro resort can match. The resort's relative seclusion means your event feels genuinely private. An extraordinary choice for couples who want their destination wedding to be truly unforgettable.</p>
 
-<h2>7. Barceló Bávaro Grand Resort</h2>
-<p><strong>Location:</strong> Bávaro | <strong>Best for:</strong> Very large weddings with guests of all ages (up to 700 guests)</p>
-<p>The Barceló Bávaro complex is one of the largest resort properties in the Caribbean, spanning several interconnected hotels on a stunning stretch of Bávaro beach. For weddings that need to accommodate 300–700+ guests — particularly for Indian destination weddings, large cultural celebrations, or multi-family events — the Barceló complex has few peers in terms of raw capacity.</p>
-<p>The resort manages dozens of weddings per year and has a seasoned events team. The beach ceremony locations are genuinely beautiful, and the range of accommodations within the complex (from budget-friendly hotel rooms to premium bungalows) allows guests at different price points to stay within the same property.</p>
-
-<h2>8. Club Med Punta Cana</h2>
-<p><strong>Location:</strong> Bávaro | <strong>Best for:</strong> Adventurous, activity-focused weddings for sporty couples</p>
-<p>Club Med brings its signature "gentle organization" model to Punta Cana — with built-in sports activities, a circus school, water sports, and entertainment that create a genuine vacation-within-a-vacation for your guests. If your group is active and outdoorsy, Club Med creates an energy that traditional resort weddings can't match.</p>
-<p>Wedding packages are straightforward and good value. The beach ceremony location is simple and beautiful. This isn't the choice for couples who want elaborate florals and fine dining — but for couples who want their guests to have the time of their lives on and off the beach, Club Med delivers.</p>
+<h2>Also Worth Considering in Punta Cana</h2>
+<p>Beyond our preferred partner properties, several other Punta Cana resorts have strong wedding programs worth knowing. <strong>Sanctuary Cap Cana</strong> is a boutique adults-only property with a distinctive colonial atmosphere in the Cap Cana marina community. <strong>Excellence Punta Cana</strong> in Uvero Alto has a long-standing reputation for elegant adults-only weddings. <strong>Hard Rock Hotel &amp; Casino Punta Cana</strong> in Bávaro is one of the few resorts capable of handling 500+ guest weddings. And <strong>Breathless Punta Cana</strong> appeals to younger couples seeking a high-energy, nightlife-forward celebration.</p>
 
 <h2>Punta Cana Wedding Planning Tips</h2>
 
@@ -1025,11 +1019,11 @@ export const blogPosts = [
 <p>Nassau, the capital of the Bahamas, sits on New Providence Island — just 55 miles from Miami and a short hop from most eastern U.S. cities. It's one of the most accessible Caribbean destinations for East Coast American couples and guests.</p>
 <p>The Nassau wedding scene centers around a handful of exceptional resort properties:</p>
 <ul>
-  <li><strong>Sandals Royal Bahamian:</strong> An adults-only luxury property on Cable Beach with private offshore island access, multiple ceremony venues, and a deeply romantic atmosphere</li>
-  <li><strong>Atlantis Paradise Island:</strong> The Caribbean's most famous resort — spectacular in scale, with a waterpark, casino, and massive event spaces ideal for large weddings of 200+ guests</li>
-  <li><strong>Rosewood Baha Mar:</strong> Part of the billion-dollar Baha Mar resort complex, the Rosewood is one of the finest luxury wedding properties in the entire Caribbean — understated, impeccably staffed, and absolutely stunning</li>
-  <li><strong>Grand Hyatt Baha Mar:</strong> Also within the Baha Mar complex, offering excellent value within a luxury setting and strong wedding infrastructure</li>
+  <li><strong>Grand Hyatt Baha Mar:</strong> Part of the billion-dollar Baha Mar resort complex, Grand Hyatt Baha Mar offers outstanding luxury wedding infrastructure — beautiful beachfront ceremony locations, a world-class casino, and one of the Caribbean's finest spas. The Baha Mar complex sits on Nassau's Cable Beach and is one of the most impressive resort developments in the region.</li>
+  <li><strong>SLS Baha Mar:</strong> The ultra-luxury boutique hotel within the Baha Mar complex — for couples who want the full Baha Mar location and infrastructure with a more intimate, fashion-forward property. SLS's design aesthetic and culinary program are among the finest in Nassau.</li>
+  <li><strong>Atlantis Paradise Island:</strong> The Caribbean's most famous resort — spectacular in scale, with a waterpark, casino, and massive event spaces ideal for large weddings of 200+ guests. An iconic venue that guests love for the entertainment it provides across a multi-day stay.</li>
 </ul>
+<p>Other notable Nassau options include <strong>Sandals Royal Bahamian</strong> on Cable Beach for couples who prefer the all-inclusive adults-only model, and boutique properties on Harbour Island (a short ferry from Nassau) for couples seeking the legendary pink sand beach setting.</p>
 <p>For couples seeking the Bahamas' most iconic beach — the legendary pink sands of Harbour Island — a short ferry from Nassau to "Briland" opens up access to boutique beachfront properties like Pink Sands Resort and The Landing.</p>
 
 <h2>The Cancun Destination Wedding Experience</h2>
