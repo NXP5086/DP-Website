@@ -1,3 +1,24 @@
+const AUTHORS = {
+    stanley: {
+        name: "Stanley Alexander",
+        title: "Founder & CEO",
+        url: "https://www.destinationpick.com/our-team/",
+        image: "/members/StanleyAlexander.webp",
+    },
+    lucy: {
+        name: "Lucy Martinez",
+        title: "Operations Associate – Cancun",
+        url: "https://www.destinationpick.com/our-team/",
+        image: "/members/lucy-img.webp",
+    },
+    wendy: {
+        name: "Wendy Del Rosario",
+        title: "Operations Associate",
+        url: "https://www.destinationpick.com/our-team/",
+        image: "/members/Wendy.jpg",
+    },
+}
+
 export const blogPosts = [
     {
         slug: "destination-wedding-mexico-guide",
@@ -8,6 +29,7 @@ export const blogPosts = [
         image: "/banners/banner2.jpg",
         keywords: "destination wedding Mexico, how to plan destination wedding Mexico, destination wedding guide Mexico",
         readTime: "12 min read",
+        author: AUTHORS.stanley,
         content: `
 <p class="text-xl text-gray-600 font-light leading-relaxed mb-8">Mexico is the world's most popular destination wedding location — and for good reason. Warm weather, world-class all-inclusive resorts, stunning beaches, and a relatively easy travel experience for guests from the U.S. and Canada make it the top choice for couples who want a seamless, unforgettable celebration abroad.</p>
 
@@ -124,6 +146,7 @@ export const blogPosts = [
         image: "/banners/banner3.jpg",
         keywords: "Cancun vs Punta Cana wedding, Cancun or Punta Cana destination wedding, best destination wedding Mexico Caribbean",
         readTime: "9 min read",
+        author: AUTHORS.stanley,
         content: `
 <p class="text-xl text-gray-600 font-light leading-relaxed mb-8">When couples start researching destination weddings in the Caribbean or Mexico, two destinations come up again and again: Cancun, Mexico and Punta Cana, Dominican Republic. Both are premier all-inclusive resort destinations with gorgeous beaches, excellent wedding infrastructure, and strong flight connectivity from North America. But they're not the same — and the right choice depends on your priorities.</p>
 
@@ -216,6 +239,7 @@ export const blogPosts = [
         image: "/images/cancun-beach-wedding.jpg",
         keywords: "best wedding resorts Cancun, all-inclusive wedding Cancun, top Cancun wedding hotels",
         readTime: "10 min read",
+        author: AUTHORS.lucy,
         content: `
 <p class="text-xl text-gray-600 font-light leading-relaxed mb-8">Cancun is home to some of the most spectacular wedding venues in the world. With hundreds of all-inclusive resorts lining the Caribbean coast — from Playa Mujeres in the north to Tulum in the south — narrowing down your options can feel overwhelming. We've done the work for you. Here are the top 10 all-inclusive wedding resorts in Cancun and the Riviera Maya for 2026, based on venue quality, wedding infrastructure, guest experience, and overall value.</p>
 
@@ -294,6 +318,7 @@ export const blogPosts = [
         image: "/banners/banner4.jpg",
         keywords: "Indian wedding Mexico, Indian destination wedding Mexico, how to plan Indian wedding abroad",
         readTime: "11 min read",
+        author: AUTHORS.stanley,
         content: `
 <p class="text-xl text-gray-600 font-light leading-relaxed mb-8">Indian destination weddings have transformed the luxury resort industry in Mexico. What was once a niche request is now one of the most requested wedding types at top Cancun, Riviera Maya, and Los Cabos properties — and for good reason. Mexico's beaches, warm weather, all-inclusive infrastructure, and increasingly experienced wedding teams make it one of the best destinations in the world for a multi-day Indian celebration.</p>
 
@@ -410,6 +435,7 @@ export const blogPosts = [
         image: "/banners/banner5.jpg",
         keywords: "Cabo vs Cancun wedding, Cabo San Lucas or Cancun destination wedding, Mexico wedding destination comparison",
         readTime: "8 min read",
+        author: AUTHORS.lucy,
         content: `
 <p class="text-xl text-gray-600 font-light leading-relaxed mb-8">Both Cabo San Lucas and Cancun are world-class destination wedding locations in Mexico — yet they couldn't feel more different. Cancun is the turquoise Caribbean with massive all-inclusive resorts and a vibrant, energetic atmosphere. Cabo sits where the Pacific meets the Sea of Cortez, surrounded by dramatic desert cliffs, rugged rock formations, and a more intimate, upscale ambiance.</p>
 
@@ -492,6 +518,7 @@ export const blogPosts = [
         image: "/images/about/wedding-couple.jpg",
         keywords: "destination wedding timeline, destination wedding planning checklist, when to plan destination wedding",
         readTime: "13 min read",
+        author: AUTHORS.stanley,
         content: `
 <p class="text-xl text-gray-600 font-light leading-relaxed mb-8">Planning a destination wedding is one of the most complex logistical challenges a couple will face — and timing is everything. Book too late and you'll find your dream resort fully committed. Start too early without a plan and you'll waste time on decisions that aren't ready to be made. This timeline is designed to keep you on track, stress-free, and celebrating on exactly the day you envisioned.</p>
 
@@ -641,6 +668,7 @@ export const blogPosts = [
         image: "/images/about/table-setting.jpg",
         keywords: "destination wedding cost, how much does destination wedding cost, destination wedding budget breakdown",
         readTime: "10 min read",
+        author: AUTHORS.stanley,
         content: `
 <p class="text-xl text-gray-600 font-light leading-relaxed mb-8">One of the first questions every couple asks is: "How much does a destination wedding actually cost?" The honest answer is that it varies enormously — from $12,000 for an intimate elopement-style ceremony to $500,000+ for a grand multi-day celebration. But within that range, there are clear patterns and benchmarks that can help you plan a realistic budget.</p>
 
@@ -772,6 +800,7 @@ export const blogPosts = [
         image: "/images/dominican-republic/about/main.jpg",
         keywords: "beach wedding venues Punta Cana, best wedding resorts Punta Cana, Punta Cana destination wedding",
         readTime: "9 min read",
+        author: AUTHORS.wendy,
         content: `
 <p class="text-xl text-gray-600 font-light leading-relaxed mb-8">Punta Cana, on the eastern tip of the Dominican Republic, is one of the Caribbean's premier destination wedding locations. With miles of soft white sand beaches, clear turquoise water, and a concentration of world-class all-inclusive resorts, it delivers the classic Caribbean wedding experience that couples around the world dream of.</p>
 
@@ -842,6 +871,7 @@ export const blogPosts = [
         image: "/images/corporate-travel.jpeg",
         keywords: "corporate travel management, corporate travel agency USA, business travel management guide",
         readTime: "11 min read",
+        author: AUTHORS.stanley,
         content: `
 <p class="text-xl text-gray-600 font-light leading-relaxed mb-8">Corporate travel is one of the largest controllable expense categories for most businesses — yet many companies manage it reactively, without a formal program, leaving significant money and productivity on the table. A well-designed corporate travel management program can reduce travel spend by 15–30%, improve traveler satisfaction, and provide the data visibility that finance teams need to make smart decisions.</p>
 
@@ -991,6 +1021,7 @@ export const blogPosts = [
         image: "/images/bahamas/about/main.jpg",
         keywords: "Nassau vs Cancun wedding, Bahamas vs Mexico destination wedding, Nassau or Cancun for wedding",
         readTime: "8 min read",
+        author: AUTHORS.stanley,
         content: `
 <p class="text-xl text-gray-600 font-light leading-relaxed mb-8">The Bahamas and Mexico are two of the most popular destination wedding locations in the world for North American couples — and Nassau (Bahamas) and Cancun (Mexico) represent each destination's flagship wedding hub. Both offer stunning beaches, excellent resort infrastructure, and proven track records for spectacular celebrations. But they create very different wedding experiences.</p>
 

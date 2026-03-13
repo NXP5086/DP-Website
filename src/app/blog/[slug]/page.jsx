@@ -34,8 +34,39 @@ export async function generateMetadata({ params }) {
             title: post.title,
             description: post.excerpt,
             images: [post.image],
+            creator: "@DestinationPick",
+            site: "@DestinationPick",
         },
     }
+}
+
+// Strip HTML tags to plain text
+function stripHtml(html) {
+    return (html || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim()
+}
+
+// Count words in HTML content
+function getWordCount(html) {
+    return stripHtml(html).split(/\s+/).filter(Boolean).length
+}
+
+// Extract FAQ question/answer pairs from HTML content
+function extractFAQ(html) {
+    if (!html) return []
+    const headerMatch = html.match(/<h2[^>]*>[^<]*Frequently Asked[^<]*<\/h2>/i)
+    if (!headerMatch) return []
+    const afterFAQ = html.slice(html.indexOf(headerMatch[0]) + headerMatch[0].length)
+    const nextH2Idx = afterFAQ.search(/<h2[^>]*>/)
+    const section = nextH2Idx > 0 ? afterFAQ.slice(0, nextH2Idx) : afterFAQ
+    const pairs = []
+    const regex = /<h3[^>]*>([\s\S]*?)<\/h3>[\s\S]*?<p[^>]*>([\s\S]*?)<\/p>/gi
+    let match
+    while ((match = regex.exec(section)) !== null) {
+        const q = match[1].replace(/<[^>]+>/g, "").trim()
+        const a = match[2].replace(/<[^>]+>/g, "").trim()
+        if (q && a) pairs.push({ q, a })
+    }
+    return pairs
 }
 
 export default async function BlogArticlePage({ params }) {
@@ -47,6 +78,9 @@ export default async function BlogArticlePage({ params }) {
         .filter((p) => p.slug !== slug && p.category === post.category)
         .slice(0, 3)
 
+    const faqPairs = extractFAQ(post.content || "")
+    const wordCount = getWordCount(post.content || "")
+
     const articleSchema = {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -55,7 +89,21 @@ export default async function BlogArticlePage({ params }) {
         "image": `https://www.destinationpick.com${post.image}`,
         "datePublished": post.date,
         "dateModified": post.date,
-        "author": {
+        "wordCount": wordCount,
+        "articleSection": post.category,
+        "keywords": post.keywords,
+        "author": post.author ? {
+            "@type": "Person",
+            "name": post.author.name,
+            "jobTitle": post.author.title,
+            "url": `https://www.destinationpick.com${post.author.url}`,
+            "image": `https://www.destinationpick.com${post.author.image}`,
+            "worksFor": {
+                "@type": "Organization",
+                "name": "DestinationPick",
+                "url": "https://www.destinationpick.com/",
+            },
+        } : {
             "@type": "Organization",
             "name": "DestinationPick",
             "url": "https://www.destinationpick.com/",
@@ -74,6 +122,19 @@ export default async function BlogArticlePage({ params }) {
         },
     }
 
+    const faqSchema = faqPairs.length > 0 ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqPairs.map(({ q, a }) => ({
+            "@type": "Question",
+            "name": q,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": a,
+            },
+        })),
+    } : null
+
     const breadcrumbSchema = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -88,6 +149,7 @@ export default async function BlogArticlePage({ params }) {
         <main>
             <Script id="article-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            {faqSchema && <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
 
             {/* Hero image */}
             <div className="w-full h-64 md:h-96 overflow-hidden relative">
@@ -125,7 +187,7 @@ export default async function BlogArticlePage({ params }) {
                     </nav>
 
                     <div className="flex items-center gap-4 text-sm text-gray-400 mb-8">
-                        <span>By <strong className="text-gray-700">DestinationPick</strong></span>
+                        <span>By <Link href={post.author?.url || "/our-team/"} className="font-semibold text-gray-700 hover:text-accent transition-colors">{post.author?.name || "DestinationPick"}</Link></span>
                         <span>·</span>
                         <time dateTime={post.date}>
                             {new Date(post.date).toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}

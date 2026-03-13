@@ -97,6 +97,43 @@ Internal links to use naturally throughout the article:
 ${internalLinks.slice(0, 20).map((l) => `  "${l.text}" → ${l.url}`).join("\n")}`
 }
 
+// ── Author profiles ───────────────────────────────────────────────────────────
+const AUTHORS = {
+    stanley: {
+        name: "Stanley Alexander",
+        title: "Founder & CEO",
+        url: "/our-team/",
+        image: "/members/StanleyAlexander.webp",
+    },
+    lucy: {
+        name: "Lucy Martinez",
+        title: "Operations Associate – Cancun",
+        url: "/our-team/",
+        image: "/members/lucy-img.webp",
+    },
+    wendy: {
+        name: "Wendy Del Rosario",
+        title: "Operations Associate",
+        url: "/our-team/",
+        image: "/members/Wendy.jpg",
+    },
+}
+
+function assignAuthor(topic) {
+    const text = `${topic.title} ${topic.suggestedSlug} ${topic.category}`.toLowerCase()
+    if (text.includes("punta cana") || text.includes("dominican") || text.includes("bavaro") || text.includes("dr ")) {
+        return AUTHORS.wendy
+    }
+    if (
+        text.includes("cancun") || text.includes("riviera maya") || text.includes("tulum") ||
+        text.includes("los cabos") || text.includes("cabo") || text.includes("puerto vallarta") ||
+        text.includes("mexico") || text.includes("playa del carmen")
+    ) {
+        return AUTHORS.lucy
+    }
+    return AUTHORS.stanley
+}
+
 // ── Calculate read time ───────────────────────────────────────────────────────
 function calcReadTime(html) {
     const text = html.replace(/<[^>]+>/g, " ")
@@ -135,7 +172,14 @@ STRUCTURE:
 1. Opening paragraph — answer the query immediately, include primary keyword
 2. 4–6 H2 sections covering the topic comprehensively (use keyword variations in H2s)
 3. Use H3 subsections, bullet lists, or numbered lists where they add clarity
-4. FAQ section: <h2>Frequently Asked Questions</h2> with <h3> for each question
+4. FAQ section — MUST follow this exact format for schema markup to work:
+   <h2>Frequently Asked Questions</h2>
+   <h3>Question one?</h3>
+   <p>Answer to question one.</p>
+   <h3>Question two?</h3>
+   <p>Answer to question two.</p>
+   Include 4–5 FAQ pairs. Each <h3> must be immediately followed by a single <p> answer.
+   Do NOT put any text between the FAQ <h2> and the first <h3>.
 5. Closing paragraph with CTA to contact DestinationPick
 
 HOTEL & RESORT MENTIONS:
@@ -188,6 +232,7 @@ RESPOND WITH VALID JSON ONLY. No explanation, no markdown code blocks. Exactly t
         image: topic.suggestedImage || "/banners/banner1.jpg",
         keywords: parsed.keywords,
         readTime: calcReadTime(parsed.content),
+        author: assignAuthor(topic),
         content: parsed.content,
     }
 }
@@ -204,6 +249,10 @@ function appendToBlogPosts(post) {
     }
 
     // Build the new post entry as a JS object literal
+    const authorEntry = post.author
+        ? `        author: { name: ${JSON.stringify(post.author.name)}, title: ${JSON.stringify(post.author.title)}, url: ${JSON.stringify(post.author.url)}, image: ${JSON.stringify(post.author.image)} },`
+        : ""
+
     const postEntry = `    {
         slug: ${JSON.stringify(post.slug)},
         title: ${JSON.stringify(post.title)},
@@ -213,6 +262,7 @@ function appendToBlogPosts(post) {
         image: ${JSON.stringify(post.image)},
         keywords: ${JSON.stringify(post.keywords)},
         readTime: ${JSON.stringify(post.readTime)},
+${authorEntry}
         content: ${JSON.stringify(post.content)},
     },`
 

@@ -13,7 +13,17 @@ export const metadata = {
     openGraph: {
         title: "Destination Wedding Blog | DestinationPick",
         description: "Expert destination wedding guides for Mexico, Punta Cana, Cabo, and the Bahamas. Resort comparisons, Indian wedding tips, and planning advice from DestinationPick.",
+        type: "website",
+        url: "https://www.destinationpick.com/blog/",
         images: [{ url: "/banners/banner1.jpg", width: 1200, height: 630, alt: "DestinationPick Destination Wedding Blog" }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Destination Wedding Blog | DestinationPick",
+        description: "Expert destination wedding guides for Mexico, Punta Cana, Cabo, and the Bahamas.",
+        images: ["/banners/banner1.jpg"],
+        creator: "@DestinationPick",
+        site: "@DestinationPick",
     },
 }
 
