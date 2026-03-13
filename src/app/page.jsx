@@ -85,7 +85,7 @@ export const metadata = {
     title: "Destination Wedding Packages in Mexico & Punta Cana | DestinationPick",
     description: "Plan luxury destination weddings in Cancun, Cabo San Lucas & Punta Cana. Explore all-inclusive wedding packages, beach venues & expert planners.",
     alternates: {
-        canonical: "https://www.destinationpick.com",
+        canonical: "https://www.destinationpick.com/",
     },
 }
 
