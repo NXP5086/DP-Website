@@ -51,30 +51,40 @@ const queuePath = path.join(__dirname, "topic-queue.json")
 const queue = JSON.parse(fs.readFileSync(queuePath, "utf-8"))
 
 // ── Build internal links reference ───────────────────────────────────────────
-const internalLinks = [
+const serviceLinks = [
     { text: "destination wedding planning services", url: "/services/" },
     { text: "contact our team for a free consultation", url: "/contact/" },
     { text: "destination weddings in Mexico", url: "/destinations/mexico/" },
     { text: "destination weddings in the Dominican Republic", url: "/destinations/dominican-republic/" },
     { text: "destination weddings in the Bahamas", url: "/destinations/bahamas/" },
-    ...destinationData.flatMap((dest) =>
-        (dest.cities || []).map((city) => ({
-            text: `destination weddings in ${city.name}`,
-            url: `/destinations/${dest.slug}/${city.slug}/`,
-        }))
-    ),
-    ...destinationData.flatMap((dest) =>
-        (dest.cities || []).flatMap((city) =>
-            (city.hotels || []).map((hotel) => ({
-                text: hotel.name,
-                url: `/destinations/${dest.slug}/${city.slug}/${hotel.slug}/`,
-            }))
-        )
-    ),
 ]
 
+const cityLinks = destinationData.flatMap((dest) =>
+    (dest.cities || []).map((city) => ({
+        text: `destination weddings in ${city.name}`,
+        url: `/destinations/${dest.slug}/${city.slug}/`,
+    }))
+)
+
+const hotelLinks = destinationData.flatMap((dest) =>
+    (dest.cities || []).flatMap((city) =>
+        (city.hotels || []).map((hotel) => ({
+            text: hotel.name,
+            url: `/destinations/${dest.slug}/${city.slug}/${hotel.slug}/`,
+        }))
+    )
+)
+
+const blogLinks = blogPosts.map((p) => ({
+    text: p.title,
+    url: `/blog/${p.slug}/`,
+}))
+
+// All links kept unsorted — filtered by relevance at prompt-build time
+const allInternalLinks = [...serviceLinks, ...cityLinks, ...hotelLinks, ...blogLinks]
+
 // ── Build site context string ─────────────────────────────────────────────────
-function buildSiteContext() {
+function buildSiteContext(topic) {
     // Build preferred hotels grouped by destination + city for the prompt
     const preferredHotelsList = destinationData.map((d) => {
         const cityLines = (d.cities || []).map((c) => {
@@ -83,6 +93,23 @@ function buildSiteContext() {
         }).join("\n")
         return `  ${d.name}:\n${cityLines}`
     }).join("\n")
+
+    // Pick the most relevant internal links for this topic
+    const topicText = `${topic.title} ${topic.suggestedSlug} ${topic.category}`.toLowerCase()
+    const relevantLinks = allInternalLinks
+        .filter((l) => {
+            // Always include service + contact links
+            if (l.url === "/services/" || l.url === "/contact/") return true
+            // Include links whose text overlaps with topic keywords
+            const linkText = l.text.toLowerCase()
+            return topicText.split(/\s+/).some((word) => word.length > 4 && linkText.includes(word))
+        })
+        .slice(0, 30)
+
+    // Fallback: if too few relevant links, pad with service + city links
+    const linksToShow = relevantLinks.length >= 8
+        ? relevantLinks
+        : [...serviceLinks, ...cityLinks].slice(0, 15)
 
     return `Company: DestinationPick (destinationpick.com)
 Niche: Luxury Indian destination weddings + corporate travel management
@@ -93,8 +120,8 @@ Tone: Expert, warm, luxury-focused, trustworthy — like advice from a knowledge
 PREFERRED PARTNER HOTELS — feature these prominently and first when recommending properties:
 ${preferredHotelsList}
 
-Internal links to use naturally throughout the article:
-${internalLinks.slice(0, 20).map((l) => `  "${l.text}" → ${l.url}`).join("\n")}`
+Internal links to use naturally throughout the article (include 4–6 of these):
+${linksToShow.map((l) => `  "${l.text}" → ${l.url}`).join("\n")}`
 }
 
 // ── Author profiles ───────────────────────────────────────────────────────────
@@ -148,7 +175,7 @@ async function generateArticle(topic) {
     console.log(`   Keyword: "${topic.keyword}"`)
     console.log(`   Category: ${topic.category}`)
 
-    const siteContext = buildSiteContext()
+    const siteContext = buildSiteContext(topic)
 
     const prompt = `You are an expert SEO content writer for DestinationPick, a luxury Indian destination wedding planning company.
 
@@ -205,11 +232,16 @@ RESPOND WITH VALID JSON ONLY. No explanation, no markdown code blocks. Exactly t
 
     const message = await client.messages.create({
         model: "claude-sonnet-4-6",
-        max_tokens: 8096,
+        max_tokens: 16000,
         messages: [{ role: "user", content: prompt }],
     })
 
     const responseText = message.content[0].text.trim()
+
+    // Detect truncation — model hit token limit mid-response
+    if (message.stop_reason === "max_tokens") {
+        throw new Error("Response was truncated (hit max_tokens). Article not saved.")
+    }
 
     let parsed
     try {
@@ -221,11 +253,31 @@ RESPOND WITH VALID JSON ONLY. No explanation, no markdown code blocks. Exactly t
         throw e
     }
 
+    // ── Content validation ──────────────────────────────────────────────────
+    const wordCount = parsed.content
+        ? parsed.content.replace(/<[^>]+>/g, " ").trim().split(/\s+/).filter(Boolean).length
+        : 0
+
+    if (wordCount < 1200) {
+        throw new Error(`Generated article is too short (${wordCount} words). Minimum is 1,200. Article not saved.`)
+    }
+
+    if (!parsed.content.toLowerCase().includes("frequently asked")) {
+        console.warn("   ⚠️  Warning: FAQ section not detected in generated content. Check output.")
+    }
+
+    if (!/<a\s+href=/.test(parsed.content)) {
+        console.warn("   ⚠️  Warning: No internal links found in generated content.")
+    }
+
+    console.log(`   📊 Word count: ${wordCount}`)
+
     const today = new Date().toISOString().split("T")[0]
 
     return {
         slug: topic.suggestedSlug,
         title: topic.title,
+        metaTitle: parsed.metaTitle || topic.title,
         excerpt: parsed.excerpt,
         category: topic.category,
         date: today,
@@ -256,6 +308,7 @@ function appendToBlogPosts(post) {
     const postEntry = `    {
         slug: ${JSON.stringify(post.slug)},
         title: ${JSON.stringify(post.title)},
+        metaTitle: ${JSON.stringify(post.metaTitle)},
         excerpt: ${JSON.stringify(post.excerpt)},
         category: ${JSON.stringify(post.category)},
         date: ${JSON.stringify(post.date)},

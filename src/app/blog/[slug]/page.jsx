@@ -15,15 +15,16 @@ export async function generateMetadata({ params }) {
     const post = blogPosts.find((p) => p.slug === slug)
     if (!post) return { title: "Article Not Found" }
 
+    const metaTitle = post.metaTitle || post.title
     return {
-        title: post.title,
+        title: metaTitle,
         description: post.excerpt,
         keywords: post.keywords,
         alternates: {
             canonical: `https://www.destinationpick.com/blog/${post.slug}/`,
         },
         openGraph: {
-            title: post.title,
+            title: metaTitle,
             description: post.excerpt,
             type: "article",
             publishedTime: post.date,
@@ -31,7 +32,7 @@ export async function generateMetadata({ params }) {
         },
         twitter: {
             card: "summary_large_image",
-            title: post.title,
+            title: metaTitle,
             description: post.excerpt,
             images: [post.image],
             creator: "@DestinationPick",
