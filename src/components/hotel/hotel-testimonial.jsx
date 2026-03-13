@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { Quote, Star, Users, Calendar } from "lucide-react"
+import Image from "next/image"
 
 export function HotelTestimonial({ hotel }) {
   if (!hotel.hoteltestimonial?.data) return null
@@ -17,7 +18,7 @@ export function HotelTestimonial({ hotel }) {
     <section className="section-padding bg-foreground text-background relative overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0 opacity-10">
-        <img src={hotel.hotelhero?.gallery[1] || "/placeholder.svg"} alt="" className="w-full h-full object-cover" />
+        <Image src={hotel.hotelhero?.gallery[1] || "/placeholder.svg"} alt="" fill sizes="100vw" className="object-cover" />
       </div>
       <div className="absolute inset-0 bg-foreground/90" />
 

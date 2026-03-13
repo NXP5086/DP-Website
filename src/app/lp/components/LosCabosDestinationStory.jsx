@@ -1,6 +1,7 @@
 ﻿"use client"
 
 import { LosCabosAreaCards } from "./LosCabosAreaCards"
+import Image from "next/image"
 
 const defaultContent = {
   title: "Why Los Cabos Is One of the World's Most Iconic Wedding Destinations",
@@ -128,11 +129,11 @@ export function LosCabosDestinationStory({ content = defaultContent }) {
 
           <div className="grid lg:grid-cols-12 gap-6 items-stretch">
             <div className="lg:col-span-7 relative rounded-3xl border border-border overflow-hidden">
-              <img
+              <Image
                 src={content.introImage}
                 alt="Los Cabos destination view"
-                className="w-full h-full object-cover min-h-[300px]"
-                loading="lazy"
+                fill
+                className="object-cover"
               />
             </div>
             <div className="lg:col-span-5 rounded-3xl border border-border bg-card p-6 lg:p-8">
@@ -171,12 +172,12 @@ export function LosCabosDestinationStory({ content = defaultContent }) {
                 </ul>
                 <p className="text-muted-foreground leading-relaxed">{content.multiDayOutro}</p>
               </div>
-              <div className="lg:col-span-5 rounded-2xl overflow-hidden border border-border aspect-[4/5] lg:aspect-auto lg:h-full min-h-[300px]">
-                <img
+              <div className="relative lg:col-span-5 rounded-2xl overflow-hidden border border-border aspect-[4/5] lg:aspect-auto lg:h-full min-h-[300px]">
+                <Image
                   src={content.multiDayImage}
                   alt="Los Cabos multi-day wedding experience"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
+                  fill
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -197,12 +198,12 @@ export function LosCabosDestinationStory({ content = defaultContent }) {
                 </ul>
                 <p className="text-muted-foreground leading-relaxed">{content.plannerOutro}</p>
               </div>
-              <div className="lg:col-span-5 rounded-2xl overflow-hidden border border-border aspect-[16/10]">
-                <img
-                  src={content.plannerImage }
+              <div className="relative lg:col-span-5 rounded-2xl overflow-hidden border border-border aspect-[16/10]">
+                <Image
+                  src={content.plannerImage}
                   alt="Los Cabos wedding planning support"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
+                  fill
+                  className="object-cover"
                 />
               </div>
             </div>

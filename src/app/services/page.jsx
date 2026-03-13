@@ -1,5 +1,6 @@
 import React from 'react'
 import Script from 'next/script'
+import Image from 'next/image'
 import Bannersection from '../../components/Bannersection'
 
 export const metadata = {
@@ -13,6 +14,12 @@ export const metadata = {
         title: "Our Services | DestinationPick",
         description: "Corporate travel, destination weddings, luxury touring & more. Expert travel management services from DestinationPick — serving clients across the USA and worldwide.",
         images: [{ url: "/banners/pp.webp", width: 1200, height: 630, alt: "DestinationPick Services" }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Our Services | DestinationPick",
+        description: "Corporate travel, destination weddings, luxury touring & more. Expert travel management from DestinationPick — serving clients across the USA and worldwide.",
+        images: ["/banners/pp.webp"],
     },
 }
 
@@ -96,11 +103,13 @@ const page = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                         {/* Left Column - Image */}
                         <div className="relative">
-                            <div className="h-full rounded-lg overflow-hidden shadow-md">
-                                <img
+                            <div className="relative h-full min-h-64 rounded-lg overflow-hidden shadow-md">
+                                <Image
                                     src="/images/corporate-travel.jpeg"
                                     alt="Corporate Travel"
-                                    className="object-cover w-full h-full rounded-lg"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    className="object-cover rounded-lg"
                                 />
                             </div>
                         </div>
@@ -139,11 +148,13 @@ const page = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                         {/* Left Column - Image */}
                         <div className="relative">
-                            <div className="h-full rounded-lg overflow-hidden shadow-md">
-                                <img
+                            <div className="relative h-full min-h-64 rounded-lg overflow-hidden shadow-md">
+                                <Image
                                     src="/images/touring.jpg"
-                                    alt="Corporate Travel"
-                                    className="object-cover w-full h-full rounded-lg"
+                                    alt="Touring Services"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    className="object-cover rounded-lg"
                                 />
                             </div>
                         </div>
@@ -179,11 +190,13 @@ const page = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                         {/* Left Column - Image */}
                         <div className="relative">
-                            <div className="h-full rounded-lg overflow-hidden shadow-md">
-                                <img
+                            <div className="relative h-full min-h-64 rounded-lg overflow-hidden shadow-md">
+                                <Image
                                     src="/images/events.jpeg"
-                                    alt="Corporate Travel"
-                                    className="object-cover w-full h-full rounded-lg"
+                                    alt="Events Planning"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    className="object-cover rounded-lg"
                                 />
                             </div>
                         </div>
@@ -200,7 +213,7 @@ const page = () => {
                     </div>
 
                     <div className="space-y-4 mt-12">
-                        <h3 className="text-2xl font-semibold text-gray-800 mb-4">Our Touring Services Include:</h3>
+                        <h3 className="text-2xl font-semibold text-gray-800 mb-4">Our Events Services Include:</h3>
                         <ul className="list-disc flex flex-wrap gap-x-10 gap-y-2 pl-6 text-gray-700 space-y-2">
                             <li>Meetings & Conferences</li>
                             <li>Incentives</li>
@@ -218,11 +231,13 @@ const page = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                         {/* Left Column - Image */}
                         <div className="relative">
-                            <div className="h-full rounded-lg overflow-hidden shadow-md">
-                                <img
+                            <div className="relative h-full min-h-64 rounded-lg overflow-hidden shadow-md">
+                                <Image
                                     src="/images/private-travel.jpeg"
-                                    alt="Corporate Travel"
-                                    className="object-cover w-full h-full rounded-lg"
+                                    alt="Private Travel"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    className="object-cover rounded-lg"
                                 />
                             </div>
                         </div>
@@ -239,7 +254,7 @@ const page = () => {
                     </div>
 
                     <div className="space-y-4 mt-12">
-                        <h3 className="text-2xl font-semibold text-gray-800 mb-4">Our Touring Services Include:</h3>
+                        <h3 className="text-2xl font-semibold text-gray-800 mb-4">Our Private Travel Services Include:</h3>
                         <ul className="list-disc flex flex-wrap gap-x-10 gap-y-2 pl-6 text-gray-700 space-y-2">
                             <li>Accredited Preferred Suppliers</li>
                             <li>Additional perks & amenities</li>
@@ -254,11 +269,13 @@ const page = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                         {/* Left Column - Image */}
                         <div className="relative">
-                            <div className="h-full rounded-lg overflow-hidden shadow-md">
-                                <img
+                            <div className="relative h-full min-h-64 rounded-lg overflow-hidden shadow-md">
+                                <Image
                                     src="/images/holy-land.jpeg"
-                                    alt="Corporate Travel"
-                                    className="object-cover w-full h-full rounded-lg"
+                                    alt="Holy Land Tours"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    className="object-cover rounded-lg"
                                 />
                             </div>
                         </div>
@@ -281,11 +298,13 @@ const page = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                         {/* Left Column - Image */}
                         <div className="relative">
-                            <div className="h-full rounded-lg overflow-hidden shadow-md">
-                                <img
+                            <div className="relative h-full min-h-64 rounded-lg overflow-hidden shadow-md">
+                                <Image
                                     src="/images/mission-human.png"
-                                    alt="Corporate Travel"
-                                    className="object-cover w-full h-full rounded-lg"
+                                    alt="Mission & Humanitarian Travel"
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    className="object-cover rounded-lg"
                                 />
                             </div>
                         </div>

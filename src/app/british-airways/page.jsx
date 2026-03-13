@@ -1,6 +1,53 @@
 import React from 'react'
+import Image from 'next/image'
+import Script from 'next/script'
 import Bannersection from '../../components/Bannersection'
 import Faqs from '../../components/Faqs'
+
+export const metadata = {
+    title: "British Airways Flights | Book with DestinationPick",
+    description: "Fly British Airways for your destination wedding or luxury travel. DestinationPick handles group bookings, seat selection, and travel logistics for your entire guest list.",
+    keywords: "British Airways flights, British Airways group booking, British Airways destination wedding travel, book British Airways DestinationPick",
+    alternates: { canonical: "https://www.destinationpick.com/british-airways/" },
+    openGraph: {
+        title: "British Airways Flights | Book with DestinationPick",
+        description: "Fly British Airways for your destination wedding or luxury travel. DestinationPick handles group bookings, seat selection, and travel logistics for your entire guest list.",
+        images: [{ url: "/banners/british-airways-banner.webp", width: 1200, height: 630, alt: "British Airways with DestinationPick" }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "British Airways Flights | Book with DestinationPick",
+        description: "Fly British Airways for your destination wedding or luxury travel. DestinationPick handles group bookings and full travel logistics.",
+        images: ["/banners/british-airways-banner.webp"],
+    },
+}
+const airlineSchema = {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "DestinationPick – British Airways Bookings",
+    "url": "https://www.destinationpick.com/british-airways/",
+    "description": "DestinationPick specializes in group British Airways bookings for destination weddings, corporate travel, and luxury trips.",
+    "image": "https://www.destinationpick.com/banners/british-airways-banner.webp",
+    "telephone": "+1-917-913-4262",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1039 I-35E Suite 306",
+        "addressLocality": "Carrollton",
+        "addressRegion": "TX",
+        "postalCode": "75006",
+        "addressCountry": "US"
+    },
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "British Airways Travel Services",
+        "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "British Airways Group Bookings" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "British Airways Business Class Upgrades" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "British Airways Destination Wedding Travel" } }
+        ]
+    }
+}
+
 const page = () => {
 
 
@@ -72,6 +119,7 @@ const page = () => {
 
     return (
         <main>
+            <Script id="airline-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(airlineSchema) }} />
             <Bannersection
                 image="/banners/british-airways-banner.webp"
                 title="About British Airways"
@@ -84,7 +132,7 @@ const page = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 bg-white gap-8">
                         {/* Left Column - Content */}
                         <div className=" px-4 py-6 rounded-lg mb-8 flex flex-col justify-center">
-                            <h3 className="text-2xl font-bold mb-4">British Airways</h3>
+                            <h1 className="text-2xl font-bold mb-4">British Airways</h1>
                             <div className="space-y-6 text-muted-foreground leading-relaxed">
                                 <p>
                                     British Airways is the largest airline in the United Kingdom. Founded in 1974, the airline was created as a result of the British government's establishment of a British Airways Board to manage the two nationalized airline corporations: British Overseas Airways Corporation (BOAC) and British European Airways (BEA), along with two regional airlines, Cambrian Airways from Cardiff and Northeast Airlines.
@@ -96,7 +144,7 @@ const page = () => {
 
                         {/* Right Column - Image */}
                         <div className="flex justify-center">
-                            <img src="/images/british-airways-01.webp" alt="British Airways" className="rounded-lg shadow-lg" />
+                            <Image src="/images/british-airways-01.webp" alt="British Airways" width={600} height={400} className="rounded-lg shadow-lg" />
                         </div>
                     </div>
 
@@ -111,7 +159,7 @@ const page = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 bg-white gap-8">
                         {/* Left Column - Content */}
                         <div className=" px-4 py-6 rounded-lg mb-8 flex flex-col justify-center">
-                            <h3 className="text-2xl font-bold mb-4">British Airways – OneWorld Member</h3>
+                            <h2 className="text-2xl font-bold mb-4">British Airways – OneWorld Member</h2>
                             <div className="space-y-6 text-muted-foreground leading-relaxed">
                                 <p>OneWorld was founded by British Airways in association with British Airways, Canadian Airlines (which left the alliance a few years later on merging with British Airways), Cathay Pacific, and Qantas in the year 1999. Each member has their style and distinctive culture of service. These alliance members have come together to provide better connections and facilities such as infrastructure, communication and whatnot. With only 13 members, OneWorld has come a long way.</p>
                             </div>
@@ -119,7 +167,7 @@ const page = () => {
 
                         {/* Right Column - Image */}
                         <div className="flex justify-center">
-                            <img src="/images/british-airways-01.webp" alt="British Airways" className="rounded-lg shadow-lg" />
+                            <Image src="/images/british-airways-01.webp" alt="British Airways" width={600} height={400} className="rounded-lg shadow-lg" />
                         </div>
                     </div>
 
@@ -129,7 +177,7 @@ const page = () => {
 
             <section className='section-padding bg-white'>
                 <div className="container">
-                    <h3 className='section-title text-center'>FAQ'S</h3>
+                    <h2 className='section-title text-center'>FAQ'S</h2>
                     <div className="h-1 w-20 bg-accent  rounded-full mb-6 mx-auto"></div>
                 </div>
 

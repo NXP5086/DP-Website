@@ -10,6 +10,7 @@ import {
     CheckCircle2,
     Star,
 } from "lucide-react"
+import Image from "next/image"
 
 export function DestinationPageContact({ data }) {
 
@@ -27,10 +28,12 @@ export function DestinationPageContact({ data }) {
         >
             {/* Subtle background */}
             <div className="absolute inset-0 opacity-[0.03]">
-                <img
+                <Image
                     src="/images/mexico-hero-1.jpg"
                     alt=""
-                    className="w-full h-full object-cover"
+                    fill
+                    sizes="100vw"
+                    className="object-cover"
                 />
             </div>
 

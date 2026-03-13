@@ -1,7 +1,6 @@
 import destinationData from "../../../../data/destinationData.json"
 import { cityMeta } from "../../../../data/Metatags"
 import { notFound } from "next/navigation"
-import Script from "next/script"
 
 import { CityHero } from "../../../../components/city/city-hero"
 import { CityMarquee } from "../../../../components/city/city-marquee"
@@ -56,6 +55,12 @@ export async function generateMetadata({ params }) {
             description: meta?.description ?? fallbackDescription,
             images: [{ url: `/banners/banner3.jpg`, width: 1200, height: 630, alt: `${cityObj?.name ?? cities} Destination Weddings` }],
         },
+        twitter: {
+            card: "summary_large_image",
+            title: meta?.title ?? fallbackTitle,
+            description: meta?.description ?? fallbackDescription,
+            images: [`/banners/banner3.jpg`],
+        },
     }
 }
 
@@ -84,9 +89,44 @@ export default async function CityPage({ params }) {
         ],
     }
 
+    const countryCode = destination === "bahamas" ? "BS" : destination === "dominican-republic" ? "DO" : "MX"
+
+    const weddingServiceSchema = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Destination Wedding Planning",
+        "name": `Destination Wedding Planning in ${cityObj.name}`,
+        "description": `Expert destination wedding planning services in ${cityObj.name}, ${destinationObj.name}. All-inclusive packages, luxury resort venues, and end-to-end coordination for couples across the USA.`,
+        "url": `https://www.destinationpick.com/destinations/${destination}/${cities}/`,
+        "provider": {
+            "@type": "TravelAgency",
+            "name": "DestinationPick",
+            "url": "https://www.destinationpick.com/",
+            "telephone": "+1-917-913-4262",
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": cityObj.name,
+            "containedInPlace": {
+                "@type": "Country",
+                "addressCountry": countryCode,
+            },
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": `${cityObj.name} Wedding Packages`,
+            "itemListElement": [
+                { "@type": "Offer", "name": "All-Inclusive Wedding Package", "description": `Complete destination wedding package at luxury resorts in ${cityObj.name}` },
+                { "@type": "Offer", "name": "Multi-Day Celebration Package", "description": "Mehndi, Haldi, Sangeet, Baraat & Reception coordination" },
+                { "@type": "Offer", "name": "Free Venue Consultation", "price": "0", "priceCurrency": "USD" },
+            ],
+        },
+    }
+
     return (
         <main className="min-h-screen bg-background">
-            <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script id="wedding-service-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(weddingServiceSchema) }} />
             <CityHero data={cityData.hero} />
             <CityMarquee data={cityData.marquee} />
             <CityAbout data={cityData.about} />

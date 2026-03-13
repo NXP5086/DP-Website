@@ -1,7 +1,12 @@
 import React from 'react'
 import Bannersection from '../../components/Bannersection'
 
-export const metadata = { robots: { index: false, follow: false } }
+export const metadata = {
+    title: "Copyright & Trademark Notices | DestinationPick",
+    description: "Review DestinationPick's copyright and trademark notices covering all content, images, logos, and intellectual property used across our website and services.",
+    alternates: { canonical: "https://www.destinationpick.com/copyright-and-trademark-notices/" },
+    robots: { index: false, follow: false },
+}
 
 const page = () => {
     return (

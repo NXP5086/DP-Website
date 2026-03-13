@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Check } from "lucide-react"
+import Image from "next/image"
 
 const defaultContent = {
   title: "Why Book Through DestinationPick x Playa Resorts?",
@@ -68,9 +69,11 @@ export function BookingBenefits({ content = defaultContent }) {
           </div>
 
           <div className="h-auto">
-            <img
+            <Image
               src={content.image || defaultContent.image}
               alt={content.imageAlt || defaultContent.imageAlt}
+              width={600}
+              height={400}
               className="w-full h-[60%] object-cover rounded-xl"
             />
           </div>

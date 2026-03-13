@@ -1,7 +1,12 @@
 import React from 'react'
 import Bannersection from '../../components/Bannersection'
 
-export const metadata = { robots: { index: false, follow: false } }
+export const metadata = {
+    title: "Disclaimer | DestinationPick",
+    description: "Read the DestinationPick disclaimer regarding the accuracy of information provided on our website and the limitations of our liability for travel-related content.",
+    alternates: { canonical: "https://www.destinationpick.com/disclaimer/" },
+    robots: { index: false, follow: false },
+}
 
 const page = () => {
     return (

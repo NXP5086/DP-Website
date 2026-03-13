@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { Check, MapPin } from "lucide-react"
+import Image from "next/image"
 
 export function HotelOverview({ hotel }) {
   // Framer Motion variants for scroll animations
@@ -71,10 +72,12 @@ export function HotelOverview({ hotel }) {
           >
             <div className="relative mb-8">
               <div className="lg:col-span-2 aspect-4/3 rounded-2xl overflow-hidden relative group">
-                <img
+                <Image
                   src={hotel.image || "/placeholder.svg"}
                   alt={`${hotel.name} overview`}
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               <div className="absolute -bottom-4 -left-4 bg-card border border-border rounded-xl px-5 py-3 shadow-lg">

@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from "next/image"
 
 export function DreamsMacaoTrustScale({ items }) {
   return (
@@ -54,7 +55,7 @@ export function DreamsMacaoExperience({ content }) {
           </div>
 
           <div className="rounded-2xl overflow-hidden border border-border">
-            <img src={image} alt={imageAlt} className="w-full h-full object-cover" />
+            <Image src={image} alt={imageAlt} width={800} height={600} className="w-full h-full object-cover" />
           </div>
         </div>
 

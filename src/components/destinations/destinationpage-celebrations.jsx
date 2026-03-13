@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 import { motion } from "framer-motion"
 import { cn } from "../../lib/utils"
+import Image from "next/image"
 
 export function DestinationPageCelebrations({ data }) {
     const [activeEvent, setActiveEvent] = useState(data?.events?.[0]?.id || "mehndi")
@@ -76,11 +77,13 @@ export function DestinationPageCelebrations({ data }) {
                 >
                     {/* Image */}
                     <div className="relative aspect-4/3 rounded-2xl overflow-hidden group">
-                        <img
+                        <Image
                             key={active.id}
                             src={active.image || "/placeholder.svg"}
                             alt={active.title}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            fill
+                            sizes="(max-width: 1024px) 100vw, 50vw"
+                            className="object-cover group-hover:scale-105 transition-transform duration-700"
                         />
                         <div className="absolute inset-0 bg-linear-to-t from-foreground/50 via-transparent to-transparent" />
                         <div className="absolute bottom-6 left-6">

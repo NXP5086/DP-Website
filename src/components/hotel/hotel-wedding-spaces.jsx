@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { cn } from "../../lib/utils"
+import Image from "next/image"
 
 export function HotelWeddingSpaces({ hotel }) {
   const [activeIndex, setActiveIndex] = useState(0)
@@ -50,11 +51,13 @@ export function HotelWeddingSpaces({ hotel }) {
             className="transition-all duration-700 delay-200"
           >
             <div className="relative">
-              <div className="aspect-4/3 rounded-2xl overflow-hidden bg-muted">
-                <img
+              <div className="aspect-4/3 rounded-2xl overflow-hidden bg-muted relative">
+                <Image
                   src={hotel.hotelhero?.gallery[activeIndex % hotel.hotelhero?.gallery?.length] || "/placeholder.svg"}
                   alt={activeTitle}
-                  className="w-full h-full object-cover transition-all duration-700"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover transition-all duration-700"
                 />
               </div>
               {/* Floating stats card */}

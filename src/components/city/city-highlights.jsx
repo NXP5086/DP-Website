@@ -4,6 +4,7 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import { cn } from "../../lib/utils"
 import { Plane, DollarSign, Umbrella, Users, Utensils, Activity, Sun, Star } from "lucide-react"
+import Image from "next/image"
 
 // Icon Map
 const iconMap = {
@@ -65,11 +66,13 @@ export function CityHighlights({ data }) {
             variants={revealVariants}
             className="relative aspect-4/3 rounded-2xl overflow-hidden bg-muted group/img"
           >
-            <img
+            <Image
               key={activeId}
               src={active.image || "/placeholder.svg"}
               alt={active.title}
-              className="absolute inset-0 w-full h-full object-cover transition-all duration-700 scale-105 group-hover/img:scale-100"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover transition-all duration-700 scale-105 group-hover/img:scale-100"
             />
             <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between">

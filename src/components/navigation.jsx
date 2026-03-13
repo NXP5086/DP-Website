@@ -11,7 +11,7 @@ import { openModal } from "../redux/slices/weddingPopupSlice"
 
 const navLinks = [
     {
-        href: "#about", label: "About",
+        href: "/about-us", label: "About",
         children: [
             { href: "/about-us", label: "About Us" },
             { href: "/our-team", label: "Our Team" },
@@ -57,6 +57,7 @@ export function Navigation() {
                                 alt="destination pick logo"
                                 fill
                                 priority
+                                sizes="(max-width: 768px) 160px, 200px"
                             />
                         </Link>
 

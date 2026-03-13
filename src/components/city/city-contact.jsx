@@ -9,7 +9,10 @@ import {
     MapPin,
     CheckCircle2,
     Star,
+    BookOpen,
 } from "lucide-react"
+import Link from "next/link"
+import Image from "next/image"
 
 export function CityContact({ data }) {
     const sectionRef = useRef(null)
@@ -30,10 +33,12 @@ export function CityContact({ data }) {
         >
             {/* Subtle background */}
             <div className="absolute inset-0 opacity-[0.03]">
-                <img
+                <Image
                     src="/images/mexico-hero-1.jpg"
                     alt=""
-                    className="w-full h-full object-cover"
+                    fill
+                    sizes="100vw"
+                    className="object-cover"
                 />
             </div>
 
@@ -112,6 +117,15 @@ export function CityContact({ data }) {
                                 )
                             })}
                         </div>
+
+                        {/* Planning Guide Link */}
+                        <Link
+                            href="/blog/"
+                            className="inline-flex items-center gap-2 text-sm text-accent hover:underline underline-offset-4 mb-8"
+                        >
+                            <BookOpen size={14} />
+                            Read our destination wedding planning guides
+                        </Link>
 
                         {/* Social Proof */}
                         <motion.div

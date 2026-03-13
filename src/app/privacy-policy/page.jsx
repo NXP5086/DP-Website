@@ -1,7 +1,12 @@
 import React from 'react'
 import Bannersection from '../../components/Bannersection'
 
-export const metadata = { robots: { index: false, follow: false } }
+export const metadata = {
+    title: "Privacy Policy | DestinationPick",
+    description: "Read DestinationPick's Privacy Policy to understand how we collect, use, and protect your personal information when you use our travel and wedding planning services.",
+    alternates: { canonical: "https://www.destinationpick.com/privacy-policy/" },
+    robots: { index: false, follow: false },
+}
 
 const page = () => {
     return (

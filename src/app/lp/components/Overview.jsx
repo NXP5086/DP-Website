@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Check, MapPin } from "lucide-react"
+import Image from "next/image"
 
 const defaultContent = {
   label: "Resort Overview",
@@ -78,7 +79,7 @@ export function Overview({ content = defaultContent }) {
           >
             <div className="relative mb-8">
               <div className="lg:col-span-2  rounded-2xl overflow-hidden relative group">
-                <img src={content.image} alt={content.imageAlt} className="w-full h-full object-cover" />
+                <Image src={content.image} alt={content.imageAlt} width={800} height={600} className="w-full h-full object-cover" />
               </div>
               <div className="absolute -bottom-4 -left-4 bg-card border border-border rounded-xl px-5 py-3 shadow-lg">
                 <p className="font-serif text-2xl text-foreground">{content.maxGuests}</p>

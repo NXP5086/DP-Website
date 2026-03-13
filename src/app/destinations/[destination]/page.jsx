@@ -1,7 +1,27 @@
 import destinationData from "../../../data/destinationData.json"
 import { destinationMeta } from "../../../data/Metatags"
 import { notFound } from "next/navigation"
-import Script from "next/script"
+import Link from "next/link"
+
+const DESTINATION_COMPARISONS = {
+    "mexico": [
+        { label: "Mexico vs Dominican Republic", href: "/compare/mexico-vs-dominican-republic/" },
+        { label: "Mexico vs Bahamas", href: "/compare/mexico-vs-bahamas/" },
+        { label: "Cancun vs Punta Cana", href: "/compare/cancun-vs-punta-cana/" },
+        { label: "Los Cabos vs Punta Cana", href: "/compare/los-cabos-vs-punta-cana/" },
+    ],
+    "dominican-republic": [
+        { label: "Dominican Republic vs Mexico", href: "/compare/mexico-vs-dominican-republic/" },
+        { label: "Dominican Republic vs Bahamas", href: "/compare/dominican-republic-vs-bahamas/" },
+        { label: "Punta Cana vs Cancun", href: "/compare/cancun-vs-punta-cana/" },
+        { label: "Punta Cana vs Los Cabos", href: "/compare/los-cabos-vs-punta-cana/" },
+    ],
+    "bahamas": [
+        { label: "Bahamas vs Mexico", href: "/compare/mexico-vs-bahamas/" },
+        { label: "Bahamas vs Dominican Republic", href: "/compare/dominican-republic-vs-bahamas/" },
+        { label: "Bahamas vs Cancun", href: "/compare/cancun-vs-bahamas/" },
+    ],
+}
 
 import { DestinationPageHero } from "../../../components/destinations/destinationpage-hero"
 import { DestinationPageMarquee } from "../../../components/destinations/destinationpage-marquee"
@@ -68,11 +88,32 @@ export default async function MexicoPage({ params }) {
 
     return (
         <main className="min-h-screen bg-background">
-            <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <DestinationPageHero data={pageData.hero} />
             <DestinationPageMarquee data={pageData.marquee} />
             <DestinationPageAbout data={pageData.about} />
             <DestinationPageVenues data={pageData.venuesSection} destinationSlug={destination} />
+            {DESTINATION_COMPARISONS[destination] && (
+                <section className="section-padding bg-muted/30">
+                    <div className="container mx-auto px-4 lg:px-8 text-center">
+                        <p className="text-accent text-sm tracking-[0.3em] uppercase mb-4">Helpful Comparisons</p>
+                        <h2 className="font-serif text-2xl lg:text-3xl text-foreground font-light mb-8">
+                            Compare {data.name} With Other Destinations
+                        </h2>
+                        <div className="flex flex-wrap justify-center gap-3">
+                            {DESTINATION_COMPARISONS[destination].map((comp) => (
+                                <Link
+                                    key={comp.href}
+                                    href={comp.href}
+                                    className="px-5 py-2.5 border border-border rounded-full text-sm text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors"
+                                >
+                                    {comp.label}
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            )}
             <DestinationPageFAQ data={pageData.faq} />
             <DestinationPageContact data={pageData.contact} />
         </main>

@@ -6,22 +6,23 @@ import { Instagram, Facebook, Youtube, Linkedin } from "lucide-react"
 
 const footerLinks = {
     destinations: [
-        { label: "Destinations", href: "/destinations" },
+        { label: "Destinations", href: "/destinations/" },
         { label: "Mexico", href: "/destinations/mexico/" },
         { label: "Dominican Republic", href: "/destinations/dominican-republic/" },
-
+        { label: "Bahamas", href: "/destinations/bahamas/" },
     ],
     airlines: [
         { label: "British Airways", href: "/british-airways/" },
-        { label: "Emirates", href: "/emirates" },
-        { label: "Etihad Airways", href: "/etihad-airways" },
-        { label: "Qatar Airways", href: "/qatar-airways" },
+        { label: "Emirates", href: "/emirates/" },
+        { label: "Etihad Airways", href: "/etihad-airways/" },
+        { label: "Qatar Airways", href: "/qatar-airways/" },
     ],
     company: [
-        { label: "About Us", href: "/about-us" },
-        { label: "Our Team", href: "/our-team" },
-        { label: "Services", href: "/services" },
-        { label: "Contact", href: "/contact" },
+        { label: "About Us", href: "/about-us/" },
+        { label: "Our Team", href: "/our-team/" },
+        { label: "Services", href: "/services/" },
+        { label: "Blog", href: "/blog/" },
+        { label: "Contact", href: "/contact/" },
     ],
 }
 

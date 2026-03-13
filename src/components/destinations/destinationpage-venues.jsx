@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { ChevronRight, ArrowRight } from "lucide-react"
 import { Button } from "../../components/ui/button"
 import Link from "next/link"
+import Image from "next/image"
 
 export function DestinationPageVenues({ data, destinationSlug }) {
     const [activeLocation, setActiveLocation] = useState(data?.locations[0].id)
@@ -92,10 +93,12 @@ export function DestinationPageVenues({ data, destinationSlug }) {
                 >
                     {/* Location Image */}
                     <div className="lg:col-span-3 rounded-tl-2xl rounded-bl-2xl aspect-video overflow-hidden relative group">
-                        <img
+                        <Image
                             src={currentLocation.image || "/placeholder.svg"}
                             alt={`${currentLocation.label} wedding venue`}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            fill
+                            sizes="(max-width: 1024px) 100vw, 60vw"
+                            className="object-cover group-hover:scale-105 transition-transform duration-700"
                         />
                         <div className="absolute inset-0 bg-linear-to-t from-foreground/60 via-transparent to-transparent" />
                         <div className="absolute bottom-6 left-6 right-6">

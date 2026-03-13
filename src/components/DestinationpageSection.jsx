@@ -2,9 +2,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Link from "next/link"
-import { ArrowRight, MapPin } from "lucide-react"
+import { ArrowRight, MapPin, BookOpen } from "lucide-react"
 import { cn } from "../lib/utils"
 import destinationData from "../data/destinationData.json"
+import Image from "next/image"
 const DestinationpageSection = () => {
     const revealVariants = {
         hidden: { opacity: 0, y: 30 },
@@ -30,10 +31,12 @@ const DestinationpageSection = () => {
                                 )}
                             >
                                 <div className="relative h-full w-full">
-                                    <img
+                                    <Image
                                         src={destination.cardImage || "/placeholder.svg"}
                                         alt={destination.name}
-                                        className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, 50vw"
+                                        className="object-cover transition-transform duration-700 group-hover:scale-110"
                                     />
 
                                     <div className="absolute inset-0 bg-linear-to-t from-foreground/80 via-foreground/20 to-transparent" />
@@ -62,6 +65,27 @@ const DestinationpageSection = () => {
                     ))}
                 </div>
             </div>
+
+            {/* Internal link: Blog / Planning Guides */}
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="text-center mt-14"
+            >
+                <p className="text-muted-foreground text-sm mb-3">
+                    Not sure where to start?
+                </p>
+                <Link
+                    href="/blog/"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-accent border border-accent/30 rounded-full px-6 py-2.5 hover:bg-accent/5 transition-colors"
+                >
+                    <BookOpen size={15} />
+                    Read our Destination Wedding Planning Guides
+                    <ArrowRight size={14} />
+                </Link>
+            </motion.div>
         </section>
     )
 }

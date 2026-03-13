@@ -4,6 +4,7 @@ import React from "react"
 import { motion } from "framer-motion"
 import Weddingform from "./forms/Weddingform"
 import { Phone, Mail, MapPin } from "lucide-react"
+import Image from "next/image"
 
 export function ContactSection() {
 
@@ -18,10 +19,11 @@ export function ContactSection() {
         <section id="contact" className="section-padding bg-background relative">
             {/* Background Image */}
             <div className="absolute inset-0 opacity-5">
-                <img
+                <Image
                     src="/images/contact/couple.jpg"
                     alt=""
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
                 />
             </div>
 

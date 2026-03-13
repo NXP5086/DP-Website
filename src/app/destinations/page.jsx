@@ -6,7 +6,18 @@ export const metadata = {
     title: "Destination Weddings in Mexico & Punta Cana | All-Inclusive Packages",
     description: "Discover destination wedding packages in Cancun, Cabo San Lucas & Punta Cana. Beach venues, luxury resorts & stress-free planning in one place.",
     alternates: {
-        canonical: "https://www.destinationpick.com/destinations",
+        canonical: "https://www.destinationpick.com/destinations/",
+    },
+    openGraph: {
+        title: "Destination Weddings in Mexico & Punta Cana | All-Inclusive Packages",
+        description: "Discover destination wedding packages in Cancun, Cabo San Lucas & Punta Cana. Beach venues, luxury resorts & stress-free planning in one place.",
+        images: [{ url: "/banners/banner3.jpg", width: 1200, height: 630, alt: "Destination Wedding Locations" }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Destination Weddings in Mexico & Punta Cana | All-Inclusive Packages",
+        description: "Discover destination wedding packages in Cancun, Cabo San Lucas & Punta Cana. Beach venues, luxury resorts & stress-free planning in one place.",
+        images: ["/banners/banner3.jpg"],
     },
 }
 export default function DestinationsPage() {

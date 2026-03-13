@@ -7,6 +7,7 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import Link from 'next/link';
 import destinationData from '../data/destinationData.json';
+import Image from 'next/image';
 
 const locations = [
   { name: "Mexico", lat: 23.6345, lng: -102.5528, slug: "mexico" },
@@ -83,9 +84,10 @@ const LocationMarker = ({ loc, customIcon }) => {
           onMouseLeave={handlePopupMouseLeave}
         >
           <div className="popup-image-container">
-            <img
+            <Image
               src={imageUrl}
               alt={loc.name}
+              fill
               className="popup-image"
             />
           </div>

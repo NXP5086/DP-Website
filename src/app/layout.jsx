@@ -13,11 +13,13 @@ const cormorant = Cormorant_Garamond({
     subsets: ["latin"],
     weight: ["300", "400", "500", "600", "700"],
     variable: "--font-serif",
+    display: "swap",
 });
 
 const inter = Inter({
     subsets: ["latin"],
     variable: "--font-sans",
+    display: "swap",
 });
 
 export const metadata = {
@@ -62,10 +64,18 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
             <head>
+                {/* Performance: preconnect to external origins */}
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+                <link rel="preconnect" href="https://www.googletagmanager.com" />
+                <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+                {/* Preload hero video poster for LCP */}
+                <link rel="preload" as="image" href="/videos/video-poster.jpg" />
+
                 {/* Google Tag Manager */}
                 <Script
                     id="gtm-script"
-                    strategy="beforeInteractive"
+                    strategy="afterInteractive"
                     dangerouslySetInnerHTML={{
                         __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];
@@ -82,11 +92,11 @@ export default function RootLayout({ children }) {
                 {/* Google Analytics */}
                 <Script
                     src="https://www.googletagmanager.com/gtag/js?id=G-FY83C3PSVX"
-                    strategy="beforeInteractive"
+                    strategy="afterInteractive"
                 />
                 <Script
                     id="ga-script"
-                    strategy="beforeInteractive"
+                    strategy="afterInteractive"
                     dangerouslySetInnerHTML={{
                         __html: `
               window.dataLayer = window.dataLayer || [];
@@ -98,17 +108,58 @@ export default function RootLayout({ children }) {
                 />
 
 
-                <Script
+                <script
+                    id="organization-schema"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "Organization",
+                            "name": "DestinationPick",
+                            "url": "https://www.destinationpick.com/",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "https://www.destinationpick.com/images/logo.webp",
+                                "width": 400,
+                                "height": 100,
+                            },
+                            "description": "DestinationPick is a luxury destination wedding and travel management company serving couples across the USA. Specializing in Mexico, Punta Cana, Bahamas, and beyond.",
+                            "foundingDate": "2020",
+                            "address": {
+                                "@type": "PostalAddress",
+                                "streetAddress": "1039 I-35E Suite 304",
+                                "addressLocality": "Carrollton",
+                                "addressRegion": "TX",
+                                "postalCode": "75006",
+                                "addressCountry": "US",
+                            },
+                            "contactPoint": {
+                                "@type": "ContactPoint",
+                                "telephone": "+1-917-913-4262",
+                                "contactType": "Customer Service",
+                                "areaServed": "Worldwide",
+                                "availableLanguage": ["English"],
+                            },
+                            "sameAs": [
+                                "https://www.facebook.com/destinationpick",
+                                "https://www.instagram.com/destinationpick",
+                                "https://www.linkedin.com/company/destinationpick",
+                                "https://www.youtube.com/destinationpick",
+                            ],
+                        }),
+                    }}
+                />
+
+                <script
                     id="travel-agency-schema"
                     type="application/ld+json"
-                    strategy="beforeInteractive"
                     dangerouslySetInnerHTML={{
                         __html: JSON.stringify({
                             "@context": "https://schema.org",
                             "@type": "TravelAgency",
                             "name": "DestinationPick",
                             "url": "https://www.destinationpick.com/",
-                            "logo": "https://www.destinationpick.com/favicon.webp",
+                            "logo": "https://www.destinationpick.com/images/logo.webp",
                             "description":
                                 "DestinationPick offers travel management, destination weddings, tours & event planning with expert concierge services across top global locations.",
                             "contactPoint": {
@@ -145,24 +196,15 @@ export default function RootLayout({ children }) {
                     }}
                 />
 
-                <Script
+                <script
                     id="website-schema"
                     type="application/ld+json"
-                    strategy="beforeInteractive"
                     dangerouslySetInnerHTML={{
                         __html: JSON.stringify({
                             "@context": "https://schema.org",
                             "@type": "WebSite",
                             "name": "DestinationPick",
                             "url": "https://www.destinationpick.com/",
-                            "potentialAction": {
-                                "@type": "SearchAction",
-                                "target": {
-                                    "@type": "EntryPoint",
-                                    "urlTemplate": "https://www.destinationpick.com/destinations/?q={search_term_string}",
-                                },
-                                "query-input": "required name=search_term_string",
-                            },
                         }),
                     }}
                 />

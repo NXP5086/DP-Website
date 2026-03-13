@@ -1,6 +1,53 @@
 import React from 'react'
+import Image from 'next/image'
+import Script from 'next/script'
 import Bannersection from '../../components/Bannersection'
 import Faqs from '../../components/Faqs'
+
+export const metadata = {
+    title: "Qatar Airways Flights | Book with DestinationPick",
+    description: "Fly Qatar Airways for your destination wedding or luxury travel. DestinationPick arranges group bookings, business class upgrades, and seamless travel for your guests.",
+    keywords: "Qatar Airways flights, Qatar Airways group booking, Qatar Airways destination wedding travel, book Qatar Airways DestinationPick, Qatar Airways business class",
+    alternates: { canonical: "https://www.destinationpick.com/qatar-airways/" },
+    openGraph: {
+        title: "Qatar Airways Flights | Book with DestinationPick",
+        description: "Fly Qatar Airways for your destination wedding or luxury travel. DestinationPick arranges group bookings, business class upgrades, and seamless travel for your guests.",
+        images: [{ url: "/banners/qatar-airways-banner.webp", width: 1200, height: 630, alt: "Qatar Airways with DestinationPick" }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Qatar Airways Flights | Book with DestinationPick",
+        description: "Fly Qatar Airways for your destination wedding or luxury travel. DestinationPick arranges group bookings and business class upgrades.",
+        images: ["/banners/qatar-airways-banner.webp"],
+    },
+}
+const airlineSchema = {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "DestinationPick – Qatar Airways Bookings",
+    "url": "https://www.destinationpick.com/qatar-airways/",
+    "description": "DestinationPick specializes in group Qatar Airways bookings for destination weddings, corporate travel, and luxury trips.",
+    "image": "https://www.destinationpick.com/banners/qatar-airways-banner.webp",
+    "telephone": "+1-917-913-4262",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1039 I-35E Suite 306",
+        "addressLocality": "Carrollton",
+        "addressRegion": "TX",
+        "postalCode": "75006",
+        "addressCountry": "US"
+    },
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Qatar Airways Travel Services",
+        "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Qatar Airways Group Bookings" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Qatar Airways Business Class Upgrades" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Qatar Airways Destination Wedding Travel" } }
+        ]
+    }
+}
+
 const page = () => {
 
 
@@ -117,6 +164,7 @@ const page = () => {
 
     return (
         <main>
+            <Script id="airline-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(airlineSchema) }} />
             <Bannersection
                 image="/banners/qatar-airways-banner.webp"
                 title="About Qatar Airways"
@@ -129,7 +177,7 @@ const page = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 bg-white gap-8">
                         {/* Left Column - Content */}
                         <div className=" px-4 py-6 rounded-lg mb-8 flex flex-col justify-center">
-                            <h3 className="text-2xl font-bold mb-4">About Qatar Airways</h3>
+                            <h1 className="text-2xl font-bold mb-4">About Qatar Airways</h1>
                             <div className="space-y-6 text-muted-foreground leading-relaxed">
                                 <p>
                                     Qatar Airways is proud to be one of the youngest global airlines to serve all six continents, and thanks to our customers’ response to our offerings, we are also the world’s fastest-growing airline. We connect more than 140 destinations on the map every day, with a fleet of the latest-generation aircraft, and an unrivalled level of service from our home and hub, the Five-star airport, Hamad International Airport in Doha, the State of Qatar.</p>
@@ -138,7 +186,7 @@ const page = () => {
 
                         {/* Right Column - Image */}
                         <div className="flex justify-center">
-                            <img src="/images/qatar.webp" alt="Qatar Airways" className="rounded-lg shadow-lg object-cover" />
+                            <Image src="/images/qatar.webp" alt="Qatar Airways" width={600} height={400} className="rounded-lg shadow-lg object-cover" />
                         </div>
                     </div>
                 </div>
@@ -149,7 +197,7 @@ const page = () => {
 
             <section className='section-padding bg-white'>
                 <div className="container">
-                    <h3 className='section-title text-center'>FAQ'S</h3>
+                    <h2 className='section-title text-center'>FAQ'S</h2>
                     <div className="h-1 w-20 bg-accent  rounded-full mb-6 mx-auto"></div>
                 </div>
 

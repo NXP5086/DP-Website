@@ -4,6 +4,7 @@ import { Star, Users, MapPin, ArrowRight, ChevronRight } from "lucide-react"
 import { cn } from "../../lib/utils"
 import Link from "next/link"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 const tierColors = {
   Budgeted: "bg-primary/10 text-primary",
@@ -96,10 +97,12 @@ export function CityHotels({ data, hotels, destinationSlug, citySlug }) {
 
                       {/* Image */}
                       <div className="lg:col-span-2 relative h-64 lg:h-full overflow-hidden">
-                        <img
+                        <Image
                           src={hotel.image || "/placeholder.svg"}
                           alt={hotel.name}
-                          className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                          fill
+                          sizes="(max-width: 1024px) 100vw, 40vw"
+                          className="object-cover group-hover:scale-110 transition-transform duration-700"
                         />
 
                         {/* Gradient overlay */}

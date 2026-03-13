@@ -1,7 +1,12 @@
 import React from 'react'
 import Bannersection from '../../components/Bannersection'
 
-export const metadata = { robots: { index: false, follow: false } }
+export const metadata = {
+    title: "Cookie Policy | DestinationPick",
+    description: "Learn how DestinationPick uses cookies and similar tracking technologies on our website to improve your browsing experience and provide personalized content.",
+    alternates: { canonical: "https://www.destinationpick.com/cookie-policy/" },
+    robots: { index: false, follow: false },
+}
 
 const page = () => {
     return (

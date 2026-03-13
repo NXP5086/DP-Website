@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const Citylocations = ({ data }) => {
 
@@ -17,13 +18,15 @@ const Citylocations = ({ data }) => {
                     {data.map((city) => (
                         <div
                             key={city.id}
-                            className="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer"
+                            className="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer h-96"
                         >
                             {/* Image */}
-                            <img
+                            <Image
                                 src={city.image}
                                 alt={city.title}
-                                className="h-96 w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                fill
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                                className="object-cover transition-transform duration-500 group-hover:scale-110"
                             />
 
                             {/* Overlay */}

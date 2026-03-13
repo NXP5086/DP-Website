@@ -1,6 +1,7 @@
 "use client"
 
 import { useMemo, useState } from "react"
+import Image from "next/image"
 import { motion } from "framer-motion"
 import { ArrowRight, CalendarDays, MapPin, Sparkles } from "lucide-react"
 
@@ -98,15 +99,15 @@ export function Resortssection({ content = defaultContent }) {
               >
                 <div className="grid lg:grid-cols-12 items-stretch">
                   <div
-                    className={`relative overflow-hidden ${
+                    className={`relative overflow-hidden h-[300px] lg:h-full ${
                       index % 2 === 0 ? "lg:col-span-6" : "lg:col-span-6 lg:order-2"
                     }`}
                   >
-                    <img
+                    <Image
                       src={resort.image || fallbackImage}
                       alt={resort.name}
-                      loading="lazy"
-                      className="w-full h-[300px] lg:h-full object-cover transition-transform duration-700 hover:scale-105"
+                      fill
+                      className="object-cover transition-transform duration-700 hover:scale-105"
                     />
 
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />

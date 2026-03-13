@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import { motion } from "framer-motion"
 import { ChevronLeft, ChevronRight, Quote, Star, Play } from "lucide-react"
 import { cn } from "../../lib/utils"
+import Image from "next/image"
 
 const stories = [
     {
@@ -76,10 +77,12 @@ export function CityTestimonials({ data }) {
         >
             {/* Background image overlay */}
             <div className="absolute inset-0 opacity-10">
-                <img
+                <Image
                     src={active.image || "/placeholder.svg"}
                     alt=""
-                    className="w-full h-full object-cover transition-opacity duration-700"
+                    fill
+                    sizes="100vw"
+                    className="object-cover transition-opacity duration-700"
                 />
             </div>
             <div className="absolute inset-0 bg-foreground/90" />
@@ -112,10 +115,12 @@ export function CityTestimonials({ data }) {
                     <div className="grid lg:grid-cols-2 gap-10 items-center">
                         {/* Image Side */}
                         <div className="relative aspect-4/3 rounded-2xl overflow-hidden">
-                            <img
+                            <Image
                                 src={active.image || "/placeholder.svg"}
                                 alt={`${active.couple} wedding`}
-                                className="w-full h-full object-cover"
+                                fill
+                                sizes="(max-width: 1024px) 100vw, 50vw"
+                                className="object-cover"
                             />
                             <div className="absolute inset-0 bg-linear-to-t from-foreground/60 via-transparent to-transparent" />
 

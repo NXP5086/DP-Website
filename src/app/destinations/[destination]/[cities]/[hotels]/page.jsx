@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation"
-import Script from "next/script"
 import destinationData from "../../../../../data/destinationData.json"
 import { hotelMeta } from "../../../../../data/Metatags"
 
@@ -64,6 +63,12 @@ export async function generateMetadata({ params }) {
             description: meta?.description ?? fallbackDescription,
             images: [{ url: hotelImage, width: 1200, height: 630, alt: `${hotel.name} Destination Wedding` }],
         },
+        twitter: {
+            card: "summary_large_image",
+            title: meta?.title ?? fallbackTitle,
+            description: meta?.description ?? fallbackDescription,
+            images: [hotelImage],
+        },
     }
 }
 
@@ -106,10 +111,59 @@ export default async function HotelPage({ params }) {
         "touristType": "Couples, Wedding Guests",
     }
 
+    const weddingVenueSchema = {
+        "@context": "https://schema.org",
+        "@type": "EventVenue",
+        "name": `${hotel.name} — Destination Wedding Venue`,
+        "description": `${hotel.name} in ${city.name} offers all-inclusive destination wedding packages with dedicated event spaces, beach ceremonies, and luxury accommodations for couples from the USA.`,
+        "url": `https://www.destinationpick.com/destinations/${destination}/${cities}/${slug}/`,
+        ...(hotel.images?.main && { "image": `https://www.destinationpick.com${hotel.images.main}` }),
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": city.name,
+            "addressCountry": destination === "bahamas" ? "BS" : destination === "dominican-republic" ? "DO" : "MX",
+        },
+        "maximumAttendeeCapacity": hotel.maxGuests ?? 500,
+        "amenityFeature": hotel.hoteloveriew?.amenities?.map(a => ({ "@type": "LocationFeatureSpecification", "name": a, "value": true })) ?? [],
+        "containedInPlace": {
+            "@type": "LodgingBusiness",
+            "name": hotel.name,
+        },
+    }
+
+    const aggregateOfferSchema = {
+        "@context": "https://schema.org",
+        "@type": "AggregateOffer",
+        "name": `Destination Wedding Packages at ${hotel.name}`,
+        "description": `All-inclusive destination wedding packages at ${hotel.name} in ${city.name}, curated by DestinationPick.`,
+        "url": `https://www.destinationpick.com/destinations/${destination}/${cities}/${slug}/`,
+        "priceCurrency": "USD",
+        "offerCount": hotel.packages?.length ?? 3,
+        "offers": hotel.packages?.map(pkg => ({
+            "@type": "Offer",
+            "name": pkg.name,
+            "description": pkg.description ?? `${pkg.name} at ${hotel.name}`,
+            "priceCurrency": "USD",
+            ...(pkg.price && { "price": pkg.price }),
+        })) ?? [
+            { "@type": "Offer", "name": "All-Inclusive Wedding Package", "description": `Complete destination wedding package at ${hotel.name}` },
+            { "@type": "Offer", "name": "Beach Ceremony Package", "description": `Private beach wedding ceremony at ${hotel.name}` },
+            { "@type": "Offer", "name": "Free Wedding Consultation", "price": "0", "priceCurrency": "USD" },
+        ],
+        "seller": {
+            "@type": "TravelAgency",
+            "name": "DestinationPick",
+            "url": "https://www.destinationpick.com/",
+            "telephone": "+1-917-913-4262",
+        },
+    }
+
     return (
         <main className="min-h-screen bg-background">
-            <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-            <Script id="lodging-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(lodgingSchema) }} />
+            <script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script id="lodging-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(lodgingSchema) }} />
+            <script id="wedding-venue-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(weddingVenueSchema) }} />
+            <script id="aggregate-offer-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateOfferSchema) }} />
             <HotelHero hotel={hotel} />
             <HotelTrustScale hotel={hotel} />
             <HotelWhyChoose hotel={hotel} />

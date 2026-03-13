@@ -1,10 +1,11 @@
 import React from "react"
-import Script from "next/script"
 import Link from "next/link"
 import Image from "next/image"
 import { notFound } from "next/navigation"
 import { blogPosts } from "../../../data/blogPosts"
 import ContactForm from "../../../components/forms/ContactForm"
+
+export const revalidate = 3600
 
 export function generateStaticParams() {
     return blogPosts.map((post) => ({ slug: post.slug }))
@@ -28,6 +29,7 @@ export async function generateMetadata({ params }) {
             description: post.excerpt,
             type: "article",
             publishedTime: post.date,
+            modifiedTime: post.modifiedDate || post.date,
             images: [{ url: post.image, width: 1200, height: 630, alt: post.title }],
         },
         twitter: {
@@ -84,7 +86,7 @@ export default async function BlogArticlePage({ params }) {
 
     const articleSchema = {
         "@context": "https://schema.org",
-        "@type": "Article",
+        "@type": "BlogPosting",
         "headline": post.title,
         "description": post.excerpt,
         "image": `https://www.destinationpick.com${post.image}`,
@@ -148,9 +150,9 @@ export default async function BlogArticlePage({ params }) {
 
     return (
         <main>
-            <Script id="article-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-            <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-            {faqSchema && <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
+            <script id="article-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+            <script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            {faqSchema && <script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
 
             {/* Hero image */}
             <div className="w-full h-64 md:h-96 overflow-hidden relative">
@@ -246,6 +248,21 @@ export default async function BlogArticlePage({ params }) {
                     </div>
                 </section>
             )}
+
+            {/* Contextual destination links */}
+            <section className="section-padding bg-gray-50">
+                <div className="container max-w-3xl">
+                    <h2 className="text-xl font-serif font-semibold text-gray-800 mb-4">Explore Top Destinations</h2>
+                    <p className="text-gray-600 mb-6 text-sm">Ready to start planning? Browse our most popular destination wedding locations.</p>
+                    <div className="flex flex-wrap gap-3">
+                        <Link href="/destinations/mexico/" className="inline-block px-4 py-2 bg-white border border-gray-200 rounded-full text-sm text-gray-700 hover:border-accent hover:text-accent transition-colors">Mexico</Link>
+                        <Link href="/destinations/dominican-republic/" className="inline-block px-4 py-2 bg-white border border-gray-200 rounded-full text-sm text-gray-700 hover:border-accent hover:text-accent transition-colors">Dominican Republic</Link>
+                        <Link href="/destinations/bahamas/" className="inline-block px-4 py-2 bg-white border border-gray-200 rounded-full text-sm text-gray-700 hover:border-accent hover:text-accent transition-colors">Bahamas</Link>
+                        <Link href="/destinations/" className="inline-block px-4 py-2 bg-white border border-gray-200 rounded-full text-sm text-gray-700 hover:border-accent hover:text-accent transition-colors">All Destinations</Link>
+                        <Link href="/services/" className="inline-block px-4 py-2 bg-white border border-gray-200 rounded-full text-sm text-gray-700 hover:border-accent hover:text-accent transition-colors">Our Services</Link>
+                    </div>
+                </div>
+            </section>
 
             {/* CTA contact form */}
             <section className="section-padding bg-white">

@@ -4,6 +4,7 @@ import React from "react"
 import { motion } from "framer-motion"
 import { Phone, Mail, MapPin, CheckCircle2, Star, Shield } from "lucide-react"
 import Weddingform from "../forms/Weddingform"
+import Image from "next/image"
 export function HotelContact({ hotel, contactInfo }) {
 
 
@@ -39,7 +40,7 @@ export function HotelContact({ hotel, contactInfo }) {
   return (
     <section id="contact" className="section-padding bg-background relative">
       <div className="absolute inset-0 opacity-[0.02]">
-        <img src={hotel.hotelhero?.gallery?.[0] || hotel.image || "/placeholder.svg"} alt="" className="w-full h-full object-cover" />
+        <Image src={hotel.hotelhero?.gallery?.[0] || hotel.image || "/placeholder.svg"} alt="" fill sizes="100vw" className="object-cover" />
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 relative">

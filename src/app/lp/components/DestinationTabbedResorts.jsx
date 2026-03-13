@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react"
 import { motion } from "framer-motion"
 import { ArrowRight, MapPin } from "lucide-react"
+import Image from "next/image"
 
 const defaultContent = {
   title: "Choose Your Destination",
@@ -68,11 +69,12 @@ export function DestinationTabbedResorts({ content = defaultContent }) {
       <div className="grid lg:grid-cols-12">
         
         {/* Image */}
-        <div className="relative lg:col-span-6 overflow-hidden">
-          <img
+        <div className="relative lg:col-span-6 overflow-hidden h-[260px] lg:h-full">
+          <Image
             src={resort.image || fallbackImage}
             alt={resort.name}
-            className="w-full h-[260px] lg:h-full object-cover transition-transform duration-500 hover:scale-105"
+            fill
+            className="object-cover transition-transform duration-500 hover:scale-105"
           />
         </div>
 

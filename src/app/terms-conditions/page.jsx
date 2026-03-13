@@ -1,7 +1,12 @@
 import React from 'react'
 import Bannersection from '../../components/Bannersection'
 
-export const metadata = { robots: { index: false, follow: false } }
+export const metadata = {
+    title: "Terms & Conditions | DestinationPick",
+    description: "Review the Terms & Conditions governing the use of DestinationPick's website and travel services, including booking policies, payment terms, and disclaimers.",
+    alternates: { canonical: "https://www.destinationpick.com/terms-conditions/" },
+    robots: { index: false, follow: false },
+}
 
 const page = () => {
     return (

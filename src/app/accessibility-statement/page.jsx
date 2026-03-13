@@ -1,7 +1,12 @@
 import React from 'react'
 import Bannersection from '../../components/Bannersection'
 
-export const metadata = { robots: { index: false, follow: false } }
+export const metadata = {
+    title: "Accessibility Statement | DestinationPick",
+    description: "DestinationPick is committed to ensuring digital accessibility for all users. Read our Accessibility Statement to learn about the standards we follow and how to report issues.",
+    alternates: { canonical: "https://www.destinationpick.com/accessibility-statement/" },
+    robots: { index: false, follow: false },
+}
 
 const page = () => {
     return (

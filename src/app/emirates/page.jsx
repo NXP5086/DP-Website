@@ -1,6 +1,53 @@
 import React from 'react'
+import Image from 'next/image'
+import Script from 'next/script'
 import Bannersection from '../../components/Bannersection'
 import Faqs from '../../components/Faqs'
+
+export const metadata = {
+    title: "Emirates Flights | Book with DestinationPick",
+    description: "Fly Emirates for your destination wedding or luxury travel. DestinationPick manages group bookings, upgrades, and full travel coordination for weddings and corporate events.",
+    keywords: "Emirates flights, Emirates group booking, Emirates destination wedding travel, book Emirates DestinationPick, Emirates luxury travel",
+    alternates: { canonical: "https://www.destinationpick.com/emirates/" },
+    openGraph: {
+        title: "Emirates Flights | Book with DestinationPick",
+        description: "Fly Emirates for your destination wedding or luxury travel. DestinationPick manages group bookings, upgrades, and full travel coordination for weddings and corporate events.",
+        images: [{ url: "/banners/emirates-airlines-banner.webp", width: 1200, height: 630, alt: "Emirates Airlines with DestinationPick" }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Emirates Flights | Book with DestinationPick",
+        description: "Fly Emirates for your destination wedding or luxury travel. DestinationPick manages group bookings and full travel coordination.",
+        images: ["/banners/emirates-airlines-banner.webp"],
+    },
+}
+const airlineSchema = {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "DestinationPick – Emirates Bookings",
+    "url": "https://www.destinationpick.com/emirates/",
+    "description": "DestinationPick specializes in group Emirates bookings for destination weddings, corporate travel, and luxury trips.",
+    "image": "https://www.destinationpick.com/banners/emirates-airlines-banner.webp",
+    "telephone": "+1-917-913-4262",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1039 I-35E Suite 306",
+        "addressLocality": "Carrollton",
+        "addressRegion": "TX",
+        "postalCode": "75006",
+        "addressCountry": "US"
+    },
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Emirates Travel Services",
+        "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emirates Group Bookings" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emirates Business Class Upgrades" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emirates Destination Wedding Travel" } }
+        ]
+    }
+}
+
 const page = () => {
 
 
@@ -73,6 +120,7 @@ const page = () => {
 
     return (
         <main>
+            <Script id="airline-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(airlineSchema) }} />
             <Bannersection
                 image="/banners/emirates-airlines-banner.webp"
                 title="About Emirates Airlines"
@@ -85,7 +133,7 @@ const page = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 bg-white gap-8">
                         {/* Left Column - Content */}
                         <div className=" px-4 py-6 rounded-lg mb-8 flex flex-col justify-center">
-                            <h3 className="text-2xl font-bold mb-4">Emirates Airlines</h3>
+                            <h1 className="text-2xl font-bold mb-4">Emirates Airlines</h1>
                             <div className="space-y-6 text-muted-foreground leading-relaxed">
                                 <p>Emirates is a major airline in Dubai, United Arab Emirates. The Emirates is a subsidiary of The Emirates Group. The Emirates is completely owned and managed by the government of Investment Corporation of Dubai. Known as the largest airline of Middle East, Emirates operates over 3,600 flights per week from its hub at Dubai International Airport, to over 140 cities in 81 countries across six continents. The cargo activities are undertaken by Emirates SkyCargo. It was formed in March 1985 as a means to make up for the cut down of Gulf Air’s services with Dubai. They believe in offering world class services to their passengers along with the ultimate comfort levels while they fly with Emirates. This just goes to prove how amazing the services offered by Emirates are. They believe that the passengers need a homely space when flying and make sure that they get such a space. This is what matters in the end, happy passengers who are willing to fly with Emirates on every trip they take!</p>
                             </div>
@@ -93,7 +141,7 @@ const page = () => {
 
                         {/* Right Column - Image */}
                         <div className="flex justify-center">
-                            <img src="/images/british-airways-01.webp" alt="British Airways" className="rounded-lg shadow-lg" />
+                            <Image src="/images/british-airways-01.webp" alt="Emirates" width={600} height={400} className="rounded-lg shadow-lg" />
                         </div>
                     </div>
 
@@ -108,7 +156,7 @@ const page = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 bg-white gap-8">
                         {/* Left Column - Content */}
                         <div className=" px-4 py-6 rounded-lg mb-8 flex flex-col justify-center">
-                            <h3 className="text-2xl font-bold mb-4">Why Emirates aren’t a part of any alliance</h3>
+                            <h2 className="text-2xl font-bold mb-4">Why Emirates aren’t a part of any alliance</h2>
                             <div className="space-y-6 text-muted-foreground leading-relaxed">
                                 <p>The unique thing about Emirates is that it is not a part of any alliance, not even the three major ones, namely Sky Alliance, One World and SkyTeam. They did consider joining Star Alliance for a brief period in the year 2000 but opted to remain independent. The reason for this was revealed by the senior vice-president of the airline's commercial operations worldwide that the airline’s ability to react or act in the marketplace becomes hindered because a consensus will be required from all of the airline’s alliance partners. They offer world-class services and great infrastructural facilities independently. They provide better connections and facilities such as communication and whatnot, independently. They try their best to make travel seamless. This enables travelers to get the best benefits regarding services and assistance when flying with the esteemed airlines of Emirates.</p>
                             </div>
@@ -116,7 +164,7 @@ const page = () => {
 
                         {/* Right Column - Image */}
                         <div className="flex justify-center">
-                            <img src="/images/british-airways-01.webp" alt="British Airways" className="rounded-lg shadow-lg" />
+                            <Image src="/images/british-airways-01.webp" alt="Emirates" width={600} height={400} className="rounded-lg shadow-lg" />
                         </div>
                     </div>
 
@@ -126,7 +174,7 @@ const page = () => {
 
             <section className='section-padding bg-white'>
                 <div className="container">
-                    <h3 className='section-title text-center'>FAQ'S</h3>
+                    <h2 className='section-title text-center'>FAQ'S</h2>
                     <div className="h-1 w-20 bg-accent  rounded-full mb-6 mx-auto"></div>
                 </div>
 

@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { Plane, Sun, Utensils, ShieldCheck, Globe, Palmtree, Star, Users } from "lucide-react"
+import Image from "next/image"
 
 export function CityAbout({ data }) {
   if (!data) return null
@@ -34,7 +35,7 @@ export function CityAbout({ data }) {
             </p>
           )}
           {(data.heading || data.headingItalic) && (
-            <h1 className="section-title mb-6 text-balance">
+            <h2 className="section-title mb-6 text-balance">
               {data.heading}
               {data.headingItalic && (
                 <>
@@ -42,7 +43,7 @@ export function CityAbout({ data }) {
                   <span className="italic">{data.headingItalic}</span>
                 </>
               )}
-            </h1>
+            </h2>
           )}
           <div className="h-1 w-20 mx-auto bg-accent rounded-full mb-6" />
           {data.description && (
@@ -64,11 +65,13 @@ export function CityAbout({ data }) {
             className="transition-all duration-700 delay-200"
           >
             <div className="relative">
-              <div className="aspect-4/5 rounded-2xl overflow-hidden">
-                <img
+              <div className="relative aspect-4/5 rounded-2xl overflow-hidden">
+                <Image
                   src={data.images?.main || "/placeholder.svg"}
-                  alt="Destination wedding"
-                  className="w-full h-full object-cover"
+                  alt={data.heading ? `${data.heading} destination wedding venue` : "Destination wedding venue"}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
               {/* Floating stats card */}

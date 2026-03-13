@@ -4,6 +4,7 @@ import { useState } from "react"
 import { MapPin, Plane, Building2, Car, PartyPopper, Users, Sparkles, Calendar } from "lucide-react"
 import { cn } from "../lib/utils"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 const services = [
     {
@@ -104,11 +105,12 @@ export function ServicesSection() {
                             whileInView={{ opacity: 1 }}
                             transition={{ duration: 0.7 }}
                         >
-                            <img
+                            <Image
                                 src={services[activeService].image}
                                 alt={services[activeService].title}
                                 key={activeService}
-                                className="w-full h-full object-cover transition-transform duration-700 ease-in-out transform hover:scale-105"
+                                fill
+                                className="object-cover transition-transform duration-700 ease-in-out transform hover:scale-105"
                             />
                             <div className="absolute inset-0 bg-linear-to-t from-foreground/60 to-transparent" />
                             <div className="absolute bottom-6 left-6 right-6">

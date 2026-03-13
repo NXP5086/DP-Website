@@ -4,8 +4,20 @@ import Bannersection from '../../components/Bannersection'
 export const metadata = {
     title: "About DestinationPick | Cancun, Cabo & Punta Cana Wedding Experts",
     description: "DestinationPick helps couples plan unforgettable beach weddings in Mexico and Punta Cana with curated resorts, planners & all-inclusive packages.",
+    keywords: "about DestinationPick, destination wedding experts, luxury travel agency Texas, wedding planning company USA, SJ Group of Companies, Stanley Alexander travel",
     alternates: {
-        canonical: "https://www.destinationpick.com/about-us",
+        canonical: "https://www.destinationpick.com/about-us/",
+    },
+    openGraph: {
+        title: "About DestinationPick | Cancun, Cabo & Punta Cana Wedding Experts",
+        description: "DestinationPick helps couples plan unforgettable beach weddings in Mexico and Punta Cana with curated resorts, planners & all-inclusive packages.",
+        images: [{ url: "/banners/banner1.jpg", width: 1200, height: 630, alt: "About DestinationPick" }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "About DestinationPick | Cancun, Cabo & Punta Cana Wedding Experts",
+        description: "DestinationPick helps couples plan unforgettable beach weddings in Mexico and Punta Cana with curated resorts, planners & all-inclusive packages.",
+        images: ["/banners/banner1.jpg"],
     },
 }
 const page = () => {
@@ -31,37 +43,37 @@ const page = () => {
 
             <section className="section-padding ">
                 <div className="container mx-auto px-6">
-                    <h3 className="section-title text-center mb-6">Our Services</h3>
+                    <h2 className="section-title text-center mb-6">Our Services</h2>
                     <div className="h-1 w-24 bg-accent mx-auto rounded-full mb-8"></div>
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                            <h4 className="text-xl font-semibold text-gray-800 mb-4">Destination Wedding Organiser</h4>
+                            <h3 className="text-xl font-semibold text-gray-800 mb-4">Destination Wedding Organiser</h3>
                             <p className="text-gray-600">Create magical moments with seamless destination wedding planning.</p>
                         </div>
 
                         <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                            <h4 className="text-xl font-semibold text-gray-800 mb-4">Corporate Event Planning</h4>
+                            <h3 className="text-xl font-semibold text-gray-800 mb-4">Corporate Event Planning</h3>
                             <p className="text-gray-600">Plan and execute corporate events that leave a lasting impression.</p>
                         </div>
 
                         <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                            <h4 className="text-xl font-semibold text-gray-800 mb-4">Travel and Tourism Planning</h4>
+                            <h3 className="text-xl font-semibold text-gray-800 mb-4">Travel and Tourism Planning</h3>
                             <p className="text-gray-600">Explore the world with tailored travel experiences.</p>
                         </div>
 
                         <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                            <h4 className="text-xl font-semibold text-gray-800 mb-4">Global Event Planning</h4>
+                            <h3 className="text-xl font-semibold text-gray-800 mb-4">Global Event Planning</h3>
                             <p className="text-gray-600">Seamless planning for events, no matter the location worldwide.</p>
                         </div>
 
                         <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                            <h4 className="text-xl font-semibold text-gray-800 mb-4">Private Travel Planning</h4>
+                            <h3 className="text-xl font-semibold text-gray-800 mb-4">Private Travel Planning</h3>
                             <p className="text-gray-600">Exclusive travel plans customized just for you.</p>
                         </div>
 
                         <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                            <h4 className="text-xl font-semibold text-gray-800 mb-4">Holy Land Tours Packages</h4>
+                            <h3 className="text-xl font-semibold text-gray-800 mb-4">Holy Land Tours Packages</h3>
                             <p className="text-gray-600">Explore the sacred sights with personalized holy land tour packages.</p>
                         </div>
                     </div>
@@ -75,7 +87,7 @@ const page = () => {
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
                         <div className="bg-gray-50 p-4 md:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-all">
-                            <h3 className="text-3xl font-semibold text-gray-800 mb-6">Our Goal</h3>
+                            <h2 className="text-3xl font-semibold text-gray-800 mb-6">Our Goal</h2>
                             <div className="h-1 w-24 bg-accent  rounded-full mb-6"></div>
                             <p className=" text-gray-600 leading-relaxed">
                                 Our goal at DestinationPick is simple yet profound: to offer our customers the perfect travel options that match their personal preferences. Leveraging our pricing influence and deep expertise in budgeted, premium, and luxury travel, we specialize in crafting surprising, extraordinary, and rewarding travel experiences. Whether it's a quick flight, a luxurious cruise, or a dream vacation, we're here to create journeys that resonate for a lifetime.
@@ -83,7 +95,7 @@ const page = () => {
                         </div>
 
                         <div className="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-2xl transition-all">
-                            <h3 className="text-3xl font-semibold  text-gray-800 mb-6">Our Mission</h3>
+                            <h2 className="text-3xl font-semibold  text-gray-800 mb-6">Our Mission</h2>
                             <div className="h-1 w-24 bg-accent  rounded-full mb-6"></div>
                             <p className=" text-gray-600 leading-relaxed">
                                 At DestinationPick, we embody our tagline—Experiences Redefined by personalizing, customizing, negotiating, and guaranteeing the perfect balance between world-class service and the best prices for our customers. We are committed to exceeding expectations, offering value-added services, and optimizing resources to ensure we're the most professional, efficient, and innovative travel facilitator possible. As a socially and ethically responsible corporate citizen, we strive to deliver beyond what's expected, making every journey with us uniquely exceptional.

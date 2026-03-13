@@ -6,6 +6,7 @@ import { Button } from "../../components/ui/button"
 import { ArrowRight, CheckCircle2 } from "lucide-react"
 import { useDispatch } from "react-redux"
 import { openModal } from "../../redux/slices/weddingPopupSlice"
+import Image from "next/image"
 
 export function DestinationPageAbout({ data }) {
     const dispatch = useDispatch()
@@ -36,27 +37,33 @@ export function DestinationPageAbout({ data }) {
                     >
                         <div className="grid grid-cols-12 gap-4">
                             {/* Main large image */}
-                            <div className="col-span-7 aspect-3/4 rounded-xl overflow-hidden">
-                                <img
+                            <div className="col-span-7 aspect-3/4 rounded-xl overflow-hidden relative">
+                                <Image
                                     src={data.images?.main || "/placeholder.svg"}
-                                    alt={data.heading}
-                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                    alt={data.heading ? `${data.heading} destination wedding` : "Destination wedding venue"}
+                                    fill
+                                    sizes="(max-width: 1024px) 60vw, 35vw"
+                                    className="object-cover hover:scale-105 transition-transform duration-700"
                                 />
                             </div>
                             {/* Stacked images */}
                             <div className="col-span-5 flex flex-col gap-4">
-                                <div className="aspect-square rounded-xl overflow-hidden">
-                                    <img
+                                <div className="aspect-square rounded-xl overflow-hidden relative">
+                                    <Image
                                         src={data.images?.secondary1 || "/placeholder.svg"}
-                                        alt={data.heading}
-                                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                        alt={data.heading ? `${data.heading} wedding celebration` : "Wedding celebration"}
+                                        fill
+                                        sizes="(max-width: 1024px) 40vw, 25vw"
+                                        className="object-cover hover:scale-105 transition-transform duration-700"
                                     />
                                 </div>
-                                <div className="aspect-4/5 rounded-xl overflow-hidden">
-                                    <img
+                                <div className="aspect-4/5 rounded-xl overflow-hidden relative">
+                                    <Image
                                         src={data.images?.secondary2 || "/placeholder.svg"}
-                                        alt={data.heading}
-                                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                                        alt={data.heading ? `${data.heading} luxury resort` : "Luxury wedding resort"}
+                                        fill
+                                        sizes="(max-width: 1024px) 40vw, 25vw"
+                                        className="object-cover hover:scale-105 transition-transform duration-700"
                                     />
                                 </div>
                             </div>

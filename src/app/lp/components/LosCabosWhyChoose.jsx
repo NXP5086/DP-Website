@@ -1,6 +1,7 @@
 "use client"
 
 import { Plane, MapPinned, Building2, Gem } from "lucide-react"
+import Image from "next/image"
 
 const defaultContent = {
   title: "Why Choose Los Cabos for Your Destination Wedding?",
@@ -36,7 +37,7 @@ export function LosCabosWhyChoose({ content = defaultContent }) {
                 <article key={item.title} className="rounded-2xl border border-border bg-card overflow-hidden">
                   {item.image && (
                     <div className="relative aspect-[16/9]">
-                      <img src={item.image} alt={item.title} className="w-full h-full object-cover" loading="lazy" />
+                      <Image src={item.image} alt={item.title} fill className="object-cover" />
                     </div>
                   )}
                   <div className="p-6 lg:p-7">

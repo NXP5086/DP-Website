@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation"
-import Script from "next/script"
 import Link from "next/link"
+import Image from "next/image"
 import destinationData from "../../../../../data/destinationData.json"
 
 export async function generateStaticParams() {
@@ -178,9 +178,9 @@ export default async function CityWeddingGuidePage({ params }) {
 
     return (
         <main className="min-h-screen bg-background">
-            <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-            <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-            <Script id="article-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+            <script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+            <script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+            <script id="article-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
             {/* Hero */}
             <section className="relative bg-black py-24 px-6 overflow-hidden">
@@ -324,11 +324,13 @@ export default async function CityWeddingGuidePage({ params }) {
                                     className="bg-background overflow-hidden border border-border hover:shadow-lg transition-shadow group"
                                 >
                                     {hotel.image && (
-                                        <div className="h-48 overflow-hidden">
-                                            <img
+                                        <div className="relative h-48 overflow-hidden">
+                                            <Image
                                                 src={hotel.image}
                                                 alt={`${hotel.name} ${cityName} wedding`}
-                                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                                fill
+                                                sizes="(max-width: 768px) 100vw, 33vw"
+                                                className="object-cover group-hover:scale-105 transition-transform duration-500"
                                             />
                                         </div>
                                     )}
