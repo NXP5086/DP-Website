@@ -83,6 +83,24 @@ const nextConfig = {
       { source: "/blog/everything-you-need-to-know-about-destination-weddings-in-paris-france", destination: "/blog/", permanent: true },
       { source: "/blog/family-vacation-to-singapore-beji-family", destination: "/blog/", permanent: true },
 
+      // ── Additional old blog posts → /blog/ ─────────────────────
+      { source: "/blog/nakita-eric-a-timeless-union-at-hyatt-ziva-los-cabos", destination: "/blog/", permanent: true },
+      { source: "/blog/mexicocity", destination: "/blog/", permanent: true },
+      { source: "/blog/client-experience-by-riyadh-jones-conference-by-destinationpick", destination: "/blog/", permanent: true },
+      { source: "/blog/client-experience-by-nick-felix-meetings-by-destinationpick-marriott-dallas-las-colinas-2", destination: "/blog/", permanent: true },
+      { source: "/blog/client-experience-conference-by-destinationpick-im-women", destination: "/blog/", permanent: true },
+      { source: "/blog/symbolic-vs-subsymbolic-ai-paradigms-for-ai", destination: "/blog/", permanent: true },
+      { source: "/blog/honeymoon-glen-hannahs-staying-at-the-movenpick-resort-kuredhivaru-maldives", destination: "/blog/", permanent: true },
+      { source: "/blog/family-vacation-wedding-anniversary", destination: "/blog/", permanent: true },
+      { source: "/blog/vlog-on-with-stan-e-4", destination: "/blog/", permanent: true },
+      { source: "/blog/nakita-eric-a-timeless-union-at-hyatt-ziva-los-cabos-7", destination: "/blog/", permanent: true },
+      { source: "/blog/nakita-eric-a-timeless-union-at-hyatt-ziva-los-cabos-14", destination: "/blog/", permanent: true },
+      { source: "/blog/nakita-eric-a-timeless-union-at-hyatt-ziva-los-cabos-15", destination: "/blog/", permanent: true },
+
+      // ── Additional old hotel/destination pages ──────────────────
+      { source: "/planet-hollywood-cancun", destination: "/destinations/mexico/cancun/", permanent: true },
+      { source: "/zotry-agua-punta-cana", destination: "/destinations/dominican-republic/punta-cana/", permanent: true },
+
       // ── Old blog subpages (image galleries) → /blog/ ───────────
       { source: "/blog/:slug/:image", destination: "/blog/", permanent: true },
     ]
