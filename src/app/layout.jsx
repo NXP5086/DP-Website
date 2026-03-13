@@ -7,6 +7,7 @@ import { Footer } from "../components/footer";
 import { ReduxProvider } from "../components/ReduxProvider";
 import Weddingpopupform from "../components/forms/Weddingpopupform";
 import Mobilebooknow from "../components/Mobilebooknow";
+import { Analytics } from "@vercel/analytics/next";
 const cormorant = Cormorant_Garamond({
     subsets: ["latin"],
     weight: ["300", "400", "500", "600", "700"],
@@ -182,6 +183,7 @@ export default function RootLayout({ children }) {
                     <Navigation />
                     {children}
                     <Footer />
+                    <Analytics />
                     <Mobilebooknow />
                 </ReduxProvider>
             </body>
