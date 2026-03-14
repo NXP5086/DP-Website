@@ -10,7 +10,6 @@ import { useParams } from "next/navigation"
 import DatePicker from "react-datepicker"
 import "react-datepicker/dist/react-datepicker.css"
 
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz4a6LDEAtEhnHekmzHfCVmQPfjCRNLakM_G_SUAV1Lyhu6O0SbUiXB9CgbMJ1wP7KR/exec'
 
 const Weddingform = () => {
     const params = useParams()
@@ -67,28 +66,26 @@ const Weddingform = () => {
         setIsSubmitting(true)
 
         try {
-            const formBody = new URLSearchParams({
-                firstname: (formState.firstname || '').trim(),
-                lastname: (formState.lastname || '').trim(),
-                email: (formState.email || '').trim(),
-                phone: (formState.phone || '').trim(),
-                eventdate: formState.eventdate ? formState.eventdate.toISOString() : '',
-                location: (formState.location || '').trim(),
-                message: (formState.message || '').trim(),
-                totalbudget: (formState.totalbudget || '').trim(),
-                events: (formState.events || '').trim(),
-                hearabout: (formState.hearabout || '').trim(),
-                lovestory: (formState.lovestory || '').trim(),
-                pageurl: (pageurl || '').toString(),
-                querydate: new Date().toISOString(),
-            }).toString()
-
-            await fetch(SCRIPT_URL, {
+            const res = await fetch('/api/contact', {
                 method: 'POST',
-                mode: 'no-cors',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: formBody,
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    firstname: (formState.firstname || '').trim(),
+                    lastname: (formState.lastname || '').trim(),
+                    email: (formState.email || '').trim(),
+                    phone: (formState.phone || '').trim(),
+                    eventdate: formState.eventdate ? formState.eventdate.toISOString() : '',
+                    location: (formState.location || '').trim(),
+                    totalbudget: (formState.totalbudget || '').trim(),
+                    events: (formState.events || '').trim(),
+                    hearabout: (formState.hearabout || '').trim(),
+                    lovestory: (formState.lovestory || '').trim(),
+                    pageurl: (pageurl || '').toString(),
+                    querydate: new Date().toISOString(),
+                }),
             })
+
+            if (!res.ok) throw new Error('Failed')
 
             setSubmitStatus('success')
             setFormState({
