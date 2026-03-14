@@ -63,25 +63,21 @@ const ContactForm = () => {
 
         setIsSubmitting(true)
 
-        const scriptUrl = 'https://script.google.com/macros/s/AKfycbzTO-1MaxJsvSB3qwU7HQ6p_ZNcboJFXlPvseDNtGJvLSpbtwijEBJ_atSfIa8VVtdNaw/exec'
-
-        try {
-            const formBody = new URLSearchParams({
-                name: formData.name.trim(),
-                email: formData.email.trim(),
-                phone: formData.phone.trim(),
-                message: formData.message.trim(),
-                querydate: new Date().toISOString()
-            }).toString()
-
-            const res = await fetch(scriptUrl, {
+            try {
+            const res = await fetch('/api/contact', {
                 method: 'POST',
-                mode: 'no-cors',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: formBody
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    formType: 'Contact Form',
+                    name: formData.name.trim(),
+                    email: formData.email.trim(),
+                    phone: formData.phone.trim(),
+                    message: formData.message.trim(),
+                    querydate: new Date().toISOString(),
+                }),
             })
 
-            // no-cors means we can't read the response; assume success if no throw
+            if (!res.ok) throw new Error('Failed')
             setSubmitStatus('success')
             setFormData({ name: '', email: '', phone: '', message: '' })
         } catch (error) {

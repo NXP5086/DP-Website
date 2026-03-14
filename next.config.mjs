@@ -120,9 +120,15 @@ const nextConfig = {
         ],
       },
       {
-        source: "/((?!_next/static|_next/image|images|banners|favicon).*)",
+        source: "/((?!_next/static|_next/image|images|banners|favicon|api).*)",
         headers: [
           { key: "Cache-Control", value: "public, s-maxage=3600, stale-while-revalidate=86400" },
+        ],
+      },
+      {
+        source: "/api/(.*)",
+        headers: [
+          { key: "Cache-Control", value: "no-store, no-cache" },
         ],
       },
       {

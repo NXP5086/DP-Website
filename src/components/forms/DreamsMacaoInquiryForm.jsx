@@ -8,7 +8,6 @@ import { Input } from "../ui/input"
 import { Textarea } from "../ui/textarea"
 import { Button } from "../ui/button"
 
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyZ6nIVr5yzL5l3wOG5zG0gn4e-q1L0qI-BbLvxiYzT2HXxzAeYtkbuwY8muztPMLM69A/exec"
 
 const defaultContent = {
   title: "Dreams Macao Inquiry Form",
@@ -81,24 +80,24 @@ export default function DreamsMacaoInquiryForm({ content = defaultContent }) {
     setSubmitStatus(null)
     setIsSubmitting(true)
     try {
-      const formBody = new URLSearchParams({
-        fullName: (formData.fullName || "").trim(),
-        email: (formData.email || "").trim(),
-        phone: (formData.phone || "").trim(),
-        preferredDate: formData.preferredDate ? formData.preferredDate.toISOString() : "",
-        guestCount: (formData.guestCount || "").trim(),
-        eventsCount: (formData.eventsCount || "").trim(),
-        totalBudget: (formData.totalBudget || "").trim(),
-        country: (formData.country || "").trim(),
-        vision: (formData.vision || "").trim(),
-        pageUrl: (formData.pageUrl || "").trim(),
-      }).toString()
-      await fetch(SCRIPT_URL, {
+      const res = await fetch("/api/contact", {
         method: "POST",
-        mode: "no-cors",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: formBody,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          formType: "Dreams Macao Inquiry",
+          fullName: (formData.fullName || "").trim(),
+          email: (formData.email || "").trim(),
+          phone: (formData.phone || "").trim(),
+          preferredDate: formData.preferredDate ? formData.preferredDate.toISOString() : "",
+          guestCount: (formData.guestCount || "").trim(),
+          eventsCount: (formData.eventsCount || "").trim(),
+          totalBudget: (formData.totalBudget || "").trim(),
+          country: (formData.country || "").trim(),
+          vision: (formData.vision || "").trim(),
+          pageUrl: (formData.pageUrl || "").trim(),
+        }),
       })
+      if (!res.ok) throw new Error("Failed")
       setSubmitStatus("success")
       setFormData({
         fullName: "",

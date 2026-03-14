@@ -8,7 +8,6 @@ import { Input } from "../ui/input"
 import { Textarea } from "../ui/textarea"
 import { Button } from "../ui/button"
 
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxOEGAY9fWAbxSYAKoyNJXt_jb-YXlKoRKiHRPuVLB-FiztS_NMsfk73wRYp_UucKM4/exec"
 
 const defaultContent = {
   title: "Wedding Inquiry Form",
@@ -83,22 +82,22 @@ export default function LosCabosInquiryForm({ content = defaultContent }) {
     setSubmitStatus(null)
     setIsSubmitting(true)
     try {
-      const formBody = new URLSearchParams({
-        fullName: (formData.fullName || "").trim(),
-        email: (formData.email || "").trim(),
-        phoneWhatsapp: (formData.phoneWhatsapp || "").trim(),
-        preferredWeddingMonth: formData.preferredWeddingMonth ? formData.preferredWeddingMonth.toISOString() : "",
-        estimatedGuestCount: (formData.estimatedGuestCount || "").trim(),
-        ceremonyStylePreference: (formData.ceremonyStylePreference || "").trim(),
-        additionalDetails: (formData.additionalDetails || "").trim(),
-        pageUrl: (formData.pageUrl || "").trim(),
-      }).toString()
-      await fetch(SCRIPT_URL, {
+      const res = await fetch("/api/contact", {
         method: "POST",
-        mode: "no-cors",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: formBody,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          formType: "Los Cabos Inquiry",
+          fullName: (formData.fullName || "").trim(),
+          email: (formData.email || "").trim(),
+          phoneWhatsapp: (formData.phoneWhatsapp || "").trim(),
+          preferredWeddingMonth: formData.preferredWeddingMonth ? formData.preferredWeddingMonth.toISOString() : "",
+          estimatedGuestCount: (formData.estimatedGuestCount || "").trim(),
+          ceremonyStylePreference: (formData.ceremonyStylePreference || "").trim(),
+          additionalDetails: (formData.additionalDetails || "").trim(),
+          pageUrl: (formData.pageUrl || "").trim(),
+        }),
       })
+      if (!res.ok) throw new Error("Failed")
       setSubmitStatus("success")
       setFormData({
         fullName: "",

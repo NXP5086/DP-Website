@@ -1,7 +1,6 @@
 "use client"
 import React, { useState } from 'react';
 
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzTO-1MaxJsvSB3qwU7HQ6p_ZNcboJFXlPvseDNtGJvLSpbtwijEBJ_atSfIa8VVtdNaw/exec';
 
 const Feedbackform = () => {
     const [currentStep, setCurrentStep] = useState(1);
@@ -207,13 +206,12 @@ const Feedbackform = () => {
         };
 
         try {
-            const formBody = new URLSearchParams(payload).toString();
-            await fetch(SCRIPT_URL, {
+            const res = await fetch('/api/contact', {
                 method: 'POST',
-                mode: 'no-cors',
-                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-                body: formBody,
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ formType: 'Client Feedback', sendAutoReply: false, ...payload }),
             });
+            if (!res.ok) throw new Error('Failed')
             setSubmitStatus('success');
             setSubmitMessage('Thank you! Your feedback has been saved.');
             setCurrentStep(1);

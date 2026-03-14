@@ -9,7 +9,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { closeModal } from "../../redux/slices/weddingPopupSlice";
 import { useParams } from "next/navigation";
 
-const POPUP_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwX5jP2oilSt6nktUCcgOAO7y0AqpIJFcGM4kkIXJvl7VqhPjG_mNlu0qjtDp2X0grJkQ/exec";
 
 const Weddingpopupform = () => {
     const dispatch = useDispatch();
@@ -72,25 +71,24 @@ const Weddingpopupform = () => {
         setIsSubmitting(true);
 
         try {
-            const formBody = new URLSearchParams({
-                firstname: (formData.firstname || "").trim(),
-                lastname: (formData.lastname || "").trim(),
-                email: (formData.email || "").trim(),
-                phone: (formData.phone || "").trim(),
-                eventdate: formData.eventdate ? formData.eventdate.toISOString() : "",
-                location: (formData.location || "").trim(),
-                message: (formData.message || "").trim(),
-                pageurl: (pageurl || "").toString(),
-                querydate: new Date().toISOString()
-            }).toString();
-
-            await fetch(POPUP_SCRIPT_URL, {
+            const res = await fetch("/api/contact", {
                 method: "POST",
-                mode: "no-cors",
-                headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: formBody
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    formType: "Wedding Inquiry (Popup)",
+                    firstname: (formData.firstname || "").trim(),
+                    lastname: (formData.lastname || "").trim(),
+                    email: (formData.email || "").trim(),
+                    phone: (formData.phone || "").trim(),
+                    eventdate: formData.eventdate ? formData.eventdate.toISOString() : "",
+                    location: (formData.location || "").trim(),
+                    message: (formData.message || "").trim(),
+                    pageurl: (pageurl || "").toString(),
+                    querydate: new Date().toISOString(),
+                }),
             });
 
+            if (!res.ok) throw new Error("Failed")
             setSubmitStatus("success");
             setFormData({
                 firstname: "",

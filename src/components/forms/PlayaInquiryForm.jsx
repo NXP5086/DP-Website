@@ -8,7 +8,6 @@ import { Input } from "../ui/input"
 import { Textarea } from "../ui/textarea"
 import { Button } from "../ui/button"
 
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxmkGT3AkmuDHKV4YlxE6v07Z5ff42GJGAIMoMCmrRHI9pt4JbdIi-4K9zm9I2tLefYbg/exec"
 
 const defaultContent = {
   title: "Playa Resort Inquiry Form",
@@ -85,23 +84,23 @@ export default function PlayaInquiryForm({ content = defaultContent }) {
     setSubmitStatus(null)
     setIsSubmitting(true)
     try {
-      const formBody = new URLSearchParams({
-        fullName: (formData.fullName || "").trim(),
-        email: (formData.email || "").trim(),
-        phone: (formData.phone || "").trim(),
-        preferredDate: formData.preferredDate ? formData.preferredDate.toISOString() : "",
-        selectedHotel: (formData.selectedHotel || "").trim(),
-        guestCount: (formData.guestCount || "").trim(),
-        totalBudget: (formData.totalBudget || "").trim(),
-        vision: (formData.vision || "").trim(),
-        pageUrl: (formData.pageUrl || "").trim(),
-      }).toString()
-      await fetch(SCRIPT_URL, {
+      const res = await fetch("/api/contact", {
         method: "POST",
-        mode: "no-cors",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: formBody,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          formType: "Playa Resort Inquiry",
+          fullName: (formData.fullName || "").trim(),
+          email: (formData.email || "").trim(),
+          phone: (formData.phone || "").trim(),
+          preferredDate: formData.preferredDate ? formData.preferredDate.toISOString() : "",
+          selectedHotel: (formData.selectedHotel || "").trim(),
+          guestCount: (formData.guestCount || "").trim(),
+          totalBudget: (formData.totalBudget || "").trim(),
+          vision: (formData.vision || "").trim(),
+          pageUrl: (formData.pageUrl || "").trim(),
+        }),
       })
+      if (!res.ok) throw new Error("Failed")
       setSubmitStatus("success")
       setFormData({
         fullName: "",
