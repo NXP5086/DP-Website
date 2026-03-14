@@ -13,7 +13,7 @@ export async function POST(request) {
 
         await resend.emails.send({
             from: 'DestinationPick <noreply@send.destinationpick.com>',
-            to: 'info.us@destinationpick.com',
+            to: ['info.us@destinationpick.com', 'stan@destinationpick.com', 'shake@destinationpick.com'],
             subject: `New Wedding Inquiry — ${firstname} ${lastname}`,
             html: `
                 <h2>New Wedding Inquiry</h2>
