@@ -1,17 +1,12 @@
 import React from "react";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import Script from "next/script";
-import dynamic from "next/dynamic";
 import "./globals.css";
 import { Navigation } from "../components/navigation";
 import { Footer } from "../components/footer";
 import { ReduxProvider } from "../components/ReduxProvider";
 import Mobilebooknow from "../components/Mobilebooknow";
-
-const Weddingpopupform = dynamic(
-    () => import("../components/forms/Weddingpopupform"),
-    { ssr: false, loading: () => null }
-);
+import WeddingPopupLoader from "../components/WeddingPopupLoader";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 const cormorant = Cormorant_Garamond({
@@ -227,7 +222,7 @@ export default function RootLayout({ children }) {
                 </noscript>
 
                 <ReduxProvider>
-                    <Weddingpopupform />
+                    <WeddingPopupLoader />
                     <Navigation />
                     {children}
                     <Footer />
