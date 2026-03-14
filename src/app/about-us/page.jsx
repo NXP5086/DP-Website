@@ -1,5 +1,8 @@
 import React from 'react'
 import Bannersection from '../../components/Bannersection'
+import Link from 'next/link'
+import ConsultationButton from '../../components/ConsultationButton'
+import { Shield, Heart, Globe, Star } from 'lucide-react'
 
 export const metadata = {
     title: "About DestinationPick | Cancun, Cabo & Punta Cana Wedding Experts",
@@ -20,93 +23,127 @@ export const metadata = {
         images: ["/banners/banner1.jpg"],
     },
 }
-const page = () => {
+
+const values = [
+    {
+        icon: Heart,
+        title: "Personalization",
+        description: "Every wedding is as unique as the couple. We build every detail around you — not a template.",
+    },
+    {
+        icon: Shield,
+        title: "Transparency",
+        description: "No hidden fees, no surprise add-ons. You'll always know exactly what you're getting and what you're paying.",
+    },
+    {
+        icon: Globe,
+        title: "Global Reach",
+        description: "With offices in the US, India, London, and Dubai, we have eyes on every destination you're considering.",
+    },
+    {
+        icon: Star,
+        title: "True Advocacy",
+        description: "We work for you — not the resort. Our relationships mean better upgrades, perks, and responsiveness when it matters most.",
+    },
+]
+
+const stats = [
+    { value: "30+", label: "Years of Experience" },
+    { value: "500+", label: "Couples Served" },
+    { value: "15+", label: "Destinations" },
+    { value: "4", label: "Global Offices" },
+]
+
+export default function AboutPage() {
     return (
         <main>
             <Bannersection
                 image="/banners/banner1.jpg"
-                title="About Us"
-                description="DestinationPick, a proud subsidiary of SJ Group of Companies, is dedicated to crafting bespoke travel experiences with a strong focus on personalized service and competitive wholesale pricing"
+                title="Our Story"
+                description="We started DestinationPick because planning a destination wedding should feel as magical as the day itself."
             />
-            <section className='section-padding bg-white'>
-                <div className="container">
-                    <h1 className='section-title mb-4 text-center'>About DestinationPick</h1>
-                    <div className="h-1 w-20 bg-accent mx-auto  rounded-full mb-6"></div>
-                    <div className="space-y-4 text-muted-foreground leading-relaxed">
-                        <p>DestinationPick, a proud subsidiary of SJ Group of Companies, is dedicated to crafting bespoke travel experiences with a strong focus on personalized service and competitive wholesale pricing. Founded by Stanley Alexander, our vision is supported by innovative technology, skilled teams, and extensive resources, all aimed at providing exceptional value and meaningful travel solutions for both leisure and corporate travelers.</p>
-                        <p>We operate around the clock, supported by a global presence in the US, India, London, and Dubai, ensuring that we are always available to meet your travel needs. Our passion lies in offering a seamless, one-stop-shop platform for both business and leisure travel. Through our extensive global partnerships, we deliver innovative and versatile travel solutions that consistently exceed expectations.</p>
-                        <p>As a trusted travel management company, DestinationPick offers unparalleled access to a wide range of domestic and international travel services. From international airlines and global hotel chains to resorts, cruise lines, tour operators, car rentals, and trip insurance providers, we leverage our strategic partnerships to bring you the best travel options available, ensuring a smooth and satisfying journey.</p>
-                    </div>
-                </div>
-            </section>
 
-
-            <section className="section-padding ">
-                <div className="container mx-auto px-6">
-                    <h2 className="section-title text-center mb-6">Our Services</h2>
-                    <div className="h-1 w-24 bg-accent mx-auto rounded-full mb-8"></div>
-
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div className="bg-white p-6 rounded-lg shadow-lg hover:-translate-y-1 transition-transform duration-200">
-                            <h3 className="text-xl font-semibold text-gray-800 mb-4">Destination Wedding Organiser</h3>
-                            <p className="text-gray-600">Create magical moments with seamless destination wedding planning.</p>
-                        </div>
-
-                        <div className="bg-white p-6 rounded-lg shadow-lg hover:-translate-y-1 transition-transform duration-200">
-                            <h3 className="text-xl font-semibold text-gray-800 mb-4">Corporate Event Planning</h3>
-                            <p className="text-gray-600">Plan and execute corporate events that leave a lasting impression.</p>
-                        </div>
-
-                        <div className="bg-white p-6 rounded-lg shadow-lg hover:-translate-y-1 transition-transform duration-200">
-                            <h3 className="text-xl font-semibold text-gray-800 mb-4">Travel and Tourism Planning</h3>
-                            <p className="text-gray-600">Explore the world with tailored travel experiences.</p>
-                        </div>
-
-                        <div className="bg-white p-6 rounded-lg shadow-lg hover:-translate-y-1 transition-transform duration-200">
-                            <h3 className="text-xl font-semibold text-gray-800 mb-4">Global Event Planning</h3>
-                            <p className="text-gray-600">Seamless planning for events, no matter the location worldwide.</p>
-                        </div>
-
-                        <div className="bg-white p-6 rounded-lg shadow-lg hover:-translate-y-1 transition-transform duration-200">
-                            <h3 className="text-xl font-semibold text-gray-800 mb-4">Private Travel Planning</h3>
-                            <p className="text-gray-600">Exclusive travel plans customized just for you.</p>
-                        </div>
-
-                        <div className="bg-white p-6 rounded-lg shadow-lg hover:-translate-y-1 transition-transform duration-200">
-                            <h3 className="text-xl font-semibold text-gray-800 mb-4">Holy Land Tours Packages</h3>
-                            <p className="text-gray-600">Explore the sacred sights with personalized holy land tour packages.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-
-
+            {/* Origin / Why We Started */}
             <section className="section-padding bg-white">
-                <div className="max-w-7xl mx-auto px-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-                        <div className="bg-gray-50 p-4 md:p-8 rounded-lg shadow-lg hover:-translate-y-1 transition-transform duration-200">
-                            <h2 className="text-3xl font-semibold text-gray-800 mb-6">Our Goal</h2>
-                            <div className="h-1 w-24 bg-accent  rounded-full mb-6"></div>
-                            <p className=" text-gray-600 leading-relaxed">
-                                Our goal at DestinationPick is simple yet profound: to offer our customers the perfect travel options that match their personal preferences. Leveraging our pricing influence and deep expertise in budgeted, premium, and luxury travel, we specialize in crafting surprising, extraordinary, and rewarding travel experiences. Whether it's a quick flight, a luxurious cruise, or a dream vacation, we're here to create journeys that resonate for a lifetime.
-                            </p>
-                        </div>
-
-                        <div className="bg-gray-50 p-8 rounded-lg shadow-lg hover:-translate-y-1 transition-transform duration-200">
-                            <h2 className="text-3xl font-semibold  text-gray-800 mb-6">Our Mission</h2>
-                            <div className="h-1 w-24 bg-accent  rounded-full mb-6"></div>
-                            <p className=" text-gray-600 leading-relaxed">
-                                At DestinationPick, we embody our tagline—Experiences Redefined by personalizing, customizing, negotiating, and guaranteeing the perfect balance between world-class service and the best prices for our customers. We are committed to exceeding expectations, offering value-added services, and optimizing resources to ensure we're the most professional, efficient, and innovative travel facilitator possible. As a socially and ethically responsible corporate citizen, we strive to deliver beyond what's expected, making every journey with us uniquely exceptional.
-                            </p>
-                        </div>
+                <div className="container">
+                    <h1 className="section-title mb-4 text-center">Why We Do This</h1>
+                    <div className="h-1 w-20 bg-accent mx-auto rounded-full mb-8"></div>
+                    <div className="max-w-3xl mx-auto space-y-5 text-muted-foreground leading-relaxed text-lg">
+                        <p>
+                            Planning a destination wedding is one of the most exciting things you&apos;ll ever do — and one of the most overwhelming. Which resort actually delivers on its promises? Who&apos;s looking out for your guests when flights get complicated? How do you negotiate group rates without spending weeks on hold?
+                        </p>
+                        <p>
+                            DestinationPick was founded by Stanley Alexander with one clear purpose: to be the advocate couples never had. Backed by the global infrastructure of SJ Group of Companies and decades of travel industry relationships, we give couples direct access to the resorts, planners, and logistics that make a destination wedding truly seamless.
+                        </p>
+                        <p>
+                            We don&apos;t just book trips. We build experiences — and we stay with you every step of the way, from the moment you start dreaming to the last dance of your reception.
+                        </p>
                     </div>
                 </div>
             </section>
 
+            {/* Stats Strip */}
+            <section className="section-padding bg-primary text-white">
+                <div className="container">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                        {stats.map((stat) => (
+                            <div key={stat.label}>
+                                <div className="text-4xl md:text-5xl font-bold font-serif mb-2">{stat.value}</div>
+                                <div className="text-white/80 text-sm uppercase tracking-wider">{stat.label}</div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Our Values */}
+            <section className="section-padding bg-white">
+                <div className="container">
+                    <h2 className="section-title text-center mb-4">What We Stand For</h2>
+                    <div className="h-1 w-20 bg-accent mx-auto rounded-full mb-10"></div>
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {values.map(({ icon: Icon, title, description }) => (
+                            <div key={title} className="bg-gray-50 p-6 rounded-lg text-center hover:-translate-y-1 transition-transform duration-200">
+                                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 mb-4">
+                                    <Icon className="w-6 h-6 text-accent" />
+                                </div>
+                                <h3 className="text-lg font-semibold text-gray-800 mb-2">{title}</h3>
+                                <p className="text-gray-600 text-sm leading-relaxed">{description}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Meet the Team CTA */}
+            <section className="section-padding bg-gray-50">
+                <div className="container text-center">
+                    <h2 className="section-title mb-4">The People Behind Your Perfect Day</h2>
+                    <div className="h-1 w-20 bg-accent mx-auto rounded-full mb-6"></div>
+                    <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-8">
+                        Our team brings together destination specialists, logistics experts, and wedding planners who genuinely love what they do.
+                    </p>
+                    <Link
+                        href="/our-team"
+                        className="inline-block border-2 border-primary text-primary font-semibold px-8 py-3 rounded-full hover:bg-primary hover:text-white transition-colors duration-200"
+                    >
+                        Meet the Team
+                    </Link>
+                </div>
+            </section>
+
+            {/* Bottom CTA */}
+            <section className="section-padding bg-white">
+                <div className="container text-center">
+                    <h2 className="section-title mb-4">Ready to Start Planning?</h2>
+                    <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-8">
+                        Let&apos;s talk about your vision. A free consultation is the first step toward the wedding you&apos;ve always imagined.
+                    </p>
+                    <ConsultationButton className="bg-primary text-white font-semibold px-10 py-4 text-lg rounded-full hover:bg-primary/90 transition-colors duration-200">
+                        Book a Free Consultation
+                    </ConsultationButton>
+                </div>
+            </section>
         </main>
     )
 }
-
-export default page
