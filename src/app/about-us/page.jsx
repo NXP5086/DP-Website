@@ -5,20 +5,20 @@ import ConsultationButton from '../../components/ConsultationButton'
 import { Shield, Heart, Globe, Star } from 'lucide-react'
 
 export const metadata = {
-    title: "About DestinationPick | Cancun, Cabo & Punta Cana Wedding Experts",
+    title: "Our Story | DestinationPick – Cancun, Cabo & Punta Cana Wedding Experts",
     description: "DestinationPick helps couples plan unforgettable beach weddings in Mexico and Punta Cana with curated resorts, planners & all-inclusive packages.",
     keywords: "about DestinationPick, destination wedding experts, luxury travel agency Texas, wedding planning company USA, SJ Group of Companies, Stanley Alexander travel",
     alternates: {
         canonical: "https://www.destinationpick.com/about-us/",
     },
     openGraph: {
-        title: "About DestinationPick | Cancun, Cabo & Punta Cana Wedding Experts",
+        title: "Our Story | DestinationPick – Cancun, Cabo & Punta Cana Wedding Experts",
         description: "DestinationPick helps couples plan unforgettable beach weddings in Mexico and Punta Cana with curated resorts, planners & all-inclusive packages.",
         images: [{ url: "/banners/banner1.jpg", width: 1200, height: 630, alt: "About DestinationPick" }],
     },
     twitter: {
         card: "summary_large_image",
-        title: "About DestinationPick | Cancun, Cabo & Punta Cana Wedding Experts",
+        title: "Our Story | DestinationPick – Cancun, Cabo & Punta Cana Wedding Experts",
         description: "DestinationPick helps couples plan unforgettable beach weddings in Mexico and Punta Cana with curated resorts, planners & all-inclusive packages.",
         images: ["/banners/banner1.jpg"],
     },
