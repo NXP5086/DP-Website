@@ -11,7 +11,7 @@ export async function POST(request) {
             hearabout, lovestory, pageurl, querydate
         } = body
 
-        await resend.emails.send({
+        const { error: notifyError } = await resend.emails.send({
             from: 'DestinationPick <noreply@send.destinationpick.com>',
             to: ['info.us@destinationpick.com', 'stan@destinationpick.com', 'shake@destinationpick.com'],
             subject: `New Wedding Inquiry — ${firstname} ${lastname}`,
@@ -33,7 +33,9 @@ export async function POST(request) {
             `,
         })
 
-        await resend.emails.send({
+        if (notifyError) throw new Error(notifyError.message)
+
+        const { error: replyError } = await resend.emails.send({
             from: 'DestinationPick <noreply@send.destinationpick.com>',
             to: email,
             subject: `We received your inquiry, ${firstname}!`,
@@ -46,6 +48,8 @@ export async function POST(request) {
                 </div>
             `,
         })
+
+        if (replyError) throw new Error(replyError.message)
 
         return Response.json({ success: true })
     } catch (error) {
