@@ -1,8 +1,10 @@
 import React from 'react'
 import Bannersection from '../../components/Bannersection'
 import Link from 'next/link'
+import Image from 'next/image'
 import ConsultationButton from '../../components/ConsultationButton'
-import { Shield, Heart, Globe, Star } from 'lucide-react'
+import GoogleReviews from '../../components/GoogleReviews'
+import { Shield, Heart, Key, Star } from 'lucide-react'
 
 export const metadata = {
     title: "Our Story | DestinationPick – Cancun, Cabo & Punta Cana Wedding Experts",
@@ -36,9 +38,9 @@ const values = [
         description: "No hidden fees, no surprise add-ons. You'll always know exactly what you're getting and what you're paying.",
     },
     {
-        icon: Globe,
-        title: "Global Reach",
-        description: "With offices in the US, India, London, and Dubai, we have eyes on every destination you're considering.",
+        icon: Key,
+        title: "Insider Access",
+        description: "Our resort relationships mean better rooms, exclusive perks, and a direct line when something needs fixing — before you even notice.",
     },
     {
         icon: Star,
@@ -54,6 +56,13 @@ const stats = [
     { value: "4", label: "Global Offices" },
 ]
 
+const teamPreview = [
+    { image: "/members/StanleyAlexander.webp", name: "Stanley Alexander" },
+    { image: "/members/abhishek-pappu-small-img.jpg", name: "Abhishek Pappu" },
+    { image: "/members/lucy-img.webp", name: "Lucy Martinez" },
+    { image: "/members/Wendy.jpg", name: "Wendy Del Rosario" },
+]
+
 export default function AboutPage() {
     return (
         <main>
@@ -66,8 +75,6 @@ export default function AboutPage() {
             {/* Origin / Why We Started */}
             <section className="section-padding bg-white">
                 <div className="container">
-                    <h1 className="section-title mb-4 text-center">Why We Do This</h1>
-                    <div className="h-1 w-20 bg-accent mx-auto rounded-full mb-8"></div>
                     <div className="max-w-3xl mx-auto space-y-5 text-muted-foreground leading-relaxed text-lg">
                         <p>
                             Planning a destination wedding is one of the most exciting things you&apos;ll ever do — and one of the most overwhelming. Which resort actually delivers on its promises? Who&apos;s looking out for your guests when flights get complicated? How do you negotiate group rates without spending weeks on hold?
@@ -96,6 +103,9 @@ export default function AboutPage() {
                 </div>
             </section>
 
+            {/* Google Reviews */}
+            <GoogleReviews />
+
             {/* Our Values */}
             <section className="section-padding bg-white">
                 <div className="container">
@@ -120,6 +130,22 @@ export default function AboutPage() {
                 <div className="container text-center">
                     <h2 className="section-title mb-4">The People Behind Your Perfect Day</h2>
                     <div className="h-1 w-20 bg-accent mx-auto rounded-full mb-6"></div>
+                    <div className="flex justify-center gap-4 mb-6">
+                        {teamPreview.map((member) => (
+                            <div key={member.name} className="flex flex-col items-center gap-2">
+                                <div className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden ring-2 ring-accent/30">
+                                    <Image
+                                        src={member.image}
+                                        alt={member.name}
+                                        width={80}
+                                        height={80}
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
+                                <span className="text-xs text-muted-foreground hidden md:block">{member.name.split(' ')[0]}</span>
+                            </div>
+                        ))}
+                    </div>
                     <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-8">
                         Our team brings together destination specialists, logistics experts, and wedding planners who genuinely love what they do.
                     </p>
