@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useState, startTransition } from 'react'
 import { User, Mail, Phone, MessageSquare, Send, Loader2, AlertCircle, CheckCircle2 } from 'lucide-react'
 import { Input } from '../ui/input'
 import { Textarea } from '../ui/textarea'
@@ -46,12 +46,14 @@ const ContactForm = () => {
             ...prev,
             [name]: value
         }))
-        // Clear error when user starts typing
+        // Clear error when user starts typing — non-urgent, defer to avoid blocking input
         if (errors[name]) {
-            setErrors(prev => ({
-                ...prev,
-                [name]: ''
-            }))
+            startTransition(() => {
+                setErrors(prev => ({
+                    ...prev,
+                    [name]: ''
+                }))
+            })
         }
     }
 

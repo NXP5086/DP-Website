@@ -47,32 +47,32 @@ const page = () => {
                     <div className="h-1 w-24 bg-accent mx-auto rounded-full mb-8"></div>
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <div className="bg-white p-6 rounded-lg shadow-lg hover:-translate-y-1 transition-transform duration-200">
                             <h3 className="text-xl font-semibold text-gray-800 mb-4">Destination Wedding Organiser</h3>
                             <p className="text-gray-600">Create magical moments with seamless destination wedding planning.</p>
                         </div>
 
-                        <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <div className="bg-white p-6 rounded-lg shadow-lg hover:-translate-y-1 transition-transform duration-200">
                             <h3 className="text-xl font-semibold text-gray-800 mb-4">Corporate Event Planning</h3>
                             <p className="text-gray-600">Plan and execute corporate events that leave a lasting impression.</p>
                         </div>
 
-                        <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <div className="bg-white p-6 rounded-lg shadow-lg hover:-translate-y-1 transition-transform duration-200">
                             <h3 className="text-xl font-semibold text-gray-800 mb-4">Travel and Tourism Planning</h3>
                             <p className="text-gray-600">Explore the world with tailored travel experiences.</p>
                         </div>
 
-                        <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <div className="bg-white p-6 rounded-lg shadow-lg hover:-translate-y-1 transition-transform duration-200">
                             <h3 className="text-xl font-semibold text-gray-800 mb-4">Global Event Planning</h3>
                             <p className="text-gray-600">Seamless planning for events, no matter the location worldwide.</p>
                         </div>
 
-                        <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <div className="bg-white p-6 rounded-lg shadow-lg hover:-translate-y-1 transition-transform duration-200">
                             <h3 className="text-xl font-semibold text-gray-800 mb-4">Private Travel Planning</h3>
                             <p className="text-gray-600">Exclusive travel plans customized just for you.</p>
                         </div>
 
-                        <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                        <div className="bg-white p-6 rounded-lg shadow-lg hover:-translate-y-1 transition-transform duration-200">
                             <h3 className="text-xl font-semibold text-gray-800 mb-4">Holy Land Tours Packages</h3>
                             <p className="text-gray-600">Explore the sacred sights with personalized holy land tour packages.</p>
                         </div>
@@ -86,7 +86,7 @@ const page = () => {
             <section className="section-padding bg-white">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-                        <div className="bg-gray-50 p-4 md:p-8 rounded-lg shadow-lg hover:shadow-2xl transition-all">
+                        <div className="bg-gray-50 p-4 md:p-8 rounded-lg shadow-lg hover:-translate-y-1 transition-transform duration-200">
                             <h2 className="text-3xl font-semibold text-gray-800 mb-6">Our Goal</h2>
                             <div className="h-1 w-24 bg-accent  rounded-full mb-6"></div>
                             <p className=" text-gray-600 leading-relaxed">
@@ -94,7 +94,7 @@ const page = () => {
                             </p>
                         </div>
 
-                        <div className="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-2xl transition-all">
+                        <div className="bg-gray-50 p-8 rounded-lg shadow-lg hover:-translate-y-1 transition-transform duration-200">
                             <h2 className="text-3xl font-semibold  text-gray-800 mb-6">Our Mission</h2>
                             <div className="h-1 w-24 bg-accent  rounded-full mb-6"></div>
                             <p className=" text-gray-600 leading-relaxed">

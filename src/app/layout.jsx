@@ -1,12 +1,17 @@
 import React from "react";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import Script from "next/script";
+import dynamic from "next/dynamic";
 import "./globals.css";
 import { Navigation } from "../components/navigation";
 import { Footer } from "../components/footer";
 import { ReduxProvider } from "../components/ReduxProvider";
-import Weddingpopupform from "../components/forms/Weddingpopupform";
 import Mobilebooknow from "../components/Mobilebooknow";
+
+const Weddingpopupform = dynamic(
+    () => import("../components/forms/Weddingpopupform"),
+    { ssr: false, loading: () => null }
+);
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 const cormorant = Cormorant_Garamond({
@@ -75,7 +80,7 @@ export default function RootLayout({ children }) {
                 {/* Google Tag Manager */}
                 <Script
                     id="gtm-script"
-                    strategy="afterInteractive"
+                    strategy="lazyOnload"
                     dangerouslySetInnerHTML={{
                         __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];
@@ -92,11 +97,11 @@ export default function RootLayout({ children }) {
                 {/* Google Analytics */}
                 <Script
                     src="https://www.googletagmanager.com/gtag/js?id=G-FY83C3PSVX"
-                    strategy="afterInteractive"
+                    strategy="lazyOnload"
                 />
                 <Script
                     id="ga-script"
-                    strategy="afterInteractive"
+                    strategy="lazyOnload"
                     dangerouslySetInnerHTML={{
                         __html: `
               window.dataLayer = window.dataLayer || [];
