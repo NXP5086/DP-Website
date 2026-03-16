@@ -29,7 +29,7 @@ export function DestinationPageContact({ data }) {
             {/* Subtle background */}
             <div className="absolute inset-0 opacity-[0.03]">
                 <Image
-                    src="/images/mexico-hero-1.jpg"
+                    src="/images/mexico/mexico-hero-1.jpg"
                     alt=""
                     fill
                     sizes="100vw"

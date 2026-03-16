@@ -148,7 +148,7 @@ const page = () => {
 
                         {/* Right Column - Image */}
                         <div className="flex justify-center">
-                            <Image src="/images/etihad1.webp" alt="Etihad Airways" width={600} height={400} className="rounded-lg shadow-lg object-cover" />
+                            <Image src="/images/airlines/etihad1.webp" alt="Etihad Airways" width={600} height={400} className="rounded-lg shadow-lg object-cover" />
                         </div>
                     </div>
 
@@ -171,7 +171,7 @@ const page = () => {
 
                         {/* Right Column - Image */}
                         <div className="flex justify-center">
-                            <Image src="/images/etihad2.webp" alt="Etihad Airways" width={600} height={400} className="rounded-lg shadow-lg object-cover" />
+                            <Image src="/images/airlines/etihad2.webp" alt="Etihad Airways" width={600} height={400} className="rounded-lg shadow-lg object-cover" />
                         </div>
                     </div>
 

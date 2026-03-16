@@ -186,7 +186,7 @@ const page = () => {
 
                         {/* Right Column - Image */}
                         <div className="flex justify-center">
-                            <Image src="/images/qatar.webp" alt="Qatar Airways" width={600} height={400} className="rounded-lg shadow-lg object-cover" />
+                            <Image src="/images/airlines/qatar.webp" alt="Qatar Airways" width={600} height={400} className="rounded-lg shadow-lg object-cover" />
                         </div>
                     </div>
                 </div>

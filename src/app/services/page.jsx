@@ -105,7 +105,7 @@ const page = () => {
                         <div className="relative">
                             <div className="relative h-full min-h-64 rounded-lg overflow-hidden shadow-md">
                                 <Image
-                                    src="/images/corporate-travel.jpeg"
+                                    src="/images/services/corporate-travel.jpeg"
                                     alt="Corporate Travel"
                                     fill
                                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -150,7 +150,7 @@ const page = () => {
                         <div className="relative">
                             <div className="relative h-full min-h-64 rounded-lg overflow-hidden shadow-md">
                                 <Image
-                                    src="/images/touring.jpg"
+                                    src="/images/services/touring.jpg"
                                     alt="Touring Services"
                                     fill
                                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -192,7 +192,7 @@ const page = () => {
                         <div className="relative">
                             <div className="relative h-full min-h-64 rounded-lg overflow-hidden shadow-md">
                                 <Image
-                                    src="/images/events.jpeg"
+                                    src="/images/services/events.jpeg"
                                     alt="Events Planning"
                                     fill
                                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -233,7 +233,7 @@ const page = () => {
                         <div className="relative">
                             <div className="relative h-full min-h-64 rounded-lg overflow-hidden shadow-md">
                                 <Image
-                                    src="/images/private-travel.jpeg"
+                                    src="/images/services/private-travel.jpeg"
                                     alt="Private Travel"
                                     fill
                                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -271,7 +271,7 @@ const page = () => {
                         <div className="relative">
                             <div className="relative h-full min-h-64 rounded-lg overflow-hidden shadow-md">
                                 <Image
-                                    src="/images/holy-land.jpeg"
+                                    src="/images/services/holy-land.jpeg"
                                     alt="Holy Land Tours"
                                     fill
                                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -300,7 +300,7 @@ const page = () => {
                         <div className="relative">
                             <div className="relative h-full min-h-64 rounded-lg overflow-hidden shadow-md">
                                 <Image
-                                    src="/images/mission-human.png"
+                                    src="/images/services/mission-human.png"
                                     alt="Mission & Humanitarian Travel"
                                     fill
                                     sizes="(max-width: 768px) 100vw, 50vw"

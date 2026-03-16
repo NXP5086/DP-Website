@@ -14,7 +14,7 @@ const destinations = [
         link: "/destinations/mexico",
         name: "Mexico",
         location: "Cancun, Los Cabos, Puerto Vallarta",
-        image: "/images/mexico.jpg",
+        image: "/images/mexico/mexico.jpg",
         description: "Turquoise waters and ancient Mayan charm",
     },
     {

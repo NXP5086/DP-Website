@@ -137,140 +137,140 @@
               "tier": "Premium",
               "rating": "5.0",
               "guests": 404,
-              "image": "/images/mexico/venues/cancun/planet-hollywood-cancun.jpg"
+              "image": "/images/mexico/cancun/planet-hollywood-cancun.jpg"
             },
             {
               "name": "Grand Palladium Costa Mujeres",
               "tier": "Premium",
               "rating": "4.9",
               "guests": 707,
-              "image": "/images/mexico/venues/cancun/grand-palladium-costa-mujeres.jpg"
+              "image": "/images/mexico/cancun/Grand-Palladium-Costa-Mujeres.jpg"
             },
             {
               "name": "TRS Coral Hotel",
               "tier": "Premium",
               "rating": "4.8",
               "guests": 796,
-              "image": "/images/mexico/venues/cancun/trs-coral-hotel.jpg"
+              "image": "/images/mexico/cancun/TRS-Coral-Hotel.jpg"
             },
             {
               "name": "SLS Cancun",
               "tier": "Premium",
               "rating": "4.9",
               "guests": 269,
-              "image": "/images/mexico/venues/cancun/sls-cancun.jpg"
+              "image": "/images/mexico/cancun/sls-cancun.jpg"
             },
             {
               "name": "Garza Blanca Cancun",
               "tier": "Premium",
               "rating": "4.9",
               "guests": 390,
-              "image": "/images/mexico/venues/cancun/garza-blanca-cancun.jpg"
+              "image": "/images/mexico/cancun/Garza-Blanca-Cancun.jpg"
             },
             {
               "name": "Hotel Mousai Cancun",
               "tier": "Premium",
               "rating": "5.0",
               "guests": 581,
-              "image": "/images/mexico/venues/cancun/hotel-mousai-cancun.jpg"
+              "image": "/images/mexico/cancun/hotel-mousai-cancun.jpg"
             },
             {
               "name": "Hyatt Ziva Cancun",
               "tier": "Premium",
               "rating": "4.7",
               "guests": 328,
-              "image": "/images/mexico/venues/cancun/hyatt-ziva-cancun.jpg"
+              "image": "/images/mexico/cancun/Hyatt-Ziva-Cancun.jpg"
             },
             {
               "name": "Paradisus Cancun",
               "tier": "Premium",
               "rating": "4.8",
               "guests": 407,
-              "image": "/images/mexico/venues/cancun/paradisus-cancun.jpg"
+              "image": "/images/mexico/cancun/Paradisus-Cancun.jpg"
             },
             {
               "name": "Grand Velas Riviera Maya",
               "tier": "Premium",
               "rating": "4.9",
               "guests": 372,
-              "image": "/images/mexico/venues/cancun/grand-velas-riviera-maya.jpg"
+              "image": "/images/mexico/cancun/Grand-Velas-Riviera-Maya.jpg"
             },
             {
               "name": "Hilton Cancun",
               "tier": "Premium",
               "rating": "4.9",
               "guests": 319,
-              "image": "/images/mexico/venues/cancun/hilton-cancun.jpg"
+              "image": "/images/mexico/cancun/Hilton-Cancun.jpg"
             },
             {
               "name": "Waldorf Astoria Cancun",
               "tier": "Luxury",
               "rating": "4.8",
               "guests": 280,
-              "image": "/images/mexico/venues/cancun/waldorf-astoria-cancun.jpg"
+              "image": "/images/mexico/cancun/Waldorf-Astoria-Cancun.jpg"
             },
             {
               "name": "The Edition Riviera Maya",
               "tier": "Luxury",
               "rating": "4.9",
               "guests": 319,
-              "image": "/images/mexico/venues/cancun/the-edition-riviera-maya.jpg"
+              "image": "/images/mexico/cancun/The-Edition-Riviera-Maya.jpg"
             },
             {
               "name": "St Regis Riviera Maya",
               "tier": "Luxury",
               "rating": "4.9",
               "guests": 634,
-              "image": "/images/mexico/venues/cancun/st-regis-riviera-maya.jpg"
+              "image": "/images/mexico/cancun/St-Regis-Riviera-Maya.jpg"
             },
             {
               "name": "Fairmont Mayakoba",
               "tier": "Premium",
               "rating": "4.8",
               "guests": 758,
-              "image": "/images/mexico/venues/cancun/fairmont-mayakoba.jpg"
+              "image": "/images/mexico/cancun/Fairmont-Mayakoba.jpg"
             },
             {
               "name": "Rosewood Mayakoba",
               "tier": "Premium",
               "rating": "4.8",
               "guests": 251,
-              "image": "/images/mexico/venues/cancun/rosewood-mayakoba.jpg"
+              "image": "/images/mexico/cancun/Rosewood-Mayakoba.jpg"
             },
             {
               "name": "Alila Mayakoba",
               "tier": "Premium",
               "rating": "5.0",
               "guests": 528,
-              "image": "/images/mexico/venues/cancun/alila-mayakoba.jpg"
+              "image": "/images/mexico/cancun/Alila-Mayakoba.jpg"
             },
             {
               "name": "Paradisus Playa del Carmen",
               "tier": "Premium",
               "rating": "4.9",
               "guests": 612,
-              "image": "/images/mexico/venues/cancun/paradisus-playa-del-carmen.jpg"
+              "image": "/images/mexico/cancun/Paradisus-Playa-del-Carmen.jpg"
             },
             {
               "name": "Paradisus La Perla",
               "tier": "Premium",
               "rating": "4.9",
               "guests": 461,
-              "image": "/images/mexico/venues/cancun/paradisus-la-perla.jpg"
+              "image": "/images/mexico/cancun/Paradisus-La-Perla.jpg"
             },
             {
               "name": "Hilton Playa del Carmen",
               "tier": "Premium",
               "rating": "4.9",
               "guests": 348,
-              "image": "/images/mexico/venues/cancun/hilton-playa-del-carmen.jpg"
+              "image": "/images/mexico/cancun/Hilton-Playa-del-Carmen.jpg"
             },
             {
               "name": "Conrad Tulum",
               "tier": "Premium",
               "rating": "4.7",
               "guests": 288,
-              "image": "/images/mexico/venues/cancun/conrad-tulum.jpg"
+              "image": "/images/mexico/cancun/Conrad-Tulum.jpg"
             }
           ],
           "tulum": [
@@ -649,7 +649,7 @@
                 "rating": "5.0",
                 "guests": 404,
                 "highlight": "Movie-Themed Sangeet Venues",
-                "image": "/images/mexico/cities/cancun/venues/planet-hollywood-cancun.jpg"
+                "image": "/images/mexico/cancun/planet-hollywood-cancun.jpg"
               },
               {
                 "name": "Grand Palladium Costa Mujeres",
@@ -657,7 +657,7 @@
                 "rating": "4.9",
                 "guests": 707,
                 "highlight": "In-Resort Canal Boat System",
-                "image": "/images/mexico/cities/cancun/venues/grand-palladium-costa-mujeres.jpg"
+                "image": "/images/mexico/cancun/Grand-Palladium-Costa-Mujeres.jpg"
               },
               {
                 "name": "TRS Coral Hotel",
@@ -665,7 +665,7 @@
                 "rating": "4.8",
                 "guests": 796,
                 "highlight": "Premier Event Venues",
-                "image": "/images/mexico/cities/cancun/venues/trs-coral-hotel.jpg"
+                "image": "/images/mexico/cancun/TRS-Coral-Hotel.jpg"
               },
               {
                 "name": "SLS Cancun",
@@ -673,7 +673,7 @@
                 "rating": "4.9",
                 "guests": 269,
                 "highlight": "Premier Event Venues",
-                "image": "/images/mexico/cities/cancun/venues/sls-cancun.jpg"
+                "image": "/images/mexico/cancun/sls-cancun.jpg"
               },
               {
                 "name": "Garza Blanca Cancun",
@@ -681,7 +681,7 @@
                 "rating": "4.9",
                 "guests": 390,
                 "highlight": "Premier Event Venues",
-                "image": "/images/mexico/cities/cancun/venues/garza-blanca-cancun.jpg"
+                "image": "/images/mexico/cancun/Garza-Blanca-Cancun.jpg"
               },
               {
                 "name": "Hotel Mousai Cancun",
@@ -689,7 +689,7 @@
                 "rating": "5.0",
                 "guests": 581,
                 "highlight": "Premier Event Venues",
-                "image": "/images/mexico/cities/cancun/venues/hotel-mousai-cancun.jpg"
+                "image": "/images/mexico/cancun/hotel-mousai-cancun.jpg"
               },
               {
                 "name": "Hyatt Ziva Cancun",
@@ -697,7 +697,7 @@
                 "rating": "4.7",
                 "guests": 328,
                 "highlight": "360° Ocean View Sky Terrace",
-                "image": "/images/mexico/cities/cancun/venues/hyatt-ziva-cancun.jpg"
+                "image": "/images/mexico/cancun/Hyatt-Ziva-Cancun.jpg"
               },
               {
                 "name": "Paradisus Cancun",
@@ -705,7 +705,7 @@
                 "rating": "4.8",
                 "guests": 407,
                 "highlight": "Premier Event Venues",
-                "image": "/images/mexico/cities/cancun/venues/paradisus-cancun.jpg"
+                "image": "/images/mexico/cancun/Paradisus-Cancun.jpg"
               },
               {
                 "name": "Grand Velas Riviera Maya",
@@ -713,7 +713,7 @@
                 "rating": "4.9",
                 "guests": 372,
                 "highlight": "Premier Event Venues",
-                "image": "/images/mexico/cities/cancun/venues/grand-velas-riviera-maya.jpg"
+                "image": "/images/mexico/cancun/Grand-Velas-Riviera-Maya.jpg"
               },
               {
                 "name": "Hilton Cancun",
@@ -721,7 +721,7 @@
                 "rating": "4.9",
                 "guests": 319,
                 "highlight": "Premier Event Venues",
-                "image": "/images/mexico/cities/cancun/venues/hilton-cancun.jpg"
+                "image": "/images/mexico/cancun/Hilton-Cancun.jpg"
               },
               {
                 "name": "Waldorf Astoria Cancun",
@@ -729,7 +729,7 @@
                 "rating": "4.8",
                 "guests": 280,
                 "highlight": "Premier Event Venues",
-                "image": "/images/mexico/cities/cancun/venues/waldorf-astoria-cancun.jpg"
+                "image": "/images/mexico/cancun/Waldorf-Astoria-Cancun.jpg"
               },
               {
                 "name": "The Edition Riviera Maya",
@@ -737,7 +737,7 @@
                 "rating": "4.9",
                 "guests": 319,
                 "highlight": "Premier Event Venues",
-                "image": "/images/mexico/cities/cancun/venues/the-edition-riviera-maya.jpg"
+                "image": "/images/mexico/cancun/The-Edition-Riviera-Maya.jpg"
               },
               {
                 "name": "St Regis Riviera Maya",
@@ -745,7 +745,7 @@
                 "rating": "4.9",
                 "guests": 634,
                 "highlight": "Premier Event Venues",
-                "image": "/images/mexico/cities/cancun/venues/st-regis-riviera-maya.jpg"
+                "image": "/images/mexico/cancun/St-Regis-Riviera-Maya.jpg"
               },
               {
                 "name": "Fairmont Mayakoba",
@@ -753,7 +753,7 @@
                 "rating": "4.8",
                 "guests": 758,
                 "highlight": "Expansive New Beach Club",
-                "image": "/images/mexico/cities/cancun/venues/fairmont-mayakoba.jpg"
+                "image": "/images/mexico/cancun/Fairmont-Mayakoba.jpg"
               },
               {
                 "name": "Rosewood Mayakoba",
@@ -761,7 +761,7 @@
                 "rating": "4.8",
                 "guests": 251,
                 "highlight": "Private Lagoon Arrival",
-                "image": "/images/mexico/cities/cancun/venues/rosewood-mayakoba.jpg"
+                "image": "/images/mexico/cancun/Rosewood-Mayakoba.jpg"
               },
               {
                 "name": "Alila Mayakoba",
@@ -769,7 +769,7 @@
                 "rating": "5.0",
                 "guests": 528,
                 "highlight": "Premier Event Venues",
-                "image": "/images/mexico/cities/cancun/venues/alila-mayakoba.jpg"
+                "image": "/images/mexico/cancun/Alila-Mayakoba.jpg"
               },
               {
                 "name": "Paradisus Playa del Carmen",
@@ -777,7 +777,7 @@
                 "rating": "4.9",
                 "guests": 612,
                 "highlight": "Premier Event Venues",
-                "image": "/images/mexico/cities/cancun/venues/paradisus-playa-del-carmen.jpg"
+                "image": "/images/mexico/cancun/Paradisus-Playa-del-Carmen.jpg"
               },
               {
                 "name": "Paradisus La Perla",
@@ -785,7 +785,7 @@
                 "rating": "4.9",
                 "guests": 461,
                 "highlight": "Premier Event Venues",
-                "image": "/images/mexico/cities/cancun/venues/paradisus-la-perla.jpg"
+                "image": "/images/mexico/cancun/Paradisus-La-Perla.jpg"
               },
               {
                 "name": "Hilton Playa del Carmen",
@@ -793,7 +793,7 @@
                 "rating": "4.9",
                 "guests": 348,
                 "highlight": "Premier Event Venues",
-                "image": "/images/mexico/cities/cancun/venues/hilton-playa-del-carmen.jpg"
+                "image": "/images/mexico/cancun/Hilton-Playa-del-Carmen.jpg"
               },
               {
                 "name": "Conrad Tulum",
@@ -801,7 +801,7 @@
                 "rating": "4.7",
                 "guests": 288,
                 "highlight": "Premier Event Venues",
-                "image": "/images/mexico/cities/cancun/venues/conrad-tulum.jpg"
+                "image": "/images/mexico/cancun/Conrad-Tulum.jpg"
               }
             ]
           },
@@ -1012,7 +1012,7 @@
           {
             "slug": "planet-hollywood-cancun",
             "name": "Planet Hollywood Cancun",
-            "image": "/images/mexico/cities/cancun/hotels/planet-hollywood-cancun/main.jpg",
+            "image": "/images/mexico/cancun/planet-hollywood-cancun.jpg",
             "location": "Cancun, Mexico",
             "description": "Planet Hollywood Cancun invites you to 'Vacay Like a Star' in the exclusive Costa Mujeres zone. This cinematic resort turns wedding celebrations into ...",
             "longDescription": "Planet Hollywood Cancun invites you to 'Vacay Like a Star' in the exclusive Costa Mujeres zone. This cinematic resort turns wedding celebrations into red-carpet events, featuring a grand lazy river, movie-themed interior design, and a diverse range of gourmet dining options that cater perfectly to large Indian wedding groups.",
@@ -1110,7 +1110,7 @@
           {
             "slug": "grand-palladium-costa-mujeres",
             "name": "Grand Palladium Costa Mujeres",
-            "image": "/images/mexico/cities/cancun/hotels/grand-palladium-costa-mujeres/main.jpg",
+            "image": "/images/mexico/cancun/Grand-Palladium-Costa-Mujeres.jpg",
             "location": "Cancun, Mexico",
             "description": "Located on the pristine shores of Costa Mujeres, this resort is a masterpiece of Thai-inspired architecture integrated with lush Mayan mangroves. Its ...",
             "longDescription": "Located on the pristine shores of Costa Mujeres, this resort is a masterpiece of Thai-inspired architecture integrated with lush Mayan mangroves. Its unique canal system allows guests to travel by boat, adding a magical element to the Baraat. The resort is famous for its 'Village' area, perfect for hosting private Sangeet and Mehndi street-fair style events.",
@@ -1208,7 +1208,7 @@
           {
             "slug": "trs-coral-hotel",
             "name": "TRS Coral Hotel",
-            "image": "/images/mexico/cities/cancun/hotels/trs-coral-hotel/main.jpg",
+            "image": "/images/mexico/cancun/TRS-Coral-Hotel.jpg",
             "location": "Cancun, Mexico",
             "description": "TRS Coral Hotel offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "TRS Coral Hotel is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -1306,7 +1306,7 @@
           {
             "slug": "sls-cancun",
             "name": "SLS Cancun",
-            "image": "/images/mexico/cities/cancun/hotels/sls-cancun/main.jpg",
+            "image": "/images/mexico/cancun/sls-cancun.jpg",
             "location": "Cancun, Mexico",
             "description": "SLS Cancun offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "SLS Cancun is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -1404,7 +1404,7 @@
           {
             "slug": "garza-blanca-cancun",
             "name": "Garza Blanca Cancun",
-            "image": "/images/mexico/cities/cancun/hotels/garza-blanca-cancun/main.jpg",
+            "image": "/images/mexico/cancun/Garza-Blanca-Cancun.jpg",
             "location": "Cancun, Mexico",
             "description": "Garza Blanca Cancun offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Garza Blanca Cancun is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -1502,7 +1502,7 @@
           {
             "slug": "hotel-mousai-cancun",
             "name": "Hotel Mousai Cancun",
-            "image": "/images/mexico/cities/cancun/hotels/hotel-mousai-cancun/main.jpg",
+            "image": "/images/mexico/cancun/hotel-mousai-cancun.jpg",
             "location": "Cancun, Mexico",
             "description": "Hotel Mousai Cancun offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Hotel Mousai Cancun is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -1600,7 +1600,7 @@
           {
             "slug": "hyatt-ziva-cancun",
             "name": "Hyatt Ziva Cancun",
-            "image": "/images/mexico/cities/cancun/hotels/hyatt-ziva-cancun/main.jpg",
+            "image": "/images/mexico/cancun/Hyatt-Ziva-Cancun.jpg",
             "location": "Cancun, Mexico",
             "description": "The only resort in Cancun surrounded on three sides by the sparking Caribbean Sea. Known for its 'Sky Wedding' terrace with 360-degree ocean views, Hy...",
             "longDescription": "The only resort in Cancun surrounded on three sides by the sparking Caribbean Sea. Known for its 'Sky Wedding' terrace with 360-degree ocean views, Hyatt Ziva Cancun offers an ultra-luxury experience with an on-site microbrewery and a dolphin habitat, ensuring a memorable multi-day celebration for all ages.",
@@ -1698,7 +1698,7 @@
           {
             "slug": "paradisus-cancun",
             "name": "Paradisus Cancun",
-            "image": "/images/mexico/cities/cancun/hotels/paradisus-cancun/main.jpg",
+            "image": "/images/mexico/cancun/Paradisus-Cancun.jpg",
             "location": "Cancun, Mexico",
             "description": "Paradisus Cancun offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Paradisus Cancun is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -1796,7 +1796,7 @@
           {
             "slug": "grand-velas-riviera-maya",
             "name": "Grand Velas Riviera Maya",
-            "image": "/images/mexico/cities/cancun/hotels/grand-velas-riviera-maya/main.jpg",
+            "image": "/images/mexico/cancun/Grand-Velas-Riviera-Maya.jpg",
             "location": "Cancun, Mexico",
             "description": "Grand Velas Riviera Maya offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Grand Velas Riviera Maya is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -1894,7 +1894,7 @@
           {
             "slug": "hilton-cancun",
             "name": "Hilton Cancun",
-            "image": "/images/mexico/cities/cancun/hotels/hilton-cancun/main.jpg",
+            "image": "/images/mexico/cancun/Hilton-Cancun.jpg",
             "location": "Cancun, Mexico",
             "description": "Hilton Cancun offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Hilton Cancun is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -1992,7 +1992,7 @@
           {
             "slug": "waldorf-astoria-cancun",
             "name": "Waldorf Astoria Cancun",
-            "image": "/images/mexico/cities/cancun/hotels/waldorf-astoria-cancun/main.jpg",
+            "image": "/images/mexico/cancun/Waldorf-Astoria-Cancun.jpg",
             "location": "Cancun, Mexico",
             "description": "Waldorf Astoria Cancun offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Waldorf Astoria Cancun is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -2090,7 +2090,7 @@
           {
             "slug": "the-edition-riviera-maya",
             "name": "The Edition Riviera Maya",
-            "image": "/images/mexico/cities/cancun/hotels/the-edition-riviera-maya/main.jpg",
+            "image": "/images/mexico/cancun/The-Edition-Riviera-Maya.jpg",
             "location": "Cancun, Mexico",
             "description": "The Edition Riviera Maya offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "The Edition Riviera Maya is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -2188,7 +2188,7 @@
           {
             "slug": "st-regis-riviera-maya",
             "name": "St Regis Riviera Maya",
-            "image": "/images/mexico/cities/cancun/hotels/st-regis-riviera-maya/main.jpg",
+            "image": "/images/mexico/cancun/St-Regis-Riviera-Maya.jpg",
             "location": "Cancun, Mexico",
             "description": "St Regis Riviera Maya offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "St Regis Riviera Maya is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -2286,7 +2286,7 @@
           {
             "slug": "fairmont-mayakoba",
             "name": "Fairmont Mayakoba",
-            "image": "/images/mexico/cities/cancun/hotels/fairmont-mayakoba/main.jpg",
+            "image": "/images/mexico/cancun/Fairmont-Mayakoba.jpg",
             "location": "Cancun, Mexico",
             "description": "Recently renovated to define modern tropical elegance, Fairmont Mayakoba sits at the heart of the Mayakoba ecosystem. Its expansive beach club and div...",
             "longDescription": "Recently renovated to define modern tropical elegance, Fairmont Mayakoba sits at the heart of the Mayakoba ecosystem. Its expansive beach club and diverse garden venues make it a favorite for large Indian weddings that require multiple distinct backdrops for Haldi, Mehndi, and grand Receptions.",
@@ -2384,7 +2384,7 @@
           {
             "slug": "rosewood-mayakoba",
             "name": "Rosewood Mayakoba",
-            "image": "/images/mexico/cities/cancun/hotels/rosewood-mayakoba/main.jpg",
+            "image": "/images/mexico/cancun/Rosewood-Mayakoba.jpg",
             "location": "Cancun, Mexico",
             "description": "Enshrined within a 620-acre eco-preserve, Rosewood Mayakoba is the summit of Riviera Maya luxury. Guests arrive at their private suites via electric l...",
             "longDescription": "Enshrined within a 620-acre eco-preserve, Rosewood Mayakoba is the summit of Riviera Maya luxury. Guests arrive at their private suites via electric lagoons. For Indian weddings, the resort offers an unparalleled sense of privacy and 'Agave Azul' coastal vibes, ideal for high-end, intimate to mid-sized luxury celebrations.",
@@ -2482,7 +2482,7 @@
           {
             "slug": "alila-mayakoba",
             "name": "Alila Mayakoba",
-            "image": "/images/mexico/cities/cancun/hotels/alila-mayakoba/main.jpg",
+            "image": "/images/mexico/cancun/Alila-Mayakoba.jpg",
             "location": "Cancun, Mexico",
             "description": "Alila Mayakoba offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Alila Mayakoba is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -2580,7 +2580,7 @@
           {
             "slug": "paradisus-playa-del-carmen",
             "name": "Paradisus Playa del Carmen",
-            "image": "/images/mexico/cities/cancun/hotels/paradisus-playa-del-carmen/main.jpg",
+            "image": "/images/mexico/cancun/Paradisus-Playa-del-Carmen.jpg",
             "location": "Cancun, Mexico",
             "description": "Paradisus Playa del Carmen offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Paradisus Playa del Carmen is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -2678,7 +2678,7 @@
           {
             "slug": "paradisus-la-perla",
             "name": "Paradisus La Perla",
-            "image": "/images/mexico/cities/cancun/hotels/paradisus-la-perla/main.jpg",
+            "image": "/images/mexico/cancun/Paradisus-La-Perla.jpg",
             "location": "Cancun, Mexico",
             "description": "Paradisus La Perla offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Paradisus La Perla is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -2776,7 +2776,7 @@
           {
             "slug": "hilton-playa-del-carmen",
             "name": "Hilton Playa del Carmen",
-            "image": "/images/mexico/cities/cancun/hotels/hilton-playa-del-carmen/main.jpg",
+            "image": "/images/mexico/cancun/Hilton-Playa-del-Carmen.jpg",
             "location": "Cancun, Mexico",
             "description": "Hilton Playa del Carmen offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Hilton Playa del Carmen is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -2874,7 +2874,7 @@
           {
             "slug": "conrad-tulum",
             "name": "Conrad Tulum",
-            "image": "/images/mexico/cities/cancun/hotels/conrad-tulum/main.jpg",
+            "image": "/images/mexico/cancun/Conrad-Tulum.jpg",
             "location": "Cancun, Mexico",
             "description": "Conrad Tulum offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Conrad Tulum is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -3245,7 +3245,7 @@
           {
             "slug": "hilton-tulum-riviera-maya",
             "name": "Hilton Tulum Riviera Maya",
-            "image": "/images/mexico/cities/tulum/hotels/hilton-tulum-riviera-maya/main.jpg",
+            "image": "/images/mexico/tulum/Hilton-Tulum-Riviera-Maya.jpg",
             "location": "Tulum, Mexico",
             "description": "Hilton Tulum Riviera Maya offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Hilton Tulum Riviera Maya is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -3343,7 +3343,7 @@
           {
             "slug": "conrad-tulum-riviera-maya",
             "name": "Conrad Tulum Riviera Maya",
-            "image": "/images/mexico/cities/tulum/hotels/conrad-tulum-riviera-maya/main.jpg",
+            "image": "/images/mexico/tulum/Conrad-Tulum-Riviera-Maya.jpg",
             "location": "Tulum, Mexico",
             "description": "Conrad Tulum Riviera Maya offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Conrad Tulum Riviera Maya is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -3767,7 +3767,7 @@
           {
             "slug": "grand-velas-los-cabos",
             "name": "Grand Velas Los Cabos",
-            "image": "/images/mexico/cities/los-cabos/hotels/grand-velas-los-cabos/main.jpg",
+            "image": "/images/mexico/los-cabos/Grand-Velas-Los-Cabos.jpg",
             "location": "Los Cabos, Mexico",
             "description": "The Grand Velas Los Cabos redefines the all-inclusive concept with Michelin-star dining and dramatic architecture where the desert meets the Sea of Co...",
             "longDescription": "The Grand Velas Los Cabos redefines the all-inclusive concept with Michelin-star dining and dramatic architecture where the desert meets the Sea of Cortez. Its 'Ocean Terrace' provides one of the most stunning sunset backdrops in Mexico for a grand Mandap ceremony, complemented by world-class service.",
@@ -3865,7 +3865,7 @@
           {
             "slug": "hyatt-ziva-los-cabos",
             "name": "Hyatt Ziva Los Cabos",
-            "image": "/images/mexico/cities/los-cabos/hotels/hyatt-ziva-los-cabos/main.jpg",
+            "image": "/images/mexico/los-cabos/Hyatt-Ziva-Los-Cabos.jpg",
             "location": "Los Cabos, Mexico",
             "description": "Hyatt Ziva Los Cabos offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Hyatt Ziva Los Cabos is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -3963,7 +3963,7 @@
           {
             "slug": "grand-fiesta-americana-los-cabos",
             "name": "Grand Fiesta Americana Los Cabos",
-            "image": "/images/mexico/cities/los-cabos/hotels/grand-fiesta-americana-los-cabos/main.jpg",
+            "image": "/images/mexico/los-cabos/grand-Fiesta-Americana-Los-Cabos.jpg",
             "location": "Los Cabos, Mexico",
             "description": "Grand Fiesta Americana Los Cabos offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Grand Fiesta Americana Los Cabos is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -4061,7 +4061,7 @@
           {
             "slug": "jw-marriott-los-cabos-beach-resort",
             "name": "JW Marriott Los Cabos Beach Resort",
-            "image": "/images/mexico/cities/los-cabos/hotels/jw-marriott-los-cabos-beach-resort/main.jpg",
+            "image": "/images/mexico/los-cabos/jw-Marriott-Los-Cabos-Beach-Resort.jpg",
             "location": "Los Cabos, Mexico",
             "description": "Constructed as an architectural landmark, the JW Marriott Los Cabos blends clean modern lines with the raw beauty of the Baja desert. The 'Amet' pool ...",
             "longDescription": "Constructed as an architectural landmark, the JW Marriott Los Cabos blends clean modern lines with the raw beauty of the Baja desert. The 'Amet' pool and beach venues are perfect for couples seeking a sophisticated, design-forward Indian wedding that feels like a private desert oasis.",
@@ -4159,7 +4159,7 @@
           {
             "slug": "viceroy-los-cabos",
             "name": "Viceroy Los Cabos",
-            "image": "/images/mexico/cities/los-cabos/hotels/viceroy-los-cabos/main.jpg",
+            "image": "/images/mexico/los-cabos/Viceroy-Los-Cabos.jpg",
             "location": "Los Cabos, Mexico",
             "description": "Viceroy Los Cabos offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Viceroy Los Cabos is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -4257,7 +4257,7 @@
           {
             "slug": "park-hyatt-cabo-del-sol",
             "name": "Park Hyatt Cabo Del Sol",
-            "image": "/images/mexico/cities/los-cabos/hotels/park-hyatt-cabo-del-sol/main.jpg",
+            "image": "/images/mexico/los-cabos/Park-Hyatt-Cabo-Del-Sol.jpg",
             "location": "Los Cabos, Mexico",
             "description": "Park Hyatt Cabo Del Sol offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Park Hyatt Cabo Del Sol is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -4692,7 +4692,7 @@
           {
             "slug": "marriott-puerto-vallarta-resort",
             "name": "Marriott Puerto Vallarta Resort",
-            "image": "/images/mexico/cities/puerto-vallarta/hotels/marriott-puerto-vallarta-resort/main.jpg",
+            "image": "/images/mexico/puerto-vallarta/Marriott-Puerto-Vallarta-Resort.jpg",
             "location": "Puerto Vallarta, Mexico",
             "description": "Marriott Puerto Vallarta Resort offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Marriott Puerto Vallarta Resort is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -4790,7 +4790,7 @@
           {
             "slug": "westin-resort-spa-puerto-vallarta",
             "name": "Westin Resort & Spa Puerto Vallarta",
-            "image": "/images/mexico/cities/puerto-vallarta/hotels/westin-resort-spa-puerto-vallarta/main.jpg",
+            "image": "/images/mexico/puerto-vallarta/Westin-Resort&Spa.jpg",
             "location": "Puerto Vallarta, Mexico",
             "description": "Westin Resort & Spa Puerto Vallarta offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Westin Resort & Spa Puerto Vallarta is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -4888,7 +4888,7 @@
           {
             "slug": "garza-blanca-preserve-resort-spa",
             "name": "Garza Blanca Preserve Resort & Spa",
-            "image": "/images/mexico/cities/puerto-vallarta/hotels/garza-blanca-preserve-resort-spa/main.jpg",
+            "image": "/images/mexico/puerto-vallarta/Garza-Blanca-Preserve-Resort&Spa.jpg",
             "location": "Puerto Vallarta, Mexico",
             "description": "Garza Blanca Preserve Resort & Spa offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Garza Blanca Preserve Resort & Spa is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -4986,7 +4986,7 @@
           {
             "slug": "hotel-mousai-puerto-vallarta",
             "name": "Hotel Mousai Puerto Vallarta",
-            "image": "/images/mexico/cities/puerto-vallarta/hotels/hotel-mousai-puerto-vallarta/main.jpg",
+            "image": "/images/mexico/puerto-vallarta/Hotel-Mousai.jpg",
             "location": "Puerto Vallarta, Mexico",
             "description": "Hotel Mousai Puerto Vallarta offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Hotel Mousai Puerto Vallarta is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -5084,7 +5084,7 @@
           {
             "slug": "hyatt-ziva-puerto-vallarta",
             "name": "Hyatt Ziva Puerto Vallarta",
-            "image": "/images/mexico/cities/puerto-vallarta/hotels/hyatt-ziva-puerto-vallarta/main.jpg",
+            "image": "/images/mexico/puerto-vallarta/Hyatt-Ziva.jpg",
             "location": "Puerto Vallarta, Mexico",
             "description": "Hyatt Ziva Puerto Vallarta offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Hyatt Ziva Puerto Vallarta is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -5182,7 +5182,7 @@
           {
             "slug": "velas-vallarta-suite-resort",
             "name": "Velas Vallarta Suite Resort",
-            "image": "/images/mexico/cities/puerto-vallarta/hotels/velas-vallarta-suite-resort/main.jpg",
+            "image": "/images/mexico/puerto-vallarta/Velas-Vallarta-Suite-Resort.jpg",
             "location": "Puerto Vallarta, Mexico",
             "description": "Velas Vallarta Suite Resort offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Velas Vallarta Suite Resort is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -5280,7 +5280,7 @@
           {
             "slug": "grand-velas-riviera-nayarit",
             "name": "Grand Velas Riviera Nayarit",
-            "image": "/images/mexico/cities/puerto-vallarta/hotels/grand-velas-riviera-nayarit/main.jpg",
+            "image": "/images/mexico/puerto-vallarta/Grand-Velas-Riviera-Nayarit.jpg",
             "location": "Puerto Vallarta, Mexico",
             "description": "Grand Velas Riviera Nayarit offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Grand Velas Riviera Nayarit is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -5378,7 +5378,7 @@
           {
             "slug": "delta-hotels-riviera-nayarit",
             "name": "Delta Hotels Riviera Nayarit",
-            "image": "/images/mexico/cities/puerto-vallarta/hotels/delta-hotels-riviera-nayarit/main.jpg",
+            "image": "/images/mexico/puerto-vallarta/Delta-Hotels-Riviera-Nayarit.jpg",
             "location": "Puerto Vallarta, Mexico",
             "description": "Delta Hotels Riviera Nayarit offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Delta Hotels Riviera Nayarit is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -5476,7 +5476,7 @@
           {
             "slug": "conrad-punta-de-mita",
             "name": "Conrad Punta de Mita",
-            "image": "/images/mexico/cities/puerto-vallarta/hotels/conrad-punta-de-mita/main.jpg",
+            "image": "/images/mexico/puerto-vallarta/Conrad-Punta-de-Mita.jpg",
             "location": "Puerto Vallarta, Mexico",
             "description": "Conrad Punta de Mita offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Conrad Punta de Mita is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -5574,7 +5574,7 @@
           {
             "slug": "st-regis-punta-mita-resort",
             "name": "St Regis Punta Mita Resort",
-            "image": "/images/mexico/cities/puerto-vallarta/hotels/st-regis-punta-mita-resort/main.jpg",
+            "image": "/images/mexico/puerto-vallarta/Regis-Punta-Mita-Resort.jpg",
             "location": "Puerto Vallarta, Mexico",
             "description": "St Regis Punta Mita Resort offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "St Regis Punta Mita Resort is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -5953,7 +5953,7 @@
           {
             "slug": "live-aqua-urban-resort-san-miguel-de-allende",
             "name": "Live Aqua Urban Resort San Miguel de Allende",
-            "image": "/images/mexico/cities/san-miguel/hotels/live-aqua-urban-resort-san-miguel-de-allende/main.jpg",
+            "image": "/images/mexico/san-miguel/Live-Aqua-Urban-Resort.jpg",
             "location": "San Miguel de Allende, Mexico",
             "description": "Live Aqua Urban Resort San Miguel de Allende offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Live Aqua Urban Resort San Miguel de Allende is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -6051,7 +6051,7 @@
           {
             "slug": "rosewood-san-miguel-de-allende",
             "name": "Rosewood San Miguel de Allende",
-            "image": "/images/mexico/cities/san-miguel/hotels/rosewood-san-miguel-de-allende/main.jpg",
+            "image": "/images/mexico/san-miguel/Rosewood-San-Miguel-de-Allende.jpg",
             "location": "San Miguel de Allende, Mexico",
             "description": "Capturing the colonial charm of this UNESCO World Heritage city, Rosewood San Miguel offers a royal setting for traditional Indian weddings. The rooft...",
             "longDescription": "Capturing the colonial charm of this UNESCO World Heritage city, Rosewood San Miguel offers a royal setting for traditional Indian weddings. The rooftop 'Luna' bar provides panoramic views of the iconic Parroquia, making it the most sought-after spot for Sangeet sunset celebrations in Central Mexico.",
@@ -6149,7 +6149,7 @@
           {
             "slug": "waldorf-astoria-san-miguel-de-allende",
             "name": "Waldorf Astoria San Miguel de Allende",
-            "image": "/images/mexico/cities/san-miguel/hotels/waldorf-astoria-san-miguel-de-allende/main.jpg",
+            "image": "/images/mexico/san-miguel/Waldorf-Astoria-San-Miguel-de-Allende.jpg",
             "location": "San Miguel de Allende, Mexico",
             "description": "Waldorf Astoria San Miguel de Allende offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Waldorf Astoria San Miguel de Allende is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -6552,7 +6552,7 @@
           {
             "slug": "marquis-reforma-hotel-spa",
             "name": "Marquis Reforma Hotel & Spa",
-            "image": "/images/mexico/cities/mexico-city/hotels/marquis-reforma-hotel-spa/main.jpg",
+            "image": "/images/mexico/mexico-city/Marquis-Reforma-Hotel&Spa.jpg",
             "location": "Mexico City, Mexico",
             "description": "Marquis Reforma Hotel & Spa offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Marquis Reforma Hotel & Spa is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -6650,7 +6650,7 @@
           {
             "slug": "hilton-mexico-city-reforma",
             "name": "Hilton Mexico City Reforma",
-            "image": "/images/mexico/cities/mexico-city/hotels/hilton-mexico-city-reforma/main.jpg",
+            "image": "/images/mexico/mexico-city/Hilton-Mexico-City-Reforma.jpg",
             "location": "Mexico City, Mexico",
             "description": "Hilton Mexico City Reforma offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Hilton Mexico City Reforma is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -6748,7 +6748,7 @@
           {
             "slug": "sofitel-mexico-city-reforma",
             "name": "Sofitel Mexico City Reforma",
-            "image": "/images/mexico/cities/mexico-city/hotels/sofitel-mexico-city-reforma/main.jpg",
+            "image": "/images/mexico/mexico-city/Sofitel-Mexico-City-Reforma.jpg",
             "location": "Mexico City, Mexico",
             "description": "Sofitel Mexico City Reforma offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Sofitel Mexico City Reforma is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -6846,7 +6846,7 @@
           {
             "slug": "intercontinental-presidente-mexico-city",
             "name": "Intercontinental Presidente Mexico City",
-            "image": "/images/mexico/cities/mexico-city/hotels/intercontinental-presidente-mexico-city/main.jpg",
+            "image": "/images/mexico/mexico-city/intercontinental-Presidente.jpg",
             "location": "Mexico City, Mexico",
             "description": "Intercontinental Presidente Mexico City offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Intercontinental Presidente Mexico City is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -6944,7 +6944,7 @@
           {
             "slug": "four-seasons-hotel-mexico-city",
             "name": "Four Seasons Hotel Mexico City",
-            "image": "/images/mexico/cities/mexico-city/hotels/four-seasons-hotel-mexico-city/main.jpg",
+            "image": "/images/mexico/mexico-city/Four-Seasons-Hotel.jpg",
             "location": "Mexico City, Mexico",
             "description": "Four Seasons Hotel Mexico City offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Four Seasons Hotel Mexico City is a distinguished luxury property in this beautiful destination, Mexico, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -7042,7 +7042,7 @@
           {
             "slug": "the-ritz-carlton-mexico-city",
             "name": "The Ritz-Carlton Mexico City",
-            "image": "/images/mexico/cities/mexico-city/hotels/the-ritz-carlton-mexico-city/main.jpg",
+            "image": "/images/mexico/mexico-city/The-Ritz-Carlton-Mexico-City.jpg",
             "location": "Mexico City, Mexico",
             "description": "Rising above the historic Chapultepec Park, The Ritz-Carlton offers a sky-high luxury experience. For city-loving couples, the terrace venues provide ...",
             "longDescription": "Rising above the historic Chapultepec Park, The Ritz-Carlton offers a sky-high luxury experience. For city-loving couples, the terrace venues provide a breathtaking backdrop of the CDMX skyline and Castle, creating a sophisticated, 'Urban Chic' atmosphere for high-end Receptions.",
@@ -7669,7 +7669,7 @@
           {
             "slug": "dreams-macao-beach",
             "name": " Dreams Macao Beach",
-            "image": "/images/dominican-republic/cities/punta-cana/hotels/dreams-macao-beach/main.jpg",
+            "image": "/images/dominican-republic/punta-cana/dreams-macao-beach.jpg",
             "location": "Punta Cana, Dominican Republic",
             "description": "Dreams Macao Beach offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Dreams Macao Beach is a distinguished luxury property in this beautiful destination, Dominican Republic, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -7889,7 +7889,7 @@
           {
             "slug": "zemi-miches-all-inclusive-resort",
             "name": "Zemi Miches All-Inclusive Resort",
-            "image": "/images/dominican-republic/cities/punta-cana/hotels/zemi-miches-all-inclusive-resort/main.jpg",
+            "image": "/images/dominican-republic/punta-cana/zemi-miches.jpg",
             "location": "Miches, Dominican Republic",
             "description": "Zemi Miches All-Inclusive Resort offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Zemi Miches All-Inclusive Resort is a distinguished luxury property in this beautiful destination, Dominican Republic, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -7981,7 +7981,7 @@
           {
             "slug": "paradisus-palma-real",
             "name": "Paradisus Palma Real",
-            "image": "/images/dominican-republic/cities/punta-cana/hotels/paradisus-palma-real/main.jpg",
+            "image": "/images/dominican-republic/punta-cana/Paradisus-Palma-Real.jpg",
             "location": "Punta Cana, Dominican Republic",
             "description": "Paradisus Palma Real offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Paradisus Palma Real is a distinguished luxury property in this beautiful destination, Dominican Republic, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -8073,7 +8073,7 @@
           {
             "slug": "hyatt-ziva-cap-cana",
             "name": "Hyatt Ziva Cap Cana",
-            "image": "/images/dominican-republic/cities/punta-cana/hotels/hyatt-ziva-cap-cana/main.jpg",
+            "image": "/images/dominican-republic/punta-cana/Hyatt-Ziva-Cap-Cana.jpg",
             "location": "Cap Cana, Dominican Republic",
             "description": "Hyatt Ziva Cap Cana offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Hyatt Ziva Cap Cana is a distinguished luxury property in this beautiful destination, Dominican Republic, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -8165,7 +8165,7 @@
           {
             "slug": "hyatt-zilara-cap-cana",
             "name": "Hyatt Zilara Cap Cana",
-            "image": "/images/dominican-republic/cities/punta-cana/hotels/hyatt-zilara-cap-cana/main.jpg",
+            "image": "/images/dominican-republic/punta-cana/Hyatt-Zilara-Cap-Cana.jpg",
             "location": "Cap Cana, Dominican Republic",
             "description": "Hyatt Zilara Cap Cana offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "Hyatt Zilara Cap Cana is a distinguished luxury property in this beautiful destination, Dominican Republic, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -8257,7 +8257,7 @@
           {
             "slug": "eden-roc-cap-cana",
             "name": "Eden Roc Cap Cana",
-            "image": "/images/dominican-republic/cities/punta-cana/hotels/eden-roc-cap-cana/main.jpg",
+            "image": "/images/dominican-republic/punta-cana/Eden-Roc-Cap-Cana.jpg",
             "location": "Cap Cana, Dominican Republic",
             "description": "The only Relais & Châteaux property in the Dominican Republic, Eden Roc Cap Cana is an ultra-exclusive enclave. Offering private villas with pools and...",
             "longDescription": "The only Relais & Châteaux property in the Dominican Republic, Eden Roc Cap Cana is an ultra-exclusive enclave. Offering private villas with pools and a secluded beach club, it is the premier choice for 'Billionaire-style' Indian weddings that demand the highest levels of service and privacy in the Caribbean.",
@@ -8660,7 +8660,7 @@
           {
             "slug": "sls-baha-mar",
             "name": "SLS Baha Mar",
-            "image": "/images/bahamas/cities/nassau-paradise-island/hotels/sls-baha-mar/main.jpg",
+            "image": "/images/bahamas/nassau/SLS-BahaMar.jpg",
             "location": "Nassau, Bahamas",
             "description": "SLS Baha Mar offers a spectacular setting for luxury Indian weddings in this beautiful destination, featuring world-class amenities and dedicated event specialists.",
             "longDescription": "SLS Baha Mar is a distinguished luxury property in this beautiful destination, Bahamas, renowned for its exceptional service and sophisticated atmosphere. Specifically designed to host grand celebrations, the resort offers a variety of indoor and outdoor venues that seamlessly accommodate traditional Indian wedding rituals, from festive Mehndi ceremonies to elegant Receptions under the stars.",
@@ -8752,7 +8752,7 @@
           {
             "slug": "grand-hyatt-baha-mar",
             "name": "Grand Hyatt Baha Mar",
-            "image": "/images/bahamas/cities/nassau-paradise-island/hotels/grand-hyatt-baha-mar/main.jpg",
+            "image": "/images/bahamas/nassau/Grand-Hyatt-BahaMar.jpg",
             "location": "Nassau, Bahamas",
             "description": "The Grand Hyatt Baha Mar is a modern Bahamian powerhouse, featuring the largest casino in the Caribbean and a spectacular show fountain. For Indian we...",
             "longDescription": "The Grand Hyatt Baha Mar is a modern Bahamian powerhouse, featuring the largest casino in the Caribbean and a spectacular show fountain. For Indian weddings, the 'Nexus' luxury catering team specializes in global cuisines, providing an authentic and high-energy celebration environment on Nassau's famous Cable Beach.",
@@ -8844,7 +8844,7 @@
           {
             "slug": "atlantis-paradise-island",
             "name": "Atlantis Paradise Island",
-            "image": "/images/bahamas/cities/nassau-paradise-island/hotels/atlantis-paradise-island/main.jpg",
+            "image": "/images/bahamas/nassau/Atlantis-Paradise-Island.jpg",
             "location": "Paradise Island, Bahamas",
             "description": "Atlantis is more than a resort; it's a legendary ocean kingdom. With a vast array of venues ranging from the Royal Deck to the intimate Ocean's Edge c...",
             "longDescription": "Atlantis is more than a resort; it's a legendary ocean kingdom. With a vast array of venues ranging from the Royal Deck to the intimate Ocean's Edge chapel, Atlantis can cater to Indian weddings of any size. Its world-famous marine habitat and waterpark offer endless entertainment for wedding guests.",

@@ -144,7 +144,7 @@ const page = () => {
 
                         {/* Right Column - Image */}
                         <div className="flex justify-center">
-                            <Image src="/images/british-airways-01.webp" alt="British Airways" width={600} height={400} className="rounded-lg shadow-lg" />
+                            <Image src="/images/airlines/british-airways-01.webp" alt="British Airways" width={600} height={400} className="rounded-lg shadow-lg" />
                         </div>
                     </div>
 
@@ -167,7 +167,7 @@ const page = () => {
 
                         {/* Right Column - Image */}
                         <div className="flex justify-center">
-                            <Image src="/images/british-airways-01.webp" alt="British Airways" width={600} height={400} className="rounded-lg shadow-lg" />
+                            <Image src="/images/airlines/british-airways-01.webp" alt="British Airways" width={600} height={400} className="rounded-lg shadow-lg" />
                         </div>
                     </div>
 

@@ -14,7 +14,7 @@ const defaultContent = {
   resorts: [],
 }
 
-const fallbackImage = "/images/cancun-beach-wedding.jpg"
+const fallbackImage = "/images/mexico/cancun/cancun-beach-wedding.jpg"
 
 export function Resortssection({ content = defaultContent }) {
   const baseResorts = Array.isArray(content?.resorts) ? content.resorts : []

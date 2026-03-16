@@ -20,7 +20,7 @@ const defaultContent = {
     "All-inclusive luxury for every guest",
   ],
   outroText: "Instead of contacting multiple resorts individually, you get one streamlined planning experience.",
-  image: "/images/abt1.jpg",
+  image: "/images/about/abt1.jpg",
   imageAlt: "Destination wedding planning",
 }
 

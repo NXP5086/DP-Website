@@ -13,7 +13,7 @@ const stories = [
         location: "Cancun",
         quote:
             "Stanley from DestinationPick organized our dream wedding in Cancun. Everything was perfect - from the flights to the resort. He went above and beyond to make sure every detail was taken care of. We couldn't have asked for a better experience!",
-        image: "/images/mexico-hero-1.jpg",
+        image: "/images/mexico/mexico-hero-1.jpg",
         guests: 250,
         events: 4,
     },
@@ -23,7 +23,7 @@ const stories = [
         location: "Los Cabos",
         quote:
             "Our Los Cabos wedding was beyond our wildest dreams. The team handled everything from our baraat on the beach to the sangeet under the stars. Our guests still talk about it!",
-        image: "/images/mexico-venue-cabos.jpg",
+        image: "/images/mexico/mexico-venue-cabos.jpg",
         guests: 180,
         events: 3,
     },
@@ -33,7 +33,7 @@ const stories = [
         location: "Cancun",
         quote:
             "Planning a destination wedding from the USA felt overwhelming until we found DestinationPick. They understood our Indian traditions perfectly and made Mexico feel like home for our families.",
-        image: "/images/mexico-hero-3.jpg",
+        image: "/images/mexico/mexico-hero-3.jpg",
         guests: 300,
         events: 5,
     },

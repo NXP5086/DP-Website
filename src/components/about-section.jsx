@@ -22,7 +22,7 @@ export function AboutSection() {
                                     transition={{ duration: 0.7 }}
                                 >
                                     <Image
-                                        src="/images/abt1.jpg"
+                                        src="/images/about/abt1.jpg"
                                         alt="Bride getting ready"
                                         fill
                                         sizes="(max-width: 768px) 50vw, 25vw"
@@ -36,7 +36,7 @@ export function AboutSection() {
                                     transition={{ duration: 0.7 }}
                                 >
                                     <Image
-                                        src="/images/abt2.jpg"
+                                        src="/images/about/abt2.jpg"
                                         alt="Wedding couple"
                                         fill
                                         sizes="(max-width: 768px) 50vw, 25vw"
@@ -52,7 +52,7 @@ export function AboutSection() {
                                     transition={{ duration: 0.7 }}
                                 >
                                     <Image
-                                        src="/images/abt3.jpg"
+                                        src="/images/about/abt3.jpg"
                                         alt="Wedding table setting"
                                         fill
                                         sizes="(max-width: 768px) 50vw, 25vw"

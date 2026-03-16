@@ -11,7 +11,7 @@ const defaultContent = {
   tabs: [],
 }
 
-const fallbackImage = "/images/cancun-beach-wedding.jpg"
+const fallbackImage = "/images/mexico/cancun/cancun-beach-wedding.jpg"
 
 export function DestinationTabbedResorts({ content = defaultContent }) {
   const tabs = Array.isArray(content?.tabs) ? content.tabs : []
