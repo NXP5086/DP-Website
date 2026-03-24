@@ -11,7 +11,7 @@ import { openModal } from "../redux/slices/weddingPopupSlice"
 
 const navLinks = [
     {
-        href: "/about-us", label: "About",
+        href: "/about-us", label: "Discover",
         children: [
             { href: "/about-us", label: "About Us" },
             { href: "/our-team", label: "Our Team" },
@@ -19,8 +19,8 @@ const navLinks = [
     },
     { href: "/services", label: "Services" },
     { href: "/destinations", label: "Destinations" },
-    { href: "/contact", label: "Contact" },
     { href: "/blog", label: "Blog" },
+    { href: "/contact", label: "Contact" },
 ]
 
 export function Navigation() {
